@@ -4,13 +4,13 @@ This document is the syllabus for this course.
 
   * [Class schedule](#class-schedule)
   * [Homework and grading](#homework-and-grading)
-  * [Course Description](#course-description)
+  * [Course description](#course-description)
   * [Resources and required materials](#resources-and-required-materials)
   * [Instructors](#instructors)
 
 ## Class schedule
 
-Time: 3:20PM-4:40PM, Tue & Thu, Sep 26 - Dec 5 2019
+Time: 1:00PM-3:00PM, Tue & Thu, Sep X - Dec X 2020
 
 Location: B1-072, Fred Hutch
 
@@ -40,7 +40,7 @@ Location: B1-072, Fred Hutch
 Materials for each lecture will be available in this repository prior to the class session;
 the link for each topic will take you to the folder containing materials for that class.
 
-For further assistance, Kate Hertweck and/or TA Katie Kistler will be available for
+For further assistance, Kate Hertweck and/or TA X will be available for
 to offer assistance just prior to (or after) the regular class session. Email Kate (khertwec at fredhutch.org) to schedule a time to meet, or to set up a separate appointment.
 
 ## Homework and grading
@@ -53,7 +53,7 @@ Grading criteria and assessment will also be available there.
 However, the answers you submit should be written in your own words.
 You should also cite any online source or person that helped you arrive at your solution as inline comments in your code.
 - Each homework will count for 10% of your final grade. In-class participation will count for the remaining 20%, and will be assessed from the rubric presented [here](lectures/lecture01/participation_rubric.md).
-- If you have a question about homework, please comment in the [GitHub issue](https://github.com/fredhutchio/tfcb_2019/issues) for the assignment, or email Kate (khertwec at fredhutch.org) for assistance.
+- If you have a question about homework, please comment in the [GitHub issue](https://github.com/fredhutchio/tfcb_2020/issues) for the assignment, or email Kate (khertwec at fredhutch.org) for assistance.
 
 | Homework | Assigned Date | Due Date | Topic
 |----------|--------------|----------|-------

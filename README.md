@@ -1,4 +1,4 @@
-# MCB 517A: Tools for Computational Biology
+# MCB 536: Tools for Computational Biology
 
 This document is the syllabus for this course.
 
@@ -12,7 +12,7 @@ This document is the syllabus for this course.
 
 Time: 1:00PM-3:00PM, Tue & Thu, Sep 30 - Dec 11 2020
 
-Location: B1-072, Fred Hutch
+Location: Zoom
 
 | Lecture | Date   | Instructor       | Topic
 |---------|--------|------------------|--------

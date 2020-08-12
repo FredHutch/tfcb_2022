@@ -40,7 +40,7 @@ Location: Zoom
 Materials for each lecture will be available in this repository prior to the class session;
 the link for each topic will take you to the folder containing materials for that class.
 
-For further assistance, Kate Hertweck and/or TA X will be available for
+For further assistance, TAs Will Hannon and Maggie Russelll will be available for
 to offer assistance just prior to (or after) the regular class session. Email Kate (khertwec at fredhutch.org) to schedule a time to meet, or to set up a separate appointment.
 
 ## Homework and grading
@@ -105,3 +105,9 @@ For general inquiries about this course, please contact khertwec at fredhutch.or
 - [Kate Hertweck](http://www.fredhutch.io)
 - [Erick Matsen](https://matsen.fhcrc.org)
 - [Arvind Rasi Subramaniam](http://rasilab.fredhutch.org)
+
+## Teaching Assistants
+
+
+- [Will Hannon](https://mcb-seattle.edu/student-profile/?uid=193)
+- [Maggie Russell](https://mcb-seattle.edu/student-profile/?uid=203)

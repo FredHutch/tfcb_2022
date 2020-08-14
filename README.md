@@ -1,4 +1,4 @@
-# MCB 517A: Tools for Computational Biology
+# MCB 536: Tools for Computational Biology
 
 This document is the syllabus for this course.
 
@@ -12,7 +12,7 @@ This document is the syllabus for this course.
 
 Time: 1:00PM-3:00PM, Tue & Thu, Sep 30 - Dec 11 2020
 
-Location: B1-072, Fred Hutch
+Location: Zoom
 
 | Lecture | Date   | Instructor       | Topic
 |---------|--------|------------------|--------
@@ -40,7 +40,7 @@ Location: B1-072, Fred Hutch
 Materials for each lecture will be available in this repository prior to the class session;
 the link for each topic will take you to the folder containing materials for that class.
 
-For further assistance, Kate Hertweck and/or TA X will be available for
+For further assistance, TAs Will Hannon and Maggie Russelll will be available for
 to offer assistance just prior to (or after) the regular class session. Email Kate (khertwec at fredhutch.org) to schedule a time to meet, or to set up a separate appointment.
 
 ## Homework and grading
@@ -105,3 +105,9 @@ For general inquiries about this course, please contact khertwec at fredhutch.or
 - [Kate Hertweck](http://www.fredhutch.io)
 - [Erick Matsen](https://matsen.fhcrc.org)
 - [Arvind Rasi Subramaniam](http://rasilab.fredhutch.org)
+
+## Teaching Assistants
+
+
+- [Will Hannon](https://mcb-seattle.edu/student-profile/?uid=193)
+- [Maggie Russell](https://mcb-seattle.edu/student-profile/?uid=203)

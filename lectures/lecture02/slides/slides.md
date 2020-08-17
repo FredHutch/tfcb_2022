@@ -6,8 +6,6 @@
 #
 <section data-background="images/gizmo.png"></section>
 
-# all high-performance compute systems run linux
-
 #
 <p class="stretch"><img src="images/galaxy.png"></p>
 
@@ -17,17 +15,16 @@
 #
 <p class="stretch"><img src="images/cake-recipe.jpg"></p>
 
-
-# so if you want to use high-performance computing, you need some linux
+# linux = do whatever you want on high-performance compute systems
 
 #
 <section data-background="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Wikimedia_Foundation_Servers-8055_08.jpg/1280px-Wikimedia_Foundation_Servers-8055_08.jpg"></section>
 
 #
-<section data-background="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Inside_and_Rear_of_Webserver.jpg/1920px-Inside_and_Rear_of_Webserver.jpg"></section>
+<section data-background="images/datacenter-cooling.jpg"></section>
 
 #
-<section data-background="images/datacenter-cooling.jpg"></section>
+<section data-background="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Inside_and_Rear_of_Webserver.jpg/1920px-Inside_and_Rear_of_Webserver.jpg"></section>
 
 #
 <section data-background="images/processor.jpg"></section>
@@ -38,7 +35,26 @@
 #
 <section data-background="images/harvesters.jpg"></section>
 
-# unix is one of humanity's great accomplishments
+# What is the command line?
+
+* "native" environment for interacting with linux
+* similar environments also appear on Mac OS and Windows
+
+#
+
+<p class="stretch"><img src="https://i.stack.imgur.com/OxQZi.gif"></p>
+
+# Command line versus shell
+
+* The "command line" is the interactive means of interacting with the "shell", which is how you interact with the actual computer
+* One can also use shell for (light) programming involving heavy interaction with the computing system
+
+# The simplest shell script
+
+# When to use shell programming?
+
+* Very rarely
+* When you are only running other commands, like making a simple computational pipeline
 
 # Unix philosophy
 
@@ -46,10 +62,9 @@
 * Write programs to work together.
 * Write programs to handle text streams, because that is a universal interface.
 
-
 # a silly demo
 
-# it is arcane, no doubt
+
 
 # goals
 

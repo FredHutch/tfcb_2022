@@ -17,8 +17,8 @@ Location: Zoom
 | Lecture | Date   | Instructor       | Topic
 |---------|--------|------------------|--------
 | 1       | Oct 1  | Kate Hertweck    | [Introduction to course](lectures/lecture01/)
-| 2       | Oct 6  | Erick Matsen     | [Introduction to the command line](lectures/lecture09/)
-| 3       | Oct 8  | Erick Matsen     | [Intro to the command line (continued)](lectures/lecture12/)
+| 2       | Oct 6  | Erick Matsen     | [Introduction to the command line](lectures/lecture02/)
+| 3       | Oct 8  | Erick Matsen     | [Intro to the command line (continued)](lectures/lecture03/)
 | 4       | Oct 13 | Trevor Bedford   | [Introduction to Git and GitHub](lectures/lecture02/)
 | 5       | Oct 15 | Trevor Bedford   | [Introduction to data](lectures/lecture03/)
 | 6       | Oct 20 | Phil Bradley     | [Introduction to Python](lectures/lecture10/)

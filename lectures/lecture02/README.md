@@ -1,4 +1,4 @@
-# Lecture 9: First steps in the shell
+# Lecture 2: First steps in the shell
 
 **Erick Matsen ([@ematsen](https://twitter.com/ematsen), [matsen.group](http://matsen.group))**
 

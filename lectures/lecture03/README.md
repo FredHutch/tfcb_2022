@@ -1,4 +1,4 @@
-# Lecture 12
+# Lecture 03
 
 The materials for this class are included with [Lecture 9](../lecture10). Other reminders include:
 

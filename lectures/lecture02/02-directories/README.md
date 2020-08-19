@@ -2,7 +2,7 @@
 
 Execute
 
-    cd directories
+    cd 02-directories
 
 Congratulations, you just changed directory using `cd`, which is short for "change directory".
 By executing `cd directories` you moved your current location inside a directory called `directories`.
@@ -22,11 +22,11 @@ The `pwd` command is short for "print working directory."
 
 On my computer the `pwd` command outputs
 
-    /home/ematsen/writing/tfcb_2019/lectures/lecture09/directories
+    /home/ematsen/writing/tfcb_20202/lectures/lecture02/02-directories
 
 which shows the list of directories I'm in.
 Such a list of directories (perhaps ending with a file name) is called an _absolute path_.
-Each successive directory is separated from the previous one with a `/`, so I'm in a directory called `directories`, which is contained in a directory called `lecture09`, which is contained in a directory called `lectures`, and so on.
+Each successive directory is separated from the previous one with a `/`, so I'm in a directory called `directories`, which is contained in a directory called `lecture02`, which is contained in a directory called `lectures`, and so on.
 As I described before the beginning ("root") directory is called `/`.
 
 Remember how before we learned how to give an argument to the directory-listing command?

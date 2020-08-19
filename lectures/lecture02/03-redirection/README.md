@@ -2,7 +2,7 @@
 
 Here we'll try out the fantastically powerful technique of redirection.
 We can use this to chain commands together easily to make things run fast.
-Let's make sure we're in the right place-- `pwd` should end in `lecture09/redirection`.
+Let's make sure we're in the right place-- `pwd` should end in `lecture02/redirection`.
 
 ## Pipes
 
@@ -33,7 +33,7 @@ We can chain together an arbitrary number of commands like
 etc.
 
 Now it's your turn.
-Use redirection to count the number of files in the `lecture09` directory.
+Use redirection to count the number of files in the `lecture02` directory.
 (Remember the various flags we used for `ls`, and the fact that you can give it an argument.)
 
 
@@ -53,7 +53,7 @@ You can see that adding the `grep jpg` filtered the output to only things contai
 That's what it does!
 You can read more about grep using `man`.
 
-Now pipe together `tree` and other commands you know to find the number of files in `lecture09` that contain `md`.
+Now pipe together `tree` and other commands you know to find the number of files in `lecture02` that contain `md`.
 
 
 ## Redirecting to files
@@ -77,7 +77,7 @@ If we don't want to over-write the output of a file, we can use the `>>` operato
 This appends the output of `date` to our file.
 
 Now it's your turn.
-Make a file that has the date, a picture of Darth Vader, and the directory tree of `lecture09`.
+Make a file that has the date, a picture of Darth Vader, and the directory tree of `lecture02`.
 You can use multiple commands to achieve this result.
 
 ---
@@ -85,4 +85,4 @@ You can use multiple commands to achieve this result.
 Congratulations!
 You know know the basics of output redirection between commands and into files.
 
-The next step is to work through the `lecture09/vim` README.
+The next step is to work through the `04-vim` README.

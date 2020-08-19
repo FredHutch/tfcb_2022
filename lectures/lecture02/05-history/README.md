@@ -75,4 +75,4 @@ Note that [this isn't a perfect solution and a better one exists](http://superus
 
 Congratulations, now you know something about command history and a little more about command line editing.
 We're now ready to do a little shell scripting!
-Next navigate to `lecture09/scripting`.
+Next navigate to `06-scripting`.

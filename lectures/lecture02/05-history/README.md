@@ -2,6 +2,8 @@
 
 Your "history" is the list of commands you have entered.
 
+Let's make sure we're in the right place-- `pwd` should end in `05-history`.
+
 ## Navigating your history
 
 The easiest way to get back in your history is just to hit the up arrow.

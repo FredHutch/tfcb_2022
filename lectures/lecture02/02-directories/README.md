@@ -115,4 +115,4 @@ Now go back to where you were before.
 
 Congratulations!
 You now know how to navigate around the file system.
-For the next lesson, go up one directory and then into the `redirection` directory and have a look at the README there.
+For the next lesson, go up one directory and then into the `03-redirection` directory and have a look at the README there.

@@ -6,6 +6,7 @@ Also, when working with remote machines, it's nice to be able to edit text in a 
 Finally, sometimes another program (e.g. git) will plop you into vim without you realizing it, so it's nice to know what to do in this situation.
 In addition, many programs, such as `less` and Jupyter notebook use vim keybindings for fast navigation.
 
+Let's make sure we're in the right place-- `pwd` should end in `04-vim`.
 
 ## The simplest `vi` session
 

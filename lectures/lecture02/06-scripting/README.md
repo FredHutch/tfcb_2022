@@ -4,6 +4,7 @@ We made it!
 You have now arrived at the fabled land of shell scripting.
 We will slide into shell scripting with the tools we've already built up.
 
+Let's make sure we're in the right place-- `pwd` should end in `06-scripting`.
 
 ## History revisited
 

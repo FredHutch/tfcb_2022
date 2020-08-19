@@ -2,7 +2,7 @@
 
 Here we'll try out the fantastically powerful technique of redirection.
 We can use this to chain commands together easily to make things run fast.
-Let's make sure we're in the right place-- `pwd` should end in `lecture02/redirection`.
+Let's make sure we're in the right place-- `pwd` should end in `03-redirection`.
 
 ## Pipes
 

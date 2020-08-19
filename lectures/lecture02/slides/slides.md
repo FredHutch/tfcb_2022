@@ -1,7 +1,17 @@
+#
+
+**_teaching goals_**
+
+<br>
+
+* what is high performance computing
+* rudiments of command line interaction
+* how to run a command in parallel across cores
+
 # eventually you will outgrow your laptop
 
 #
-<p class="stretch"><img src="https://i.imgur.com/FAewO.jpg"></p>
+<p class="stretch"><img src="images/ferret.jpg"></p>
 
 #
 <section data-background="https://img-en.fs.com/community/wp-content/uploads/2016/08/Data-Center-.jpg"></section>
@@ -38,10 +48,8 @@
 #
 <section data-background="images/harvesters.jpg"></section>
 
-# What is the command line?
-
-* "native" environment for interacting with linux
-* similar environments also appear on Mac OS and Windows
+#
+<section data-background="https://upload.wikimedia.org/wikipedia/commons/c/c7/HuaweiRH2288HV2.JPG"></section>
 
 # the command line is the computational lab bench
 
@@ -49,28 +57,113 @@
 
 <p class="stretch"><img src="https://thumbs.dreamstime.com/z/pipeta-do-canal-da-mulher-qu%C3%ADmica-do-cientista-do-laborat%C3%B3rio-multi-27966547.jpg"></p>
 
-# Command line versus shell
+#
 
-You can write a program to execute command line calls, this is called a "shell script"
+the command line is the "native" environment <br> for interacting with linux
 
-# The simplest shell script
+<br>
 
-# When to use shell programming?
+<div class=fragment>
+similar environments also appear <br> on Mac OS and Windows
+</div>
 
-* Very rarely
-* When you are only running other commands, like making a simple computational pipeline
+#
 
-# Unix philosophy
+_buy eggs_
+
+    buy eggs
+
+<br>
+
+<div class=fragment>
+_buy two dozen eggs_
+
+    buy --dozens 2 eggs
+</div>
+
+
+
+<br>
+
+<div class=fragment>
+_buy, using cash, two dozen eggs_
+
+    buy --using cash --dozens 2 eggs
+</div>
+
+#
+
+_buy eggs and fry them_
+
+    buy eggs | fryingpan --oiled --minutes 4
+
+<br>
+
+<div class=fragment>
+
+_buy eggs, fry them, and store on plate_
+
+    buy eggs | fryingpan --oiled --minutes 4 > plate
+</div>
+
+
+#
+
+You can write a little program <br>
+to execute command line calls.
+
+This is called a "shell script"
+
+<br>
+
+<div class=fragment>
+    buy eggs | hands --action crack > bowl
+</div>
+
+<div class=fragment>
+    whisk --input bowl | fryingpan --oiled --minutes 4 > plate
+</div>
+
+#
+
+but first, let's mash the keyboard
+
+#
+
+    buy eggs | hands --action crack > bowl
+    whisk --input bowl | fryingpan --oiled --minutes 4 > plate
+
+<br>
+
+    samtools view wgs_bam_NA12878_20k_b37_NA12878.bam \
+                   | cut -f3 | sort | uniq -c > contig_counts.txt
+    sort -n -r contig_counts.txt > contig_counts_sorted.txt
+    head contig_counts_sorted.txt
+
+
+#
+**When to use shell programming?**
+
+<br>
+
+Just you are _only_ running other commands, like making a simple computational pipeline
+
+<div class=fragment>
+For other tasks, use Python or R.
+</div>
+
+#
+
+**Unix philosophy**
 
 * Write programs that do one thing and do it well.
 * Write programs to work together.
 * Write programs to handle text streams, because that is a universal interface.
 
-# a silly demo
+#
 
+**May you be a happy and free ferret**
 
+<br>
 
-# goals
-
-* rudiments of running a command in shell
-* how to run a command in parallel across cores
+<p class="stretch"><img src="https://img-9gag-fun.9cache.com/photo/awxeMoR_700bwp.webp"></p>

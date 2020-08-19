@@ -2,9 +2,10 @@
 
 **Erick Matsen ([@ematsen](https://twitter.com/ematsen), [matsen.group](http://matsen.group))**
 
-Now that you have some experience using R for data manipulation and visualization, we'll move on to explore a few of the other common tools used in computational biology. This lesson introduces you to the command line (Unix shell), which is useful (and necessary) for automating tasks, working with files/directories, and using compute clusters. We'll be integrating our knowledge of the shell with Python coding starting with lecture 10, as these tools often work hand-in-hand.
+This lesson introduces you to the command line (Unix shell), which is useful (and necessary) for automating tasks, working with files/directories, and using compute clusters.
 
-**TODO for anyone revising this course: students got confused about what directory they should be in. Sprinkle in some "you should now be in directory bla/bla" notes so make sure folks didn't get off track.**
+[Introductory slides](https://fredhutchio.github.io/tfcb_2020/lectures/lecture02/slides/slides.html)
+
 
 ## Learning objectives
 

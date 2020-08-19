@@ -67,7 +67,7 @@ Sequence Alignment/Map (SAM) format.
 This software is installed on rhino,
 but needs to be made available for use using `module load`, or `ml` for short:
 
-    ml samtools
+    ml SAMtools
 
 Our data has an awkward name, so let's rename it `input.bam` with
 

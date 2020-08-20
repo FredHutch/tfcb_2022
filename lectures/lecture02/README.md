@@ -71,7 +71,7 @@ To get started, make sure you're connected to the Marconi wireless network.
     git clone https://github.com/fredhutchio/tfcb_2020.git
     cd tfcb_2020/lectures/lecture02
 
-Now you can start the first lesson by clicking on the `first-steps.md` link in the file list above on the GitHub website and starting your adventure!
+Now you can start the first lesson by clicking on the `01-first-steps.md` link in the file list above on the GitHub website and starting your adventure!
 
 
 ## Further references

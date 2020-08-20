@@ -2,7 +2,7 @@
 
 **Erick Matsen ([@ematsen](https://twitter.com/ematsen), [matsen.group](http://matsen.group))**
 
-This lesson introduces you to the command line (Unix shell), which is useful (and necessary) for automating tasks, working with files/directories, and using compute clusters.
+This lesson introduces you to the command line (a.k.a. Unix shell), which is useful (and necessary) for automating tasks, working with files/directories, and using compute clusters.
 
 * [Recorded lecture](https://www.youtube.com/watch?v=dzkacZ2BTjw)
 * [Corresponding slides](https://fredhutchio.github.io/tfcb_2020/lectures/lecture02/slides/slides.html)
@@ -29,7 +29,7 @@ After this course, you should be able to:
 
 ## Reminders
 
-- Homework 1 (command line) are available [here](https://github.com/fredhutchio/tfcb_2020/tree/master/homeworks/homework01); it may be useful to reference these questions as you work through material in today's class.
+- Homework 1 (command line) is available [here](https://github.com/fredhutchio/tfcb_2020/tree/master/homeworks/homework01); it may be useful to reference these questions as you work through material in today's class.
 <!--
 The assignment is due at 12 pm on Nov 7. It is not yet available through GitHub Classroom, but a link will be emailed to you by Nov 5 when the second half of the shell homework is available.
 -->

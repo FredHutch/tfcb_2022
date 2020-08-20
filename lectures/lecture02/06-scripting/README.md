@@ -212,7 +212,7 @@ It is tremendously powerful!
 ## More references
 
 * [my notes on shell scripting](https://www.fredhutch.io/articles/2017/02/25/shell-scripting/)
-* [GNU Parallel documentation](https://www.gnu.org/software/parallel/).
+* [GNU Parallel documentation](https://www.gnu.org/software/parallel/)
 
 
 ---

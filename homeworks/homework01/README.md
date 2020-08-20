@@ -1,78 +1,86 @@
-# Homework 1
+# Homework 1: Unix shell
 
-This homework will assess your ability to use GitHub, organize projects, and apply tidy data principles, and represents content covered in lectures 01-03. You will also have the opportunity to familiarize yourself with GitHub Classroom, through which you will submit homework assignments for the duration of the course.
+This homework will assess your ability to run commands in the shell and make a simple script.
 
-At the end of this assignment, you will have two public repositories. One repository (`tfcb-homework01`) will be a revision of `messy-project-directory/`, following the instructions below, and will be located in your own GitHub account. The second repository (prefixed with `homework01`) will belong to the GitHub organization set up specifically for homework collection; this repository will be automatically set up after you accept the invitation (from clicking the link sent via email). The second repository will contain a separate copy of this file that you will modify for your homework submission. Your answers will replace the lines specified in _italics_ below. Your answers in that file will be recorded automatically at the time due (October 8 at noon) for your homework submission.
+Replace the lines specified in _italics_ with your answers and save as a text file.
+
+<!--
+The assignment is worth 100 points, is due on Thursday, November 7 at noon, and includes material from lectures 9 and 12. This assignment will be available in GitHub Classroom on Tuesday, November 5.
+-->
+
+## Problem 0
+
+**30 points**
+
+Complete the interactive tutorial.
+
+_Did you hit any points of frustration, and if so, how could we improve the material to avoid that frustration?_
+
 
 ## Problem 1
 
-**10 points**
+**25 points**
 
-Make a GitHub account and populate your bio by including your research interests, place of work, location, professional webpage (or science-focused twitter account!). Here's an example [github.com/trvrb/](https://github.com/trvrb/).
+Learn about the difference between standard out ("stdout") and standard error ("stderr") from [this article](https://www.howtogeek.com/435903/what-are-stdin-stdout-and-stderr-on-linux/) (feel free to read the whole thing, but you can stop before the section "Detecting Redirection Within a Script").
+Note that in reading this article, you don't need to come up with a script that will throw an error: we have one at `tfcb_2020/lectures/lecture02/scripting/script2.sh`.
 
-_Include the link to your GitHub profile here._
+_Write a command here that redirects stdout from `script2.sh` to a file named `stdout.txt` and redirects stderr to a file named `stderr.txt`._
 
-## Problem 2
-
-**10 points**
-
-This question assesses your ability to track a project using Git.
-
-Download the course files with the following link: [github.com/fredhutchio/tfcb_2019/archive/master.zip](https://github.com/fredhutchio/tfcb_2019/archive/master.zip). Copy the contents of `messy-project-directory/` to a new directory on your computer named `tfcb-homework01`.
-
-Open GitHub Desktop and make a "New repository" with name `tfcb-homework01`. Set "Local Path" to the location in your computer where your `tfcb-homework01` directory can be found.
-
-Create an initial commit that adds all the local files in `tfcb-homework01`:
-- `Survey Data.xlsx`
-- `get Species_list.py`
-- etc...
-
-You do not need to submit anything for this problem; your success will be evaluated in the next problem.
 
 ## Problem 3
 
 **10 points**
 
-This question assesses your ability to publish projects to GitHub.
+Use `man` or web search to learn about the `tee` command.
 
-Publish `tfcb-homework01` to GitHub using GitHub Desktop. Make sure to set this to be a "public" repository. The resulting repository can now be accessed at github.com/{your_name}/tfcb-homework01. If necessary, you can make this repository public by going to "Settings" from this page.
+_Modify your previous command to also write stdout to the terminal as well as redirect it to `stdout.txt`_
 
-_Include the link to your `tfcb-homework01` GitHub repository here._
-
-## Problem 4
-
-**10 points**
-
-This question assesses your ability to organize files and directories associated with research projects.
-
-Organize files into a more consistent structure. Group images into a `images/` directory. Separate source code and data. Rename files to remove spaces and improve consistency.
-
-Commit changes and publish to your public GitHub repository. Locate the URL of this commit by clicking on "commits" from your project page on GitHub, which should be similar in format to: https://github.com/fredhutchio/tfcb_2019/commit/16b5235bd2d908c96f22297813e6aaf9f172ad41
-
-_Include the commit URL for your reorganized project here._
 
 ## Problem 4
 
-**10 points**
+**15 points**
 
-This question assesses your ability to write a README with markdown formatting.
+Enter the `tfcb_2020/lectures/lecture02/vim` directory.
+Have a look at the `anthony.txt` file.
+The command
 
-Create a file called `README.md` and populate with Markdown. Demonstrate headers, lists, links, embedded images (by linking to images contained in the directory) and tables in this readme.
+    sed "s/ /\n/g" anthony.txt
 
-Commit this file and publish to your public GitHub repository.
+will spit out the words of this file one by one.
 
-_Include the link to your `README.md` here._
+_Figure out a series of commands, piped together, that will count the number of unique occurrences of various words in `anthony.txt`._
+
+Hint: learn about the `uniq` command and its flags first, but to successfully answer the question you'll need another command to transform your list.
+
 
 ## Problem 5
 
-**10 points**
+**20 points**
 
-This question assesses your understanding of tidy data principles.
+You might have noticed that the files we're dealing with have "extensions" that describe their file type.
+For example, text files are marked with `.txt`, and shell scripts are labeled with `.sh`.
 
-Clean up the file that was originally named `Survey Data.xlsx`. Some points to remember: aim for a single tidy data frame in a single tab, don't use formatting as data, use preferred date format, properly record null values.
+This is a handy convention which is used heavily by a command-line library called "imagemagick" to manipulate images.
+ImageMagick has been installed on rhino, but needs to be loaded before you use it:
 
-Export this as a tab-delimited `.tsv` text file with Unix line endings.
+    ml ImageMagick
 
-Commit the modified `.xlsx` file and the `.tsv` file and publish to your public GitHub repository.
+Don't forget to load the updated version of parallel:
 
-_Include the link to your `.tsv` file on GitHub here._
+    ml parallel
+
+Once the library is loaded, go to the `lecture02/slides/images` directory and try
+
+    convert betty-crocker.jpg betty-crocker.png
+
+which converts `betty-crocker.jpg` (a JPG image) to `betty-crocker.png` (a PNG image).
+You can confirm proper conversion using `file`.
+Now, your turn:
+
+_Use parallel to convert all of the JPGs in this directory to PNG images._
+
+Big hint: There is a very similar sort of command in the "Compute intensive jobs and substitution" section of the `parallel` man page.
+
+Next:
+
+_Write a script that will take all of the JPGs in the current directory, convert them to PNGs, and then assemble all of the PNGs in the current directory into a file called `montage.png` using the `montage` command. Paste that script here._

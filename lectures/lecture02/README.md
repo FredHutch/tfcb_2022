@@ -4,7 +4,8 @@
 
 This lesson introduces you to the command line (Unix shell), which is useful (and necessary) for automating tasks, working with files/directories, and using compute clusters.
 
-[Recorded lecture](https://www.youtube.com/watch?v=dzkacZ2BTjw) with [introductory slides](https://fredhutchio.github.io/tfcb_2020/lectures/lecture02/slides/slides.html)
+* [Recorded lecture](https://www.youtube.com/watch?v=dzkacZ2BTjw)
+* [Corresponding slides](https://fredhutchio.github.io/tfcb_2020/lectures/lecture02/slides/slides.html)
 
 
 ## Learning objectives
@@ -28,9 +29,12 @@ After this course, you should be able to:
 
 ## Reminders
 
+- Homework 1 (command line) are available [here](https://github.com/fredhutchio/tfcb_2020/tree/master/homeworks/homework01); it may be useful to reference these questions as you work through material in today's class.
 <!--
-- The first questions for homework 4 (command line) are available [here](https://github.com/fredhutchio/tfcb_2020/tree/master/homeworks/homework04); it may be useful to reference these questions as you work through material in today's class. The assignment is due at 12 pm on Nov 7. It is not yet available through GitHub Classroom, but a link will be emailed to you by Nov 5 when the second half of the shell homework is available.
-- We'll be working in Python in the next class; please make sure you have [Anaconda](https://github.com/fredhutchio/tfcb_2020/tree/master/software#python) installed, which includes Python, Jupyter notebooks and other packages we'll be using in later classes.
+The assignment is due at 12 pm on Nov 7. It is not yet available through GitHub Classroom, but a link will be emailed to you by Nov 5 when the second half of the shell homework is available.
+-->
+- We'll be working in Python in upcoming classes; please make sure you have [Anaconda](https://github.com/fredhutchio/tfcb_2020/tree/master/software#python) installed, which includes Python, Jupyter notebooks and other packages we'll be using in later classes.
+<!--
 - The regularly scheduled office hours (for fredhutch.io) don't seem to be workable or necessary for most folks! If you would like assistance with homework or course material, please let Kate (or Katie) know, and we'd be happy to meet you before (or after) class (the syllabus/README for this repo has been updated accordingly).
 -->
 
@@ -69,11 +73,9 @@ To get started, make sure you're connected to the Marconi wireless network.
 
 Now you can start the first lesson by clicking on the `first-steps.md` link in the file list above on the GitHub website and starting your adventure!
 
-If you have problems at any point, flag us down and we'll come by to help out.
-
 
 ## Further references
 
-* [Software Carpentry's shell introduction](https://swcarpentry.github.io/shell-novice/).
+* [Software Carpentry's shell introduction](https://swcarpentry.github.io/shell-novice/)
 * [Software Carpentry's shell topics](https://carpentries-incubator.github.io/shell-extras/)
 * [MIT Computer Science "Missing Semester"](https://missing.csail.mit.edu/)

@@ -112,7 +112,7 @@ _buy eggs, fry them, and store on plate_
 You can write a little program <br>
 to execute command line calls.
 
-This is called a "shell script"
+This is called a "shell script".
 
 <br>
 

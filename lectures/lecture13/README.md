@@ -1,25 +1,14 @@
-# Lecture 13
+# Lecture 5: Principles of Data Visualization
 
-For our next set of lectures, we'll be heading back to Python to explore some specific tools common in computational biology research. Lecture 13 and 14 from Jesse Bloom will introduce you to the use of packages in general, and [Biopython](https://biopython.org) in particular, which includes many useful tools for manipulation and analysis of data related to molecular biology.
+Now that we can create basic plots in R, we'll talk more about best practices in data visualization: how are data best represented in a graph? How do we select colors and fonts to effectively convey information? What are the main goals of data visualization? This lecture will provide you with the foundational knowledge you need to continue adapting your code to suit the message conveyed by a visualization.
 
 ## Learning objectives
 
-After this section, you should be able to write Python functions that perform some useful real biological analyses:
-
-- Get the reverse complement of a sequence (learn to use a Python `dict`).
-
-- See if a sequence matches using ambiguous nucleotides (learn to use the Python `re` module).
-
-- Parse barcodes from a real deep-sequencing experiment (learn to use `biopython`).
+- Identify best practices (and common pitfalls) for data visualization
+- Differentiate among different types of data visualization
+- Apply strategies for effective data visualization
 
 ## Class materials
 
-- The content for this lecture is contained in the Jupyter notebook [lecture13.ipynb](lecture13.ipynb) located in this directory.
-
-- Please install [Biopython](https://anaconda.org/anaconda/biopython) prior to class by opening Terminal (Mac) or Anaconda Prompt (Windows) and executing the following code: `conda install -c anaconda biopython` . Alternatively (on either platform), open Anaconda Navigator, go to "Environments" and click "not installed". Search for biopython click the box to install.
-
-- This class requires use of Python 3.6+. If you installed Anaconda recently (e.g., within the last few months, since the start of the course), you should be fine. If you are working with an older installation of Python, please see [these instructions](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-python.html#updating-or-upgrading-python) for checking your version and updating if necessary.
-
-## Reminders
-
-- Homeworks 4 and 5 were due at noon on Thursday, November 7.
+- To view slides in presentation mode, update the repo on your local computer (`git pull origin master`) and open [`lecture.html`](lecture.html) in a web browser. Note that Github does not display `.html` files natively, so you need to open the [`lecture.html`](lecture.html) version that is on your hard disk (You can first browse to its location using your file explorer). [`lecture.org`](lecture.org) and [`reveal.js`](reveal.js) include the unformatted code and files used to create the slides; you should not need to use any of these files.
+- [Fundamentals of Data Visualization](https://serialmentor.com/dataviz/) by Claus Wilke is a great book that describes the concepts behind this lecture in more detail.

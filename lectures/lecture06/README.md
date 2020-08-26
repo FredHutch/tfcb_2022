@@ -1,18 +1,22 @@
-# Lecture 6: Working with data using tidyverse
+# Lecture 10: Introduction to Python
 
-Much of the time biologists spend while performing data analysis involves manipulating, reformatting, and transforming data. In this lecture, we'll use `tidyverse` functions from the `dplyr` package to perform these "data munging" tasks. We'll cover a few of the functions available for these tasks and learn a common programming structure (piping), which will equip you to continue developing powerful data manipulation code that will be foundational for visualization and statistical analysis.
+This section introduces the last of the programming languages we'll be using this semester: Python. These two lectures introduce you to the main syntax, data types, data structures, and programming structures in Python. We've grouped this intro to Python with the command line material, as these tools often operate hand-in-hand for computational biology projects. We'll be continuing to develop your Python skills throughout the rest of the quarter, so a good grasp on the fundamentals in this section will be especially important. We've included a number of practice exercises in this section to help you gauge your understanding of the material. 
 
 ## Learning objectives
 
-- Select and apply functions from `tidyverse` to perform manipulations to tabular data
-- Apply pipes as a programming structure to connect input and output from multiple functions
+After this section, you should be able to:
+- Write and execute Python code using Jupyter notebooks
+- Manipulate basic data types and structures in Python
+- Apply the general programming structures of for loops and defining functions
+- Work with Python modules and system commands
 
 ## Class materials
 
-- Note that Github does not display `.html` files natively, so you need to download [`lecture.html`](lecture.html) and open in a file browser to view slides in presentation mode. [`lecture.org`](lecture.org) and [`reveal.js`](reveal.js) include the unformatted code and files used to create the slides; you should not need to use any of these files.
-- RStudio has a [data manipulation cheatsheet](https://github.com/rstudio/cheatsheets/raw/master/data-transformation.pdf) that should help you identify what functions are useful for certain tasks.
+- We'll be using Jupyter notebooks as our interface for Python, so we recommend installing [Anaconda](https://github.com/fredhutchio/tfcb_2019/tree/master/software#python) (this also installs many of the other packages we'll be using in Python this semester).
+- The content for this lecture (as well as lecture 11) is contained in the Jupyter notebook [`lecture10.ipynb`](lecture10.ipynb) located in this directory. The example code and practice exercises are executable as code cells in that notebook. For additional background on Jupyter notebooks, please see [this link](https://realpython.com/jupyter-notebook-introduction/).
 
 ## Reminders
-
-- Homework 2 is currently available and is due Tuesday, October 22 at noon. You should have received an email containing an invitation to create your repository using GitHub Classroom. Contact Kate (khertwec at fredhutch.org) with any questions or concerns.
-- We've had some questions about the difference between R Markdown documents and R Notebooks. The short answer is that R Notebooks are a specialized document written in R Markdown that updates as you run the code, while regular R Markdown documents need to be knit at the end of writing code for content to appear in the final document. More information can be found [here](http://uc-r.github.io/r_notebook). 
+- Homework deadlines:
+  - Homework 3 (genomic data in R) was due Tuesday, October 28 at noon.
+  - [Homework 4 (command line)](../../homeworks/homework04) is due on Thursday, November 7 at noon, and includes material from lectures 9 and 12. This assignment will be available in GitHub Classroom on Tuesday, November 5.
+  - [Homework 5 (intro to python)](../../homeworks/homework05) will also be due at Thursday, November 7 at noon, and includes material from lectures 10 and 11. This assignment will be available in GitHub Classroom on Thursday, October 31.

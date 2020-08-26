@@ -1,30 +1,25 @@
-# Lecture 8: Genomic data in R
+# Lecture 13
 
-This lecture will unite the last lecture's content on genomic analysis with our previous coding in R. The packages we'll use this week are from [Bioconductor](http://bioconductor.org), a collection of software specifically designed for genomic analysis in R.
+For our next set of lectures, we'll be heading back to Python to explore some specific tools common in computational biology research. Lecture 13 and 14 from Jesse Bloom will introduce you to the use of packages in general, and [Biopython](https://biopython.org) in particular, which includes many useful tools for manipulation and analysis of data related to molecular biology.
 
 ## Learning objectives
 
-- Use Bioconductor packages to work with genomic data in R
-- Load, inspect, and query genomic data (BED/SEG, BAM, VCF files)
-- Identify and annotate genomic variants
+After this section, you should be able to write Python functions that perform some useful real biological analyses:
+
+- Get the reverse complement of a sequence (learn to use a Python `dict`).
+
+- See if a sequence matches using ambiguous nucleotides (learn to use the Python `re` module).
+
+- Parse barcodes from a real deep-sequencing experiment (learn to use `biopython`).
 
 ## Class materials
 
-- If you have not done so already, update your local copy of the class repository from GitHub. You should have a directory (`lecture08`) containing the following three RMarkdown tutorials:
-  - [Lecture8_GenomicData.Rmd](Lecture8_GenomicData.Rmd): storing genomic data as objects, assessing genomic ranges, importing and assessing variant (vcf) data
-  - [Lecture8_Annotations.Rmd](Lecture8_Annotations.Rmd): load and apply gene annotations to genomic data
-  - [Lecture8_Rsamtools.Rmd](Lecture8_Rsamtools.Rmd): Compute “pile-up” statistics at genomic loci to identify genomic variants
-- Please download all data files found in [this folder](https://www.dropbox.com/sh/zoitjnobgp7l7c2/AABBIpTQcNA4lWYOFnV5dlMKa?dl=0) and add them to your `lecture08` directory. The files should have the following filenames:
-  - `BRCA.genome_wide_snp_6_broad_Level_3_scna.seg`
-  - `BRCA_IDC_cfDNA.bam`
-  - `BRCA_IDC_cfDNA.bam.bai`
-  - `GIAB_highconf_v.3.3.2.vcf.gz` (if this file was automatically uncompressed on your computer, resulting in a file named `GIAB_highconf_v.3.3.2.vcf`, look in your Trash folder to find the original file ending in `gz`)
-  - `GIAB_highconf_v.3.3.2.vcf.gz.tbi`
-- You should run [this script in RStudio](../../software/genomic_data.R) to ensure all Bioconductor packages are installed.
-- Your homework will also require use of the [Integrative Genomics Viewer (IGV)](https://software.broadinstitute.org/software/igv/)
+- The content for this lecture is contained in the Jupyter notebook [lecture13.ipynb](lecture13.ipynb) located in this directory.
+
+- Please install [Biopython](https://anaconda.org/anaconda/biopython) prior to class by opening Terminal (Mac) or Anaconda Prompt (Windows) and executing the following code: `conda install -c anaconda biopython` . Alternatively (on either platform), open Anaconda Navigator, go to "Environments" and click "not installed". Search for biopython click the box to install.
+
+- This class requires use of Python 3.6+. If you installed Anaconda recently (e.g., within the last few months, since the start of the course), you should be fine. If you are working with an older installation of Python, please see [these instructions](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-python.html#updating-or-upgrading-python) for checking your version and updating if necessary.
 
 ## Reminders
 
-- Homework 2 was due at noon on Tuesday, October 22 in GitHub Classroom.
-- Homework 3 (genomic data in R) is available through GitHub Classroom and is due Tuesday, October 28 at noon. You should receive an email containing an invitation to create your repository using GitHub Classroom. Contact Kate (khertwec at fredhutch.org) with any questions or concerns.
-- The next class session will cover Unix command line. Please ensure you have the [software for accessing the Unix command line](https://github.com/fredhutchio/tfcb_2019/tree/master/software#unix-command-line) installed. We will be using compute clusters available through Fred Hutch, which will require use of your HutchNetID. If you have not yet received a notification of HutchNetID creation, please contact Kate.
+- Homeworks 4 and 5 were due at noon on Thursday, November 7.

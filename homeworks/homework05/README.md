@@ -1,13 +1,13 @@
-# Homework 5: Intro to Python
+# Homework 7: Python data analysis and remote computing
 
-The assignment includes material from lectures 9 and 12. It is due on Thursday, November 7 at noon through GitHub Classroom. The assignment is worth 50 points (plus 5 extra credit points), with partial credit possible (this is more likely if you include code comments so we understand your intentions).
+This assignment includes material from lectures 15 and 16 (Python data analysis and modeling) as well as lectures 17 and 18 (remote computing). It is due on Thursday, December 5 at noon through GitHub Classroom.
 
-If you have difficulty viewing this notebook in GitHub, copy the URL to the page and paste it into [nbviewer](https://nbviewer.jupyter.org) to render.
+Point values are listed with each question, and the assignment is worth 80 points total.
 
-This assignment uses output from a genomic analysis. Because the instructions for each question describe the desired output in relation to the specific data provided, you should not need a deep understanding of the specific data to complete the assigned exercises.
+Don't forget to include references to the sources you used to obtain your answer, including your classmates (if you are working in groups). A failure to include code comments and to cite your sources (if applicable) will result in a reduction in your grade.
 
 **Instructions:**
 - Clone the repository created when you accept the invitation from GitHub Classroom
-- Add your code to the notebook to answer each question. Please note that your notebook needs to contain the `data` directory in order for the included code to run.
-- Take advantage of the code chunks included at the bottom of the page!
-- Make sure your entire notebook is executable, and has been executed in order (in the "Cell" menu, select "Run All")
+- Complete questions from each of the two sections:
+  - [`homework07python.ipynb`](homework07python.ipynb): Add your code to the notebook to answer each question. Prior to final submission, make sure your entire notebook is executable, and has been executed in order (in the "Cell" menu, select "Run All").
+  - [`homework07unix.md`](homework07unix.md): Replace the text where indicated with code and answers.

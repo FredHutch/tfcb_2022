@@ -14,34 +14,33 @@ Time: 1:00PM-3:00PM, Tue & Thu, Sep 30 - Dec 11 2020
 
 Location: Zoom
 
-| Lecture | Date   | Instructor       | Topic
-|---------|--------|------------------|--------
-| 1       | Oct 1  | Kate Hertweck    | [Introduction to course](lectures/lecture01/)
-| 2       | Oct 6  | Erick Matsen     | [Introduction to the command line](lectures/lecture02/)
-| 3       | Oct 8  | Erick Matsen     | [Intro to the command line (continued)](lectures/lecture03/)
-| 4       | Oct 13 | Trevor Bedford   | [Introduction to Git and GitHub](lectures/lecture02/)
-| 5       | Oct 15 | Trevor Bedford   | [Introduction to data](lectures/lecture03/)
-| 6       | Oct 20 | Phil Bradley     | [Introduction to Python](lectures/lecture10/)
-| 7       | Oct 22 | Phil Bradley     | [Intro to Python (continued)](lectures/lecture11/)
-| 8       | Oct 27 | Jesse Bloom      | [Data structures and biological analyses using Python](lectures/lecture13/)
-| 9       | Oct 29 | Jesse Bloom      | [Data structures/biological analyses in Python (continued)](lectures/lecture14)
-| 10      | Nov 3  | Phil Bradley     | [Modeling and machine learning in Python](lectures/lecture15)
-| 11      | Nov 5  | Phil Bradley     | [Modeling/machine learning in Python (continued)](lectures/lecture16)
-| 12      | Nov 10 | Rasi Subramaniam | [Visualize data using R/ggplot2](lectures/lecture04/)
-| 13      | Nov 12 | Rasi Subramaniam | [Principles of data visualization](lectures/lecture05/)
-| 14      | Nov 17 | Rasi Subramaniam | [Working with data using R/tidyverse](lectures/lecture06/)
-| 15      | Nov 19 | Gavin Ha         | [Introduction to sequencing data](lectures/lecture07/)
-| 16      | Nov 24 | Gavin Ha         | [Genomic data in R](lectures/lecture08/)
-| 17      | Dec 1  | Erick Matsen     | [Introduction to remote computing](lectures/lecture17)
-| 18      | Dec 3  | Kate Hertweck    | Begin course summary and synthesis? [Remote computing on the command line](lectures/lecture18)
-| 19      | Dec 8  | Rasi Subramaniam | [Course summary and synthesis](lectures/lecture19)
-| 20      | Dec 10 | Kate Hertweck    | [Capstone project](lectures/lecture20)
+| Lecture | Date   | Instructor       | Topic                                                                                          |
+| ------- | ------ | ---------------- | ---------------------------------------------------------------------------------------------- |
+| 1       | Oct 1  | Kate Hertweck    | [Introduction to course](lectures/lecture01/)                                                  |
+| 2       | Oct 6  | Erick Matsen     | [Introduction to the command line](lectures/lecture02/)                                        |
+| 3       | Oct 8  | Erick Matsen     | [Intro to the command line (continued)](lectures/lecture03/)                                   |
+| 4       | Oct 13 | Trevor Bedford   | [Introduction to Git and GitHub](lectures/lecture04/)                                          |
+| 5       | Oct 15 | Trevor Bedford   | [Introduction to data](lectures/lecture05/)                                                    |
+| 6       | Oct 20 | Phil Bradley     | [Introduction to Python](lectures/lecture06/)                                                  |
+| 7       | Oct 22 | Phil Bradley     | [Intro to Python (continued)](lectures/lecture07/)                                             |
+| 8       | Oct 27 | Jesse Bloom      | [Data structures and biological analyses using Python](lectures/lecture08/)                    |
+| 9       | Oct 29 | Jesse Bloom      | [Data structures/biological analyses in Python (continued)](lectures/lecture09)                |
+| 10      | Nov 3  | Phil Bradley     | [Modeling and machine learning in Python](lectures/lecture10)                                  |
+| 11      | Nov 5  | Phil Bradley     | [Modeling/machine learning in Python (continued)](lectures/lecture11)                          |
+| 12      | Nov 10 | Rasi Subramaniam | [Visualize data using R/ggplot2](lectures/lecture12/)                                          |
+| 13      | Nov 12 | Rasi Subramaniam | [Principles of data visualization](lectures/lecture13/)                                        |
+| 14      | Nov 17 | Rasi Subramaniam | [Working with data using R/tidyverse](lectures/lecture14/)                                     |
+| 15      | Nov 19 | Gavin Ha         | [Introduction to sequencing data](lectures/lecture15/)                                         |
+| 16      | Nov 24 | Gavin Ha         | [Genomic data in R](lectures/lecture16/)                                                       |
+| 17      | Dec 1  | Erick Matsen     | [Introduction to remote computing](lectures/lecture17)                                         |
+| 18      | Dec 3  | Kate Hertweck    | Begin course summary and synthesis? [Remote computing on the command line](lectures/lecture18) |
+| 19      | Dec 8  | Rasi Subramaniam | [Course summary and synthesis](lectures/lecture19)                                             |
+| 20      | Dec 10 | Kate Hertweck    | [Capstone project](lectures/lecture20)                                                         |
 
 Materials for each lecture will be available in this repository prior to the class session;
 the link for each topic will take you to the folder containing materials for that class.
 
-For further assistance, TAs Will Hannon and Maggie Russelll will be available for
-to offer assistance just prior to (or after) the regular class session. Email Kate (khertwec at fredhutch.org) to schedule a time to meet, or to set up a separate appointment.
+For further assistance, TAs Will Hannon and Maggie Russell will be available to offer assistance just prior to and during the regular class session.
 
 ## Homework and grading
 
@@ -55,17 +54,16 @@ You should also cite any online source or person that helped you arrive at your 
 - Each homework will count for 10% of your final grade. In-class participation will count for the remaining 20%, and will be assessed from the rubric presented [here](lectures/lecture01/participation_rubric.md).
 - If you have a question about homework, please comment in the [GitHub issue](https://github.com/fredhutchio/tfcb_2020/issues) for the assignment, or email Kate (khertwec at fredhutch.org) for assistance.
 
-**Homework assignments will be updated pending final schedule**
-| Homework | Assigned Date | Due Date | Topic
-|----------|--------------|----------|-------
-| 1        | Oct 1        | Oct 8    | Reproducible science, Git and GitHub, Markdown
-| 2        | Oct 15       | Oct 22   | Data visualization and manipulation in R
-| 3        | Oct 22       | Oct 29   | Genomic data in R
-| 4        | Oct 24       | Nov 7    | Unix command line
-| 5        | Oct 29       | Nov 7    | Programming in Python
-| 6        | Nov 12       | Nov 19   | Data structures and biological analyses in Python
-| 7        | Nov 26       | Dec 5    | Modeling and machine learning in Python
-| 8        | Dec 3        | Dec 10   | Capstone
+| Homework | Assigned Date | Due Date | Topic                                             |
+| -------- | ------------- | -------- | ------------------------------------------------- |
+| 1        | Oct 6         | Oct 13   | Unix command line                                 |
+| 2        | Oct 13        | Oct 20   | Reproducible science, Git and GitHub, Markdown    |
+| 3        | Oct 20        | Oct 27   | Programming in Python                             |
+| 4        | Oct 27        | Nov 3    | Data structures and biological analyses in Python |
+| 5        | Nov 3         | Nov 10   | Modeling and machine learning in Python           |
+| 6        | Nov 10        | Nov 17   | Data visualization and manipulation in R          |
+| 7        | Nov 19        | Dec 1    | Genomic data in R                                 |
+| 8        | Dec 3         | Dec 10   | Capstone                                          |
 
 ## Course description
 
@@ -89,8 +87,7 @@ flow cytometry, and 96-well plate readers.
 - Additional reading material is available [for your reference](reference.md).
 - If you are a UW student who does not possess a prior affiliation with Fred Hutch: We will request a HutchNetID for you,
 which will allow access to computational resources used for this class (please note that this process
-requires a background check). Parking on campus is limited, so we recommend taking public transit. More information
-for visitors to campus can be found [here](https://www.fredhutch.org/en/about/contact-us.html).
+requires a background check).
 - Information about expectations for student conduct, disability resources, academic integrity, and religious
 accommodations can be found on [this page](https://registrar.washington.edu/staffandfaculty/syllabi-guidelines/).
 
@@ -107,7 +104,6 @@ For general inquiries about this course, please contact khertwec at fredhutch.or
 - [Arvind Rasi Subramaniam](http://rasilab.fredhutch.org)
 
 ## Teaching Assistants
-
 
 - [Will Hannon](https://mcb-seattle.edu/student-profile/?uid=193)
 - [Maggie Russell](https://mcb-seattle.edu/student-profile/?uid=203)

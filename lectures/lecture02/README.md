@@ -73,6 +73,7 @@ To get started, make sure you're connected to the Marconi wireless network.
 
 Now you can start the first lesson by clicking on the `01-first-steps.md` link in the file list above on the GitHub website and starting your adventure!
 
+The `quickref.md` file is a short-as-possible quick reference sheet with basic commands.
 
 ## Further references
 

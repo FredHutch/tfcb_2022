@@ -211,12 +211,5 @@ It is tremendously powerful!
 
 ## More references
 
-* [my notes on shell scripting](https://www.fredhutch.io/articles/2017/02/25/shell-scripting/)
 * [GNU Parallel documentation](https://www.gnu.org/software/parallel/)
-
-
----
-
-Congratulations!
-You are done with the tutorial!
-If you want a little more, take a look at the `puritanical.md` file in this same directory.
+* If you want a little more, take a look at the `06-scripting/puritanical.md` file

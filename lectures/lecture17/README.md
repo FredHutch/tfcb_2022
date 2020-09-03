@@ -2,161 +2,57 @@
 
 **Erick Matsen ([@ematsen](https://twitter.com/ematsen), [matsen.group](http://matsen.group))**
 
-Now that you have some experience with shell, we'll dive a little more deeply into what remote and cloud computing are, including the modern container-based approach to high-performance computing.
-However, we will start by going over some of the questions from last time.
+TODO Rasi!
 
 ## Learning objectives
 
-After this course, you should be able to:
+After this course, you should:
 
-- Be able to run shell commands from Python
-- Understand local versus remote execution
-- Understand the basics of what cloud computing is and what it offers
-- Understand what a linux container is
-- Know how to copy, move, and delete files on the command line
+- Understand the computational resources available at the center
+- Be able to use the interactive and cluster nodes
 
 ## Class materials
 
-- This directory has the class materials for the course. The file `quickref.md` is a quick reference file with basic commands we've used so far.
-- You should be able to execute all commands in this lesson on Rhino or on your local computer.
+... insert video here ...
 
 ## Reminders
-
-- Homework 7 will be available next week.
-- Homework 8 (capstone) will be available the week of December 2.
-- Don't forget to `git pull` in the directory containing your `tfcb_2019` repository to get the latest goodies.
 
 
 ## Interactive work
 
-### A little about wildcards/globbing
+### Shell variables
 
-In the scripting component from last time, we used wildcards like so:
+Shell variables are [worthy of a whole class on their own](https://tldp.org/LDP/Bash-Beginners-Guide/html/sect_03_02.html) but here we will just tell you enough to understand what they are.
 
-    ls input_*.bam | parallel file
+Shell variables are variables that are associated with your shell session.
+If you want to use their value, you write them with a `$` at the beginning.
+They are typically written in all caps.
 
-The `*` just represents any set of characters.
-Thus this `ls` call just lists anything that starts with `input_` and ends with `.bam`.
+For example, the `$PWD` variable will always have your current working directory, just as if you had executed `pwd`.
+We can learn the value of variables using `echo`.
+For example, try the following commands:
 
-Now it's your turn.
-You can combine wildcards, using them for example for both directory and file names.
-Try using a wildcard to list all of the `.md` files in `../lecture09/directories/purchase`.
-
-There is also a Python `glob` module which implements wildcards.
-Here's an example you can copy and paste into the shell:
-
-    python -c "import glob; print(glob.glob('ps*'))"
-
-Here we give the `glob.glob` command a string to expand, which in this case is like using `ls ps*`.
-`glob.glob` returns a Python list.
-
-[There are other symbols you can use if you want more precise control over your wildcard matches](http://www.linfo.org/wildcard.html) but `*` is a fine start.
+* `echo $PWD`
+* `echo $HOST`
+* `echo $USER`
 
 
-### Hidden directories and files
+### Playing with the FH computational environment
 
-The shell has a special way of hiding files that you don't want to see: any file or directory starting with a period (`.`) is hidden when you `ls`.
-It's also not matched with `*`.
-Try doing
-
-    echo ~/*
-
-which compactly lists all of the non-hidden files in your home directory (which is `~`).
-Then try
-
-    echo ~/.*
-
-which shows all of the hidden files.
-
-You can also use
-
-    ls -a ~
-
-which will list all of the files in `~`.
+* Grab a node with `grabnode`
+* Run `htop`
+* Log out from it
+* See who is hammering the cluster using `hitparade`
 
 
-### Removing files
+### Cluster use
 
-Removing files happens with
+The `slow.sh` script is the same one that I demoed in the video.
 
-    rm FILENAMES
-
-where `FILENAMES` can be one or more names.
-Removing directories happens with
-
-    rmdir DIRECTORYNAMES
-
-where `DIRECTORYNAMES` is one or more directory names.
-However, these directories need to be empty.
-It is more common to use the less safe
-
-    rm -r DIRECTORYNAMES
-
-which recursively removes `DIRECTORYNAMES` and all of their contents.
-
-Unlike "putting something in the trash" on a desktop OS, once linux removes a file, it's gone!
-
-However, there's a safety net on the Fred Hutch linux system, which are the "snapshots."
-Every hour the Fred Hutch servers back up your whole home directory into a snapshot folder hosted in `~/.snapshot`.
-Try
-
-    ls ~/.snapshot
-
-to see all of these files.
-
-Now it's your turn to pretend you made a mistake.
-I will assume that you are in `tfcb_2019/lectures/lecture17`.
-Try removing some non-essential file, say doing
-
-    rm ../lecture09/vader.txt
-
-and then restoring it from the snapshot directory.
-
-
-### Making directories
-
-Making directories is done with
-
-    mkdir DIRECTORY
-
-which makes a directory called `DIRECTORY`.
-
-
-### Copying and moving/renaming files
-
-Copying files uses the `cp` command, like so:
-
-    cp SOURCE DESTINATION
-
-where `SOURCE` is an extant file, and `DESTINATION` is a place the file can go.
-If `DESTINATION` is a file name, it will copy that file to have that new name.
-If `DESTINATION` is a directory, it will copy the file with the same name into that directory.
-
-You can also use the form
-
-    cp SOURCES DIRECTORY
-
-where `SOURCES` is a collection of files and `DIRECTORY` is a directory.
-
-Moving/renaming files is just the same, except that you use the `mv` command rather than the `cp` command.
-
-Now it's your turn.
-
-* Copy this `README.md` file into `..`
-* Rename it `../README.copy.md`
-* Make a directory called `copies`
-* Copy `../README.copy.md` and `../lecture09/vader.txt` into `copies`
-* Remove the `copies` directory
-
-
-### Trying out mixing shell and Python
-
-The `file` command, when run on `../lecture09/slides/images/betty-crocker.jpg`, returns
-
-    ../lecture09/slides/images/betty-crocker.jpg: JPEG image data, JFIF standard 1.01, resolution (DPI), density 72x72, segment length 16, baseline, precision 8, 460x600, components 3
-
-which as you can see, is the file name, then a colon, then a description of the file.
-
-Make a Python script that runs `file` on each file in `../lecture09/`, extracts just the descriptions (hint: see the Python `split()` function), sorts them, and prints them.
-
-You can use the `ps-count.py` script in this directory as a template (in particular the invocation of `subprocess.check_output`).
+* change it so that it emails you, not me
+* change the job output file names
+* try running it with `sbatch`
+* watch the output accumulate using `tail -f`
+* see your job with `squeue -u $USER`
+* copy the job ID from that command and cancel your job with `scancel`
+* see your recent cluster history with `sacct`

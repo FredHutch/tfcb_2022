@@ -13,7 +13,7 @@ After this course, you should:
 
 ## Class materials
 
-... insert video here ...
+[A tour of Fred Hutch scientific computing resources video](https://www.youtube.com/watch?v=VkYdbQ0VoWU)
 
 ## Reminders
 

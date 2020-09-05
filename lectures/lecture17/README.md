@@ -22,8 +22,6 @@ After this course, you should:
 
 ### Shell variables
 
-Shell variables are [worthy of a whole class on their own](https://tldp.org/LDP/Bash-Beginners-Guide/html/sect_03_02.html) but here we will just tell you enough to understand what they are.
-
 Shell variables are variables that are associated with your shell session.
 If you want to use their value, you write them with a `$` at the beginning.
 They are typically written in all caps.
@@ -35,6 +33,11 @@ For example, try the following commands:
 * `echo $PWD`
 * `echo $HOST`
 * `echo $USER`
+
+If you want to know more (e.g. how to set a variable), here are two excellent resources describing variables in shell (in fact, in Bash, but most people use Bash).
+
+* [An excellent and short introduction](https://opensource.com/article/19/8/using-variables-bash)
+* [A more detailed introduction](https://tldp.org/LDP/Bash-Beginners-Guide/html/sect_03_02.html)
 
 
 ### Playing with the FH computational environment

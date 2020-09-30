@@ -39,6 +39,7 @@ Location: Zoom
 
 Materials for each lecture will be available in this repository prior to the class session;
 the link for each topic will take you to the folder containing materials for that class.
+Please note that materials are considered in draft form until the beginning of the class session in which they will be presented (or if otherwise indicated).
 
 For further assistance, TAs Will Hannon and Maggie Russell will be available to offer assistance just prior to and during the regular class session.
 
@@ -46,13 +47,12 @@ For further assistance, TAs Will Hannon and Maggie Russell will be available to 
 
 - A total of 8 homework assignments will be assigned on the following dates and will be due at 12pm on the dates indicated.
 If you need to submit a homework late, please check with the instructor at least 24 hours before the due date.
-- You should obtain and submit homework assignments via [GitHub Classroom](https://classroom.github.com).
-Grading criteria and assessment will also be available there.
+- Grading criteria and instructions for submission are available in the [Canvas](http://canvas.uw.edu) site for this class.
 - You are encouraged to search online for solutions and discuss the homework with your classmates.
 However, the answers you submit should be written in your own words.
 You should also cite any online source or person that helped you arrive at your solution as inline comments in your code.
 - Each homework will count for 10% of your final grade. In-class participation will count for the remaining 20%, and will be assessed from the rubric presented [here](lectures/lecture01/participation_rubric.md).
-- If you have a question about homework, please comment in the [GitHub issue](https://github.com/fredhutchio/tfcb_2020/issues) for the assignment, or email Kate (khertwec at fredhutch.org) for assistance.
+- If you have a question about homework, please post it in the Slack workspace for this course (preferred) or message an instructor directly.
 
 | Homework | Assigned Date | Due Date | Topic                                             |
 | -------- | ------------- | -------- | ------------------------------------------------- |

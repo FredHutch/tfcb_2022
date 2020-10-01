@@ -17,4 +17,4 @@
 ## Reminders
 
 - Complete the [pre-class survey](https://docs.google.com/forms/d/e/1FAIpQLSduC2isWymIuXkZ5086TnpVnqfQ1VXVmFSuFvbqgCGePa2ibA/viewform?usp=sf_link).
-- Follow [these instructions](https://github.com/fredhutchio/tfcb_2019/tree/master/software) to complete software installation and testing.
+- Follow [these instructions](../../software/README.md) to complete software installation and testing.

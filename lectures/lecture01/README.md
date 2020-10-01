@@ -2,13 +2,13 @@
 
 ## Learning objectives
 
-- Understand expectations and objectives for the rest of the course
-- Describe principles of reproducible computational methods
-- Apply appropriate conventions for naming and organizing files and directories for computational projects
+- Locate information relevant to the course (lecture materials, assessment, communication streams)
+- Identify range of skills and concepts covered in this course
+- Install software required for this course
 
 ## Class materials
 
-- Slides in [Google Slides](https://docs.google.com/presentation/d/1ZdkUR2HKAzBMI3PMmQjOt7g9l1P_nbvd1ekX2F7pmSM/edit?usp=sharing) and [as PDF](lecture01_slides.pdf)
+- Slides [as PDF](lecture01_slides.pdf)
 - Rubric for participation grading available [here](participation_rubric.md) (will be assessed at end of the semester)
 - Recommended reading:
   - [Good Enough Practices in Scientific Computing](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005510)

@@ -10,7 +10,7 @@ This document is the syllabus for this course.
 
 ## Class schedule
 
-Time: 1:00PM-3:00PM, Tue & Thu, Sep 30 - Dec 11 2020
+Time: 1:00PM-3:00PM (1-2:40 is official class time, extra 20 minutes at end for additional questions and buffer in case of logistical issues), Tue & Thu, Sep 30 - Dec 11 2020
 
 Location: Zoom
 
@@ -45,7 +45,7 @@ For further assistance, TAs Will Hannon and Maggie Russell will be available to 
 
 ## Homework and grading
 
-- A total of 8 homework assignments will be assigned on the following dates and will be due at 12pm on the dates indicated.
+- A total of 8 homework assignments will be assigned on the following dates and will be due at 1pm on the dates indicated.
 If you need to submit a homework late, please check with the instructor at least 24 hours before the due date.
 - Grading criteria and instructions for submission are available in the [Canvas](http://canvas.uw.edu) site for this class.
 - You are encouraged to search online for solutions and discuss the homework with your classmates.

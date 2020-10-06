@@ -2,7 +2,7 @@
 
 The materials for this class are included with [Lecture 2](../lecture02). 
 
-For this lecture, we will divide ourselves into groups of 3 and work through the exercicses in [Lecture 2](../lecture02). Please join the breakout room that you are assigned to below. If you need help from an instructor, please ask in the #lectures-homework channel in Slack.
+For this lecture, we will divide ourselves into groups of 3 and work through the exercises in [Lecture 2](../lecture02). Please join the breakout room that you are assigned to below. If you need help from an instructor, please ask in the #lectures-homework channel in Slack.
 
 ### Breakout Room 1
 - Amin Addetia

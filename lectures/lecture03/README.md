@@ -1,8 +1,36 @@
 # Lecture 03
 
-The materials for this class are included with [Lecture 9](../lecture10). Other reminders include:
+The materials for this class are included with [Lecture 2](../lecture02). 
 
-- [Homework 4 (command line)](../../homeworks/homework04) is due on Thursday, November 7 at noon, and includes material from lectures 9 and 12. This assignment will be available in GitHub Classroom on Tuesday, November 5. Please see [this issue](https://github.com/fredhutchio/tfcb_2019/issues/27) for discussion of general questions about command line, and [this issue](https://github.com/fredhutchio/tfcb_2019/issues/26) for specific questions about homework 4.
-- [Homework 5 (intro to python)](../../homeworks/homework05) will also be due at Thursday, November 7 at noon, and includes material from lectures 10 and 11. This assignment will be available in GitHub Classroom on Thursday, October 31. Please see [this issue](https://github.com/fredhutchio/tfcb_2019/issues/29) for discussion of general questions about the intro to python materials, and [this issue](https://github.com/fredhutchio/tfcb_2019/issues/28) for specific questions about homework 5.
-- TA Katie Kistler will be holding office hours at the Double Helix (coffee stand in Weintraub) on Wednesday, Nov 6 from 12:30 to 2:30.
-- We'll be using [Biopython](https://anaconda.org/anaconda/biopython) in our next class. Please install this package prior to class by opening Terminal (Mac) or Anaconda Prompt (Windows) and executing the following code: `conda install -c anaconda biopython` . Alternatively (on either platform), open Anaconda Navigator, go to "Environments" and click "not installed". Search for biopython click the box to install.
+For this lecture, we will divide ourselves into groups of 3 and work through the exercicses in [Lecture 2](../lecture02). Please join the breakout room that you are assigned to below. If you need help from an instructor, please ask in the #lectures-homework channel in Slack.
+
+### Breakout Room 1
+- Amin Addetia
+- Laura Belmont
+- Julie Renee Boiko
+
+### Breakout Room 2
+- Cara Chao
+- Cassidy Danyko
+- David Granadier
+
+### Breakout Room 2
+- Jodiene Johnson
+- Sam Klebanoff
+- Aaron N Long
+ 
+### Breakout Room 4
+- Joanna Maltbaek
+- Kelly McKenna
+- Brendan McShane
+
+### Breakout Room 2
+- Felicitas Ruiz
+- Jazmine Snow
+- Shiyi Wang
+
+
+Other reminders include:
+
+- [Homework 1 (command line)](../../homeworks/homework01) is due on Tuesday, October 13 at noon, and includes material from lectures 2 and 3. Please submit it through Canvas.
+- [Lecture 4](../lecture04) requires that you have a [GitHub](https://github.com/) account and [git](https://github.com/fredhutchio/tfcb_2020/tree/master/software#git) installed.

@@ -25,11 +25,11 @@ After this course, you should be able to:
   - See the Tutorial section below to get started with the exercises.
   - The recorded lecture and introductory slides are linked to above.
   - You are responsible for the material through **Redirection** for this class session; we'll complete the rest of the material in lecture 3.
-- This material requires access to a [unix shell](tfcb_2020/software#unix-command-line-shell). Different "flavors" of shell have slight variations in commands available. These materials are designed to work on the group of computing servers at Fred Hutch called "rhino". Please see [these instructions](/software/unix_rhino.md) for logging on to rhino, and note there is an extra step to log in off campus. You can execute most of these commands on your own computer (e.g., without logging in to rhino), but don't be surprised if some of the commands and options are slightly different (especially on OS X).
+- This material requires access to a [unix shell](https://fredhutchio.github.io/tfcb_2020/software/#unix-command-line-shell)). Different "flavors" of shell have slight variations in commands available. These materials are designed to work on the group of computing servers at Fred Hutch called "rhino". Please see [these instructions]([software/unix_rhino.md](https://fredhutchio.github.io/tfcb_2020/software/unix_rhino)) for logging on to rhino, and note there is an extra step to log in off campus. You can execute most of these commands on your own computer (e.g., without logging in to rhino), but don't be surprised if some of the commands and options are slightly different (especially on OS X).
 
 ## Reminders
 
-- Homework 1 (command line) is available [here](tfcb_2020/homeworks/homework01); it may be useful to reference these questions as you work through material in today's class.
+- Homework 1 (command line) is available [here](https://fredhutchio.github.io/tfcb_2020/homeworks/homework01); it may be useful to reference these questions as you work through material in today's class.
 
 ## Tutorial
 
@@ -58,23 +58,23 @@ After this course, you should be able to:
 This is an interactive tutorial to teach you about navigating the shell.
 
 To get started, 
-[access the unix shell on your computer](tfcb_2020/software#unix-command-line-shell).
+[access the unix shell on your computer](https://fredhutchio.github.io/tfcb_2020/software#unix-command-line-shell).
 Make sure you're connected to the Fred Hutch network, 
 either on campus via the Marconi wireless network,
 via VPN, 
-or using `snail` as described [here](tfcb_2020/software/unix_rhino.md#off-campus-log-in).
-Follow the instructions to [log on to `rhino`](tfcb_2020/software/unix_rhino.md#logging-on-to-rhino).
+or using `snail` as described [here](https://fredhutchio.github.io/tfcb_2020/software/unix_rhino.md#off-campus-log-in).
+Follow the instructions to [log on to `rhino`](https://fredhutchio.github.io/tfcb_2020/software/unix_rhino.md#logging-on-to-rhino).
 Once you have logged on,
 execute the following commands:
 
     git clone https://github.com/fredhutchio/tfcb_2020.git
     cd tfcb_2020/lectures/lecture02
 
-Now you can start the first lesson by clicking [here](tfcb_2020/lectures/lecture02/)
+Now you can start the first lesson by clicking [here](https://fredhutchio.github.io/tfcb_2020/lectures/lecture02/)
 to access the [`01-first-steps.md` file. 
 We recommend keeping a browser open with the lesson materials as you work through the exercises on rhino.
-
-The [`quickref.md` file](tfcb_2020/lectures/lecture02/quickref.md) is a short-as-possible quick reference sheet with basic commands.
+Go to [this page](https://github.com/fredhutchio/tfcb_2020/tree/master/lectures/lecture02) to see the complete list of files for this lecture.
+The [`quickref.md` file](https://fredhutchio.github.io/tfcb_2020/lectures/lecture02/quickref.md) is a short-as-possible quick reference sheet with basic commands.
 
 ## Further references
 

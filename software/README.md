@@ -75,10 +75,10 @@ RStudio + R is available through the Self Service application.
 
 ### Installing tidyverse
 
-- Open Rstudio. 
-- Click the Packages tab in the lower right panel. 
+- Open Rstudio.
+- Click the Packages tab in the lower right panel.
 - Click the Install button (upper left corner of the panel). In the empty space for Packages, type `tidyverse`. The other defaults (Install from CRAN and the Install to Library path) should be ok. Make sure the box next to "Install dependencies" is checked, and click Install.
-- If your installation is successful, you should see tidyverse appear in the list below. 
+- If your installation is successful, you should see tidyverse appear in the list below.
 
 ## Unix command line (shell)
 
@@ -94,7 +94,7 @@ Macintosh operating systems are built on Unix, so many of the tools you'll need 
 
 ### Logging on to rhino
 
-We'll be using a computer cluster at Fred Hutch called rhino for the unix classes. Please see [these instructions](https://github.com/fredhutchio/tfcb_2019/tree/master/software/unix_rhino.md) for logging on to rhino, and note there is an extra step to log in off campus.
+We'll be using a computer cluster at Fred Hutch called rhino for the unix classes. Please see [these instructions](https://github.com/fredhutchio/tfcb_2020/tree/master/software/unix_rhino.md) for logging on to rhino, and note there is an extra step to log in off campus.
 
 ## Python
 

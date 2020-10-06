@@ -4,7 +4,11 @@
 
 Check to make sure you're connected to the Marconi wireless network. Open the program you'll be using to access Unix on your computer (Terminal on Mac or WSL/Git bash on Windows) and type the following (where `username` is your HutchNetID):
 
-    ssh username@rhino
+    ssh username@rhino.fhcrc.org
+
+> If you're working on a computer owned by the Hutch,
+> or if you've logged on via `snail` (see below),
+> you can shorten the command above to `ssh rhino`.
 
 Hit enter to execute the command. The first time you execute this on a computer, you'll receive a response similar to:
 

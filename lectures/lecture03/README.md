@@ -24,7 +24,7 @@ For this lecture, we will divide ourselves into groups of 3 and work through the
 - Kelly McKenna
 - Brendan McShane
 
-### Breakout Room 2
+### Breakout Room 5
 - Felicitas Ruiz
 - Jazmine Snow
 - Shiyi Wang

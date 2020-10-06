@@ -70,7 +70,7 @@ execute the following commands:
     git clone https://github.com/fredhutchio/tfcb_2020.git
     cd tfcb_2020/lectures/lecture02
 
-Now you can start the first lesson by clicking [here](01-first-steps.md) to access the `01-first-steps.md` file. 
+Now you can start the first lesson by clicking [here](01-first-steps.md). 
 We recommend keeping a browser open with the lesson materials as you work through the exercises on rhino.
 Go to [this page](https://github.com/fredhutchio/tfcb_2020/tree/master/lectures/lecture02) to see the complete list of files for this lecture.
 The [`quickref.md` file](https://fredhutchio.github.io/tfcb_2020/lectures/lecture02/quickref) is a short-as-possible quick reference sheet with basic commands.

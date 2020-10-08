@@ -30,7 +30,7 @@ For this lecture, we will divide ourselves into groups of 3 and work through the
 - Shiyi Wang
 
 
-Other reminders include:
+## Reminders 
 
-- [Homework 1 (command line)](../../homeworks/homework01) is due on Tuesday, October 13 at noon, and includes material from lectures 2 and 3. Please submit it through Canvas.
-- [Lecture 4](../lecture04) requires that you have a [GitHub](https://github.com/) account and [git](https://github.com/fredhutchio/tfcb_2020/tree/master/software#git) installed.
+- [Homework 1 (command line)](../../homeworks/homework01) is due at the beginning of the next class session, and includes material from lectures 2 and 3. Please submit it through Canvas.
+- Our next [lectures](../lecture04) require that you have software for Git/GitHub, a text editor, and a spreadsheet program installed. Please see our [software installation instructions](https://fredhutchio.github.io/tfcb_2020/software/) for more information. If you would like to confirm you have the Git command line tools installed, please open your shell interface (e.g., Terminal), type `git`, and you should see the help documentation for `git` printed to the screen. If the tools are not installed, you will receive an error saying the command is not recognized.

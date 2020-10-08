@@ -1,6 +1,6 @@
 # Lecture 03
 
-The materials for this class are included with [Lecture 2](../lecture02). 
+The materials for this class are included with [Lecture 2](../lecture02).
 
 For this lecture, we will divide ourselves into groups of 3 and work through the exercises in [Lecture 2](../lecture02). Please join the breakout room that you are assigned to below. If you need help from an instructor, please ask in the #lectures-homework channel in Slack.
 
@@ -14,11 +14,11 @@ For this lecture, we will divide ourselves into groups of 3 and work through the
 - Cassidy Danyko
 - David Granadier
 
-### Breakout Room 2
+### Breakout Room 3
 - Jodiene Johnson
 - Sam Klebanoff
 - Aaron N Long
- 
+
 ### Breakout Room 4
 - Joanna Maltbaek
 - Kelly McKenna

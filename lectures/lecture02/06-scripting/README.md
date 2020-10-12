@@ -18,8 +18,8 @@ Try that!
 Look at the manual for `tail` so that you can get the last 25 lines of your history rather than the default.
 
 There's one annoying thing about `history`, which is that it includes the number of the command.
-We can avoid that by using [fc](http://pubs.opengroup.org/onlinepubs/9699919799/utilities/fc.html#top) as `fc -ln 1` in place of `history`.
-If you get an error with `fc`, use `builtin fc -ln 1`.
+We can avoid that by using [fc](http://pubs.opengroup.org/onlinepubs/9699919799/utilities/fc.html#top) as `fc -ln` in place of `history`.
+If you get an error with `fc`, use `builtin fc -ln`.
 
 Let's noodle around in the shell a bit to generate more history.
 
@@ -28,7 +28,7 @@ Let's noodle around in the shell a bit to generate more history.
 * echo "shell scripting is hip"
 * do your own `echo` command with a phrase of your choice.
 
-Now pipe `fc -ln 1` through tail to get the last 15 commands you have written, and redirect that to a file called `script1.sh`.
+Now use `fc -ln -20` through tail to get the last 20 commands you have written, and redirect that to a file called `script1.sh`.
 
 Now edit that file with `vi script1.sh`
 Delete the lines that you don't want, like `man` calls, etc (an easy way to do that is to go to a line you don't want with the arrow keys, and hit `dd`).

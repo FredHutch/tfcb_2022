@@ -1,4 +1,4 @@
-# Lecture 2: Reproducible Research, Markdown, Git and GitHub
+# Lecture 4: Reproducible Research, Markdown, Git and GitHub
 
 **Trevor Bedford ([@trvrb](https://twitter.com/trvrb), [bedford.io](https://bedford.io))**
 
@@ -17,7 +17,7 @@
 ## Reminders
 
 - Recommended reading is available at the end of each section
-- Your first homework assignment is available today, and due Tuesday, October 8 at noon. You should receive an email containing an invitation to create your repository using GitHub Classroom. Please note that this homework covers project organization and Git/GitHub (lectures 1 and 2) as well as tidy data (lecture 3). Contact Kate (khertwec at fredhutch.org) with any questions or concerns.
+- Your second homework assignment is available today, and due Tuesday, October 20 at 1pm. This homework covers project organization and Git/GitHub (lectures 4) as well as tidy data (lecture 5). Contact Kate (khertwec at fredhutch.org) with any questions or concerns.
 
 ## Reproducible science
 
@@ -31,7 +31,7 @@ The Center for Open Science has also embarked on a [Reproducibility Project for 
 
 There are a lot of factors at play here, including "_p_ hacking" lead by the "garden of forking paths" and selective publication of significant results. I would call this a crisis of _replication_ and have this as a separate concept from _reproducibility_.
 
-Reproducibility is also difficult to achieve. In ["An empirical analysis of journal policy effectiveness for computational reproducibility" (Stodden et al, PNAS 2018)](https://doi.org/10.1073/pnas.1708290115), Stodden, Seiler and Ma:
+But even reproducibility is also difficult to achieve. In ["An empirical analysis of journal policy effectiveness for computational reproducibility" (Stodden et al, PNAS 2018)](https://doi.org/10.1073/pnas.1708290115), Stodden, Seiler and Ma:
 
 >Evaluate the effectiveness of journal policy that requires the data and code necessary for reproducibility be made available postpublication by the authors upon request. We assess the effectiveness of such a policy by (i) requesting data and code from authors and (ii) attempting replication of the published findings. We chose a random sample of 204 scientific papers published in the journal Science after the implementation of their policy in February 2011. We found that we were able to obtain artifacts from 44% of our sample and were able to reproduce the findings for 26%.
 
@@ -85,12 +85,13 @@ Some things to notice:
 More sophisticated examples will use a workflow manager like Snakemake to automate builds. For example:
 
 * Alistair Russell and Jesse Bloom's recent work on single-cell sequencing of influenza: [github.com/jbloomlab/IFNsorted_flu_single_cell/](https://github.com/jbloomlab/IFNsorted_flu_single_cell/)
+* John Huddelston's influenza forecasting work: [github.com/blab/flu-forecasting](https://github.com/blab/flu-forecasting) (this also provides a Conda environment for better reproducibility)
 
 With GitHub as lingua franca for reproducible research, there are now services built on top of this model. For example:
 
 * [Zenodo](https://zenodo.org/) allows you to mint DOIs from GitHub releases.
 * In [github.com/cboettig/noise-phenomena](https://github.com/cboettig/noise-phenomena), Carl Boettiger provides `.Rmd` of code, but also uses [Binder](https://mybinder.org/) to launch an interactive RStudio session. Binder is described in more detail [here](https://elifesciences.org/labs/a7d53a88/toward-publishing-reproducible-computation-with-binder).
-* We've built [Nextstrain](https://nextstrain.org) to look for results files in public GitHub repos to provide interactive figures. For example [nextstrain.org/community/blab/zika-colombia](https://nextstrain.org/community/blab/zika-colombia) provides an interactive visualization of Allison Black's paper on [Zika in Colombia](https://bedford.io/papers/black-zika-in-colombia/).
+* We've built [Nextstrain](https://nextstrain.org) to look for results files in public GitHub repos to provide interactive figures. For example [nextstrain.org/community/blab/zika-colombia](https://nextstrain.org/community/blab/zika-colombia) provides an interactive visualization directly from files hosted on GitHub at [github.com/blab/zika-colombia/](https://github.com/blab/zika-colombia/).
 
 ### Project communication
 
@@ -108,6 +109,8 @@ Some suggested readings on reproducible research include:
 
 ## Markdown
 
+![](figures/markdown_logo.png)
+
 * What is Markdown? ([Look at this lecture!](https://raw.githubusercontent.com/fredhutchio/tfcb_2019/master/lectures/lecture02/README.md))
 
 * Invented by John Gruber to provide markup that is intuitive and aesthetically pleasing when viewed as plain text. It's similar to how you would style a plain text email.
@@ -120,10 +123,12 @@ Some suggested readings on reproducible research include:
 
 * Some further examples of Markdown:
   - [Practical I wrote on using BEAST](https://github.com/trvrb/dynamics-practical)
-  - [Benchtop protocol for Zika sequencing written by Alli](https://github.com/blab/zika-seq/tree/master/protocols)
-  - bedford.io is written completely in Markdown ([example](https://github.com/blab/blotter/blob/master/blog/_posts/2019-09-26-sep-2019-nextflu-report.md))
+  - [Benchtop protocol for Zika sequencing written by Alli Black](https://github.com/blab/zika-seq/tree/master/protocols)
+  - [bedford.io](https://bedford.io/) is written completely in Markdown ([example](https://github.com/blab/blotter/blob/master/blog/_posts/2019-09-26-sep-2019-nextflu-report.md))
 
 ## Git and GitHub
+
+![](figures/github_logo.png)
 
 * Why use version control?
 
@@ -137,15 +142,15 @@ Some suggested readings on reproducible research include:
   - Make a new project on GitHub
   - Make a linear series of commits in GitHub Desktop
   - Cover same actions on the command line: `git status`, `git add`, `git commit`, `git diff`
-  - Safely exploring history and rolling back if necessary
-  - Amend last commit  
-  - Remotes and push and pull from GitHub  
+  - Safely exploring history and rolling back if necessary: `git log`, `git checkout`
+  - Remotes and push and pull from GitHub: `git pull`, `git push`
   - Look at files under the hood
 
 * Other details:
   - The importance of `.gitignore`
   - The importance of good commit messages, relevant [xkcd](https://xkcd.com/1296/)
   - Breaking up work and staging / committing different pieces separately
+  - Merge conflicts (don't panic)
 
 ### Further reading
 

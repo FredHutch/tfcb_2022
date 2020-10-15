@@ -1,4 +1,4 @@
-# Lecture 3: Introduction to Data
+# Lecture 5: Introduction to Data
 
 **Trevor Bedford ([@trvrb](https://twitter.com/trvrb), [bedford.io](https://bedford.io))**
 
@@ -17,8 +17,8 @@ This class requires Microsoft Excel (or an equivalent program that can open `.xl
 ## Reminders
 
 - Recommended reading is available throughout each section
-- Please have R and RStudio installed before the next class session. See [Software installation](../../software/) for more information. **Please also follow the instructions to [install tidyverse](../../software/README.md#installing-tidyverse).**
-- Your first homework assignment is currently available and is due Tuesday, October 8 at noon. You should have received an email containing an invitation to create your repository using GitHub Classroom. Contact Kate (khertwec at fredhutch.org) with any questions or concerns.
+- Please have Python installed before the next class session. See [Software installation](../../software/) for more information.
+- The homework assignment is currently available and is due Tuesday, October 20 at 1pm.
 
 ## Project and data organization
 
@@ -77,7 +77,7 @@ See for example, single cell RNA sequencing data, with cells as rows and genes a
 
 1. Demonstrate conversion of simple example dataset. Work from [Table 2 in Bedford et al. 2014](https://bedford.io/papers/bedford-flux/), available as an [Excel table in the course repo](tables/influenza-evolutionary-parameters.xlsx).
 
-2. Pair up to work from an HI (haemagglutination-inhibition) table and convert to tidy data. Data available as an [Excel table in the course repo](tables/influenza-titer-data.xlsx).
+2. Split into small groups of 3-4 people to work from an HI (haemagglutination-inhibition) table and convert to tidy data. Data available as an [Excel table in the course repo](tables/influenza-titer-data.xlsx).
 
 ## File formats
 

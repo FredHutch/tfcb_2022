@@ -1,6 +1,6 @@
 # Lecture 08
 
-For our next set of lectures, we'll be heading back to Python to explore some specific tools common in computational biology research. Lecture 08 and 09 from Jesse Bloom will introduce you to the use of packages in general, and [Biopython](https://biopython.org) in particular, which includes many useful tools for manipulation and analysis of data related to molecular biology.
+For our next set of lectures, we'll use Python to explore some specific tools common in computational biology research. Lecture 08 and 09 from Jesse Bloom will introduce you to the use of packages in general, and [Biopython](https://biopython.org) in particular, which includes many useful tools for manipulation and analysis of data related to molecular biology.
 
 ## Learning objectives
 

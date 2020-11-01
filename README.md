@@ -59,7 +59,7 @@ You should also cite any online source or person that helped you arrive at your 
 | 1        | Oct 6         | Oct 13   | [Unix command line](homeworks/homework01)         |
 | 2        | Oct 13        | Oct 20   | [Reproducible science, Git and GitHub, Markdown](homeworks/homework02)    |
 | 3        | Oct 20        | Oct 29   | [Programming in Python](homeworks/homework03)                          |
-| 4        | Oct 27        | Nov 3    | [Python analysis, lecture 9](lectures/lecture09)  |
+| 4        | Oct 27        | Nov 3    | [Python analysis, lecture 9](homeworks/homework04)  |
 | 5        | Nov 3         | Nov 10   | Modeling and machine learning in Python           |
 | 6        | Nov 10        | Nov 17   | Data visualization and manipulation in R          |
 | 7        | Nov 19        | Dec 1    | Genomic data in R                                 |

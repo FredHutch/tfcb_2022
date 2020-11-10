@@ -4,9 +4,11 @@
 #+REVEAL_THEME: default
 #+STARTUP: showeverything
 
+* Note                                                             :noexport:
+
 To view the slides below in presentation mode, open [[file:README.html]] in a web browser.
 
-* Lecture 5 – Principles of Data Visualization
+* Lecture 14 – Principles of Data Visualization
 :PROPERTIES:
 :reveal_extra_attr: class="center"
 :END:
@@ -20,7 +22,7 @@ Basic Sciences Division and Computational Biology Program
 Fred Hutchinson Cancer Research Center
 
 * Contents                                            :toc:noexport:
-- [[#lecture-5--principles-of-data-visualization][Lecture 5 – Principles of Data Visualization]]
+- [[#lecture-14--principles-of-data-visualization][Lecture 14 – Principles of Data Visualization]]
 - [[#learning-objectives][Learning Objectives]]
 - [[#goals-of-visualization][Goals of Visualization]]
 - [[#same-data-can-be-visualized-very-differently][Same data can be visualized very differently]]
@@ -49,21 +51,21 @@ Fred Hutchinson Cancer Research Center
 - [[#common-types-of-data-visualizations][Common types of data visualizations]]
 - [[#visualizing-uncertainty][Visualizing uncertainty]]
 - [[#visualizing-uncertainty-1][Visualizing uncertainty]]
-- [[#-or-][👍 or 👎?]]
-- [[#-or--1][👍 or 👎?]]
-- [[#-or--2][👍 or 👎?]]
+- [[#yes-or-no][Yes or No?]]
+- [[#yes-or-no-1][Yes or No?]]
+- [[#yes-or-no-2][Yes or No?]]
 - [[#which-is-better--pie-or-bar][Which is better – pie or bar?]]
 - [[#which-is-better--pie-or-bar-1][Which is better – pie or bar?]]
-- [[#-or--3][👍 or 👎?]]
-- [[#-or--4][👍 or 👎?]]
-- [[#-or--5][👍 or 👎?]]
-- [[#-or--6][👍 or 👎?]]
-- [[#-or--7][👍 or 👎?]]
-- [[#-or--8][👍 or 👎?]]
-- [[#-or--9][👍 or 👎?]]
-- [[#-or--10][👍 or 👎?]]
-- [[#-or--11][👍 or 👎?]]
-- [[#-or--12][👍 or 👎?]]
+- [[#yes-or-no-3][Yes or No?]]
+- [[#yes-or-no-4][Yes or No?]]
+- [[#yes-or-no-5][Yes or No?]]
+- [[#yes-or-no-6][Yes or No?]]
+- [[#yes-or-no-7][Yes or No?]]
+- [[#yes-or-no-8][Yes or No?]]
+- [[#yes-or-no-9][Yes or No?]]
+- [[#yes-or-no-10][Yes or No?]]
+- [[#yes-or-no-11][Yes or No?]]
+- [[#yes-or-no-12][Yes or No?]]
 
 * Learning Objectives
 - Know general dos and donts of data visualization
@@ -320,7 +322,7 @@ Standard deviation or standard error?
 #+ATTR_HTML: :style margin-top:30px;
 Standard deviation does not decrease with more measurements.
 
-* 👍 or 👎?
+* Yes or No?
 
 #+ATTR_HTML: :width 800px
 [[file:img/hawaii-income-bars-bad-1.png]]
@@ -333,7 +335,7 @@ Linear scales should begin at 0.
 #+ATTR_HTML: :class reference
 [[https://serialmentor.com/dataviz/][Wilke 2018]]
 
-* 👍 or 👎?
+* Yes or No?
 
 [[file:img/oceania-gdp-logbars-1.png]]
 
@@ -348,7 +350,7 @@ Bar areas are not proportional to value.
 [[https://serialmentor.com/dataviz/][Wilke 2018]]
 
 
-* 👍 or 👎?
+* Yes or No?
 
 [[file:img/oceania-gdp-dots-1.png]]
 
@@ -379,7 +381,7 @@ Bars are more accurately perceived than areas.
 [[https://serialmentor.com/dataviz/][Wilke 2018]]
 
 
-* 👍 or 👎?
+* Yes or No?
 
 #+ATTR_HTML: :width 750px
 [[file:img/mpg-cty-displ-solid-1.png]]
@@ -391,7 +393,7 @@ Overlapping points can be hidden.
 #+ATTR_HTML: :class reference
 [[https://serialmentor.com/dataviz/][Wilke 2018]]
 
-* 👍 or 👎?
+* Yes or No?
 
 #+ATTR_HTML: :width 750px
 [[file:img/mpg-cty-displ-transp-1.png]]
@@ -403,7 +405,7 @@ Make points semi-transparent.
 #+ATTR_HTML: :class reference
 [[https://serialmentor.com/dataviz/][Wilke 2018]]
 
-* 👍 or 👎?
+* Yes or No?
 
 #+ATTR_HTML: :width 750px
 [[file:img/mpg-cty-displ-jitter-1.png]]
@@ -415,7 +417,7 @@ Slightly jitter points along the direction of overlap.
 #+ATTR_HTML: :class reference
 [[https://serialmentor.com/dataviz/][Wilke 2018]]
 
-* 👍 or 👎?
+* Yes or No?
 
 #+ATTR_HTML: :width 750px
 [[file:img/mpg-cty-displ-jitter-extreme-1.png]]
@@ -427,7 +429,7 @@ But too much jittering can be misleading.
 #+ATTR_HTML: :class reference
 [[https://serialmentor.com/dataviz/][Wilke 2018]]
 
-* 👍 or 👎?
+* Yes or No?
 
 #+ATTR_HTML: :width 750px
 [[file:img/nycflights-points-1.png]]
@@ -439,7 +441,7 @@ Neither transparency nor jittering will help when data density is too high.
 #+ATTR_HTML: :class reference
 [[https://serialmentor.com/dataviz/][Wilke 2018]]
 
-* 👍 or 👎?
+* Yes or No?
 
 #+ATTR_HTML: :width 750px
 [[file:img/nycflights-2d-bins-1.png]]
@@ -451,7 +453,7 @@ Binned 2D histograms is a good solution.
 #+ATTR_HTML: :class reference
 [[https://serialmentor.com/dataviz/][Wilke 2018]]
 
-* 👍 or 👎?
+* Yes or No?
 
 #+ATTR_HTML: :width 750px
 [[file:img/nycflights-hex-bins-1.png]]
@@ -463,7 +465,7 @@ Hexagonal bins are slightly more accurate.
 #+ATTR_HTML: :class reference
 [[https://serialmentor.com/dataviz/][Wilke 2018]]
 
-* 👍 or 👎?
+* Yes or No?
 
 #+ATTR_HTML: :width 800px
 [[file:img/tech-stocks-bad-legend-1.png]]
@@ -475,7 +477,7 @@ Legend order does not match plot order.
 #+ATTR_HTML: :class reference
 [[https://serialmentor.com/dataviz/][Wilke 2018]]
 
-* 👍 or 👎?
+* Yes or No? 
 
 #+ATTR_HTML: :width 800px
 [[file:img/tech-stocks-good-legend-1.png]]
@@ -487,7 +489,7 @@ Legend order matches plot order.
 #+ATTR_HTML: :class reference
 [[https://serialmentor.com/dataviz/][Wilke 2018]]
 
-* 👍 or 👎?
+* Yes or No?
 
 #+ATTR_HTML: :width 800px
 [[file:img/tech-stocks-good-no-legend-1.png]]

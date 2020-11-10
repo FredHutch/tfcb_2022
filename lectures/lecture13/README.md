@@ -1,4 +1,4 @@
-# Lecture 6: Working with data using tidyverse
+# Lecture 13: Working with data using tidyverse
 
 Much of the time biologists spend while performing data analysis involves manipulating, reformatting, and transforming data. In this lecture, we'll use `tidyverse` functions from the `dplyr` package to perform these "data munging" tasks. We'll cover a few of the functions available for these tasks and learn a common programming structure (piping), which will equip you to continue developing powerful data manipulation code that will be foundational for visualization and statistical analysis.
 

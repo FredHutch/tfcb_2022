@@ -1,4 +1,4 @@
-# Lecture 5: Principles of Data Visualization
+# Lecture 14: Principles of Data Visualization
 
 Now that we can create basic plots in R, we'll talk more about best practices in data visualization: how are data best represented in a graph? How do we select colors and fonts to effectively convey information? What are the main goals of data visualization? This lecture will provide you with the foundational knowledge you need to continue adapting your code to suit the message conveyed by a visualization.
 

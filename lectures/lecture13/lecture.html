@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8"/>
 <title></title>
-<meta name="author" content="(Arvind ‘Rasi’ Subramaniam)"/>
+<meta name="author" content="(Arvind Subramaniam)"/>
 <style type="text/css">
 .underline { text-decoration: underline; }
 </style>
@@ -28,7 +28,7 @@
 <div class="slides">
 
 <section  class="center">
-<h1 id="orgde80528">Lecture 6 – Working with data using <code>R</code> / <code>tidyverse</code></h1>
+<h1 id="org7b83ca8">Lecture 13 – Working with data using <code>R</code> / <code>tidyverse</code></h1>
 <p>
 Arvind R. Subramaniam
 </p>
@@ -48,8 +48,8 @@ Fred Hutchinson Cancer Research Center
 
 </section>
 <section >
-<h1 id="org8a41f56"><code>Tidyverse</code> Functions for Working with Tabular Data</h1>
-<table border="0" cellspacing="0" cellpadding="6" rules="none" frame="none" style="margin-top:100px;width:100%;">
+<h1 id="orgdcfe7ec"><code>Tidyverse</code> Functions for Working with Tabular Data</h1>
+<table border="0" cellspacing="0" cellpadding="6" rules="none" frame="none" class="shrunk" style="margin-top:100px;width:100%;">
 
 
 <colgroup>
@@ -113,7 +113,7 @@ Fred Hutchinson Cancer Research Center
 
 </section>
 <section >
-<h1 id="orge41759c">Read tabular data into a <code>DataFrame</code> (<code>tibble</code>)</h1>
+<h1 id="orgd22af12">Read tabular data into a <code>DataFrame</code> (<code>tibble</code>)</h1>
 <div class="org-src-container">
 
 <pre  class="src src-R" id="flow_data"><span style="color: #268bd2; font-weight: bold;">library</span>(tidyverse)
@@ -132,7 +132,7 @@ data <span style="color: #268bd2; font-weight: bold;">&lt;-</span> read_tsv(<spa
 <pre class="example">
 # A tibble: 16 x 7
   strain  mean_yfp mean_rfp mean_ratio se_ratio insert_sequence kozak_region
-  &lt;chr&gt;      &lt;int&gt;    &lt;int&gt;      &lt;dbl&gt;    &lt;dbl&gt; &lt;chr&gt;           &lt;chr&gt;       
+  &lt;chr&gt;      &lt;dbl&gt;    &lt;dbl&gt;      &lt;dbl&gt;    &lt;dbl&gt; &lt;chr&gt;           &lt;chr&gt;       
 1 schp688     1748    20754      0.755    0.066 10×AGA          A           
 2 schp684     3294    20585      1.44     0.021 10×AGA          B           
 3 schp690     3535    20593      1.54     0.018 10×AGA          C           
@@ -144,7 +144,7 @@ data <span style="color: #268bd2; font-weight: bold;">&lt;-</span> read_tsv(<spa
 
 </section>
 <section >
-<h1 id="orgce7192e">Use the pipe <code>%&gt;%</code> operator to chain commands</h1>
+<h1 id="org47501c1">Use the pipe <code>%&gt;%</code> operator to chain commands</h1>
 <div class="org-src-container">
 
 <pre  class="src src-R">data <span style="color: #268bd2; font-weight: bold;">%&gt;%</span>
@@ -155,7 +155,7 @@ data <span style="color: #268bd2; font-weight: bold;">&lt;-</span> read_tsv(<spa
 <pre class="example">
 # A tibble: 16 x 7
   strain  mean_yfp mean_rfp mean_ratio se_ratio insert_sequence kozak_region
-  &lt;chr&gt;      &lt;int&gt;    &lt;int&gt;      &lt;dbl&gt;    &lt;dbl&gt; &lt;chr&gt;           &lt;chr&gt;       
+  &lt;chr&gt;      &lt;dbl&gt;    &lt;dbl&gt;      &lt;dbl&gt;    &lt;dbl&gt; &lt;chr&gt;           &lt;chr&gt;       
 1 schp688     1748    20754      0.755    0.066 10×AGA          A           
 2 schp684     3294    20585      1.44     0.021 10×AGA          B           
 3 schp690     3535    20593      1.54     0.018 10×AGA          C           
@@ -177,7 +177,7 @@ data <span style="color: #268bd2; font-weight: bold;">&lt;-</span> read_tsv(<spa
 
 </section>
 <section >
-<h1 id="orgc9966c0">All these commands produce the same output.</h1>
+<h1 id="org73c17c8">All these commands produce the same output.</h1>
 <ol>
 <li><div class="org-src-container">
 
@@ -201,7 +201,7 @@ data <span style="color: #268bd2; font-weight: bold;">&lt;-</span> read_tsv(<spa
 
 </section>
 <section >
-<h1 id="org208ae97">Simple Data Manipulations – <code>select</code> columns</h1>
+<h1 id="orgcaa621b">Simple Data Manipulations – <code>select</code> columns</h1>
 <div class="org-src-container">
 
 <pre  class="src src-R">data <span style="color: #268bd2; font-weight: bold;">%&gt;%</span>
@@ -212,7 +212,7 @@ data <span style="color: #268bd2; font-weight: bold;">&lt;-</span> read_tsv(<spa
 <pre class="example">
 # A tibble: 16 x 7
   strain  mean_yfp mean_rfp mean_ratio se_ratio insert_sequence kozak_region
-  &lt;chr&gt;      &lt;int&gt;    &lt;int&gt;      &lt;dbl&gt;    &lt;dbl&gt; &lt;chr&gt;           &lt;chr&gt;       
+  &lt;chr&gt;      &lt;dbl&gt;    &lt;dbl&gt;      &lt;dbl&gt;    &lt;dbl&gt; &lt;chr&gt;           &lt;chr&gt;       
 1 schp688     1748    20754      0.755    0.066 10×AGA          A           
 2 schp684     3294    20585      1.44     0.021 10×AGA          B           
 # … with 14 more rows
@@ -248,7 +248,7 @@ data <span style="color: #268bd2; font-weight: bold;">&lt;-</span> read_tsv(<spa
 
 </section>
 <section >
-<h1 id="org9db1b20">Simple Data Manipulations – <code>filter</code>  rows</h1>
+<h1 id="orgd34a4dd">Simple Data Manipulations – <code>filter</code>  rows</h1>
 <div class="org-src-container">
 
 <pre  class="src src-R">data <span style="color: #268bd2; font-weight: bold;">%&gt;%</span>
@@ -259,7 +259,7 @@ data <span style="color: #268bd2; font-weight: bold;">&lt;-</span> read_tsv(<spa
 <pre class="example">
 # A tibble: 2 x 7
   strain  mean_yfp mean_rfp mean_ratio se_ratio insert_sequence kozak_region
-  &lt;chr&gt;      &lt;int&gt;    &lt;int&gt;      &lt;dbl&gt;    &lt;dbl&gt; &lt;chr&gt;           &lt;chr&gt;       
+  &lt;chr&gt;      &lt;dbl&gt;    &lt;dbl&gt;      &lt;dbl&gt;    &lt;dbl&gt; &lt;chr&gt;           &lt;chr&gt;       
 1 schp688     1748    20754      0.755    0.066 10×AGA          A           
 2 schp679     2528    19906      1.15     0.056 10×AAG          A
 
@@ -275,7 +275,7 @@ data <span style="color: #268bd2; font-weight: bold;">&lt;-</span> read_tsv(<spa
 <pre class="example">
 # A tibble: 1 x 7
   strain  mean_yfp mean_rfp mean_ratio se_ratio insert_sequence kozak_region
-  &lt;chr&gt;      &lt;int&gt;    &lt;int&gt;      &lt;dbl&gt;    &lt;dbl&gt; &lt;chr&gt;           &lt;chr&gt;       
+  &lt;chr&gt;      &lt;dbl&gt;    &lt;dbl&gt;      &lt;dbl&gt;    &lt;dbl&gt; &lt;chr&gt;           &lt;chr&gt;       
 1 schp688     1748    20754      0.755    0.066 10×AGA          A
 
 </pre>
@@ -291,7 +291,7 @@ data <span style="color: #268bd2; font-weight: bold;">&lt;-</span> read_tsv(<spa
 <pre class="example">
 # A tibble: 1 x 7
   strain  mean_yfp mean_rfp mean_ratio se_ratio insert_sequence kozak_region
-  &lt;chr&gt;      &lt;int&gt;    &lt;int&gt;      &lt;dbl&gt;    &lt;dbl&gt; &lt;chr&gt;           &lt;chr&gt;       
+  &lt;chr&gt;      &lt;dbl&gt;    &lt;dbl&gt;      &lt;dbl&gt;    &lt;dbl&gt; &lt;chr&gt;           &lt;chr&gt;       
 1 schp688     1748    20754      0.755    0.066 10×AGA          A
 
 </pre>
@@ -308,7 +308,7 @@ data <span style="color: #268bd2; font-weight: bold;">&lt;-</span> read_tsv(<spa
 
 </section>
 <section >
-<h1 id="org734713e">Simple Data Manipulations – <code>arrange</code>  rows</h1>
+<h1 id="org2ba5c03">Simple Data Manipulations – <code>arrange</code>  rows</h1>
 <div class="org-src-container">
 
 <pre  class="src src-R">data <span style="color: #268bd2; font-weight: bold;">%&gt;%</span>
@@ -319,7 +319,7 @@ data <span style="color: #268bd2; font-weight: bold;">&lt;-</span> read_tsv(<spa
 <pre class="example">
 # A tibble: 16 x 7
    strain  mean_yfp mean_rfp mean_ratio se_ratio insert_sequence kozak_region
-   &lt;chr&gt;      &lt;int&gt;    &lt;int&gt;      &lt;dbl&gt;    &lt;dbl&gt; &lt;chr&gt;           &lt;chr&gt;       
+   &lt;chr&gt;      &lt;dbl&gt;    &lt;dbl&gt;      &lt;dbl&gt;    &lt;dbl&gt; &lt;chr&gt;           &lt;chr&gt;       
  1 schp680     1117    19377      0.519    0.01  10×AAG          H           
  2 schp674     1270    20316      0.561    0.004 10×AAG          G           
  3 schp688     1748    20754      0.755    0.066 10×AGA          A           
@@ -347,7 +347,7 @@ data <span style="color: #268bd2; font-weight: bold;">&lt;-</span> read_tsv(<spa
 </aside>
 </section>
 <section >
-<h1 id="org6b0c939">Use <code>mutate</code> to create new columns</h1>
+<h1 id="org8c37b28">Use <code>mutate</code> to create new columns</h1>
 <div class="org-src-container">
 
 <pre  class="src src-R">data <span style="color: #268bd2; font-weight: bold;">&lt;-</span> read_tsv(<span style="color: #2aa198;">"data/example_dataset_2.tsv"</span>) <span style="color: #268bd2; font-weight: bold;">%&gt;%</span>
@@ -379,7 +379,7 @@ data <span style="color: #268bd2; font-weight: bold;">&lt;-</span> read_tsv(<spa
 
 </section>
 <section >
-<h1 id="org9589817">Use <code>mutate</code> to create new columns</h1>
+<h1 id="orgd0ecb80">Use <code>mutate</code> to create new columns</h1>
 <div class="org-src-container">
 
 <pre  class="src src-R">data <span style="color: #268bd2; font-weight: bold;">&lt;-</span> data <span style="color: #268bd2; font-weight: bold;">%&gt;%</span>
@@ -391,7 +391,7 @@ data <span style="color: #268bd2; font-weight: bold;">&lt;-</span> read_tsv(<spa
 <pre class="example">
 # A tibble: 16 x 4
    strain  mean_yfp mean_rfp mean_ratio
-   &lt;chr&gt;      &lt;int&gt;    &lt;int&gt;      &lt;dbl&gt;
+   &lt;chr&gt;      &lt;dbl&gt;    &lt;dbl&gt;      &lt;dbl&gt;
  1 schp688     1748    20754     0.0842
  2 schp684     3294    20585     0.160 
  3 schp690     3535    20593     0.172 
@@ -412,7 +412,7 @@ data <span style="color: #268bd2; font-weight: bold;">&lt;-</span> read_tsv(<spa
 
 </section>
 <section >
-<h1 id="org2cf7d68">Use <code>mutate</code> to modify existing columns</h1>
+<h1 id="orgd522dd3">Use <code>mutate</code> to modify existing columns</h1>
 <div class="org-src-container">
 
 <pre  class="src src-R">data <span style="color: #268bd2; font-weight: bold;">%&gt;%</span>
@@ -424,7 +424,7 @@ data <span style="color: #268bd2; font-weight: bold;">&lt;-</span> read_tsv(<spa
 <pre class="example">
 # A tibble: 16 x 4
    strain  mean_yfp mean_rfp mean_ratio
-   &lt;chr&gt;      &lt;int&gt;    &lt;int&gt;      &lt;dbl&gt;
+   &lt;chr&gt;      &lt;dbl&gt;    &lt;dbl&gt;      &lt;dbl&gt;
  1 schp688     1748    20754       0.08
  2 schp684     3294    20585       0.16
  3 schp690     3535    20593       0.17
@@ -445,7 +445,7 @@ data <span style="color: #268bd2; font-weight: bold;">&lt;-</span> read_tsv(<spa
 
 </section>
 <section >
-<h1 id="org1e231c0">Use <code>TYPE_join</code> to join two data frames</h1>
+<h1 id="orgbb5021d">Use <code>TYPE_join</code> to join two data frames</h1>
 <div class="org-src-container">
 
 <pre  class="src src-R">annotations <span style="color: #268bd2; font-weight: bold;">&lt;-</span> read_tsv(<span style="color: #2aa198;">"data/example_dataset_3.tsv"</span>) <span style="color: #268bd2; font-weight: bold;">%&gt;%</span>
@@ -478,7 +478,7 @@ data <span style="color: #268bd2; font-weight: bold;">&lt;-</span> read_tsv(<spa
 
 </section>
 <section >
-<h1 id="org390ad2b"><code>inner_join</code> keeps common rows</h1>
+<h1 id="org5995ce6"><code>inner_join</code> keeps common rows</h1>
 <div class="org-src-container">
 
 <pre  class="src src-R">data <span style="color: #268bd2; font-weight: bold;">%&gt;%</span>
@@ -490,7 +490,7 @@ data <span style="color: #268bd2; font-weight: bold;">&lt;-</span> read_tsv(<spa
 <pre class="example">
 # A tibble: 16 x 6
    strain  mean_yfp mean_rfp mean_ratio insert_sequence kozak_region
-   &lt;chr&gt;      &lt;int&gt;    &lt;int&gt;      &lt;dbl&gt; &lt;chr&gt;           &lt;chr&gt;       
+   &lt;chr&gt;      &lt;dbl&gt;    &lt;dbl&gt;      &lt;dbl&gt; &lt;chr&gt;           &lt;chr&gt;       
  1 schp688     1748    20754     0.0842 10×AGA          A           
  2 schp684     3294    20585     0.160  10×AGA          B           
  3 schp690     3535    20593     0.172  10×AGA          C           
@@ -520,7 +520,7 @@ data <span style="color: #268bd2; font-weight: bold;">&lt;-</span> read_tsv(<spa
 
 </section>
 <section >
-<h1 id="org2c64626"><code>left_join</code> keeps all rows in left data frame</h1>
+<h1 id="org8e4281d"><code>left_join</code> keeps all rows in left data frame</h1>
 <div class="org-src-container">
 
 <pre  class="src src-R">data <span style="color: #268bd2; font-weight: bold;">%&gt;%</span>
@@ -532,7 +532,7 @@ data <span style="color: #268bd2; font-weight: bold;">&lt;-</span> read_tsv(<spa
 <pre class="example">
 # A tibble: 16 x 6
    strain  mean_yfp mean_rfp mean_ratio insert_sequence kozak_region
-   &lt;chr&gt;      &lt;int&gt;    &lt;int&gt;      &lt;dbl&gt; &lt;chr&gt;           &lt;chr&gt;       
+   &lt;chr&gt;      &lt;dbl&gt;    &lt;dbl&gt;      &lt;dbl&gt; &lt;chr&gt;           &lt;chr&gt;       
  1 schp688     1748    20754     0.0842 10×AGA          A           
  2 schp684     3294    20585     0.160  10×AGA          B           
  3 schp690     3535    20593     0.172  10×AGA          C           
@@ -553,7 +553,7 @@ data <span style="color: #268bd2; font-weight: bold;">&lt;-</span> read_tsv(<spa
 
 </section>
 <section >
-<h1 id="org9afb6c4"><code>right_join</code> keeps all rows in right data frame</h1>
+<h1 id="org9c28ea8"><code>right_join</code> keeps all rows in right data frame</h1>
 <div class="org-src-container">
 
 <pre  class="src src-R">data <span style="color: #268bd2; font-weight: bold;">%&gt;%</span>
@@ -565,29 +565,29 @@ data <span style="color: #268bd2; font-weight: bold;">&lt;-</span> read_tsv(<spa
 <pre class="example">
 # A tibble: 17 x 6
    strain  mean_yfp mean_rfp mean_ratio insert_sequence kozak_region
-   &lt;chr&gt;      &lt;int&gt;    &lt;int&gt;      &lt;dbl&gt; &lt;chr&gt;           &lt;chr&gt;       
- 1 schp674     1270    20316     0.0625 10×AAG          G           
- 2 schp675     3687    20438     0.180  10×AAG          B           
- 3 schp676     2657    20223     0.131  10×AAG          F           
- 4 schp677     3967    20604     0.193  10×AAG          E           
- 5 schp678     4378    20630     0.212  10×AAG          D           
- 6 schp679     2528    19906     0.127  10×AAG          A           
- 7 schp680     1117    19377     0.0576 10×AAG          H           
- 8 schp681     3705    20227     0.183  10×AAG          C           
- 9 schp683     9365    23866     0.392  10×AGA          G           
-10 schp684     3294    20585     0.160  10×AGA          B           
-11 schp685     7379    22956     0.321  10×AGA          F           
-12 schp686     5000    21171     0.236  10×AGA          E           
-13 schp687     4658    20860     0.223  10×AGA          D           
-14 schp688     1748    20754     0.0842 10×AGA          A           
-15 schp689     8693    22649     0.384  10×AGA          H           
-16 schp690     3535    20593     0.172  10×AGA          C           
+   &lt;chr&gt;      &lt;dbl&gt;    &lt;dbl&gt;      &lt;dbl&gt; &lt;chr&gt;           &lt;chr&gt;       
+ 1 schp688     1748    20754     0.0842 10×AGA          A           
+ 2 schp684     3294    20585     0.160  10×AGA          B           
+ 3 schp690     3535    20593     0.172  10×AGA          C           
+ 4 schp687     4658    20860     0.223  10×AGA          D           
+ 5 schp686     5000    21171     0.236  10×AGA          E           
+ 6 schp685     7379    22956     0.321  10×AGA          F           
+ 7 schp683     9365    23866     0.392  10×AGA          G           
+ 8 schp689     8693    22649     0.384  10×AGA          H           
+ 9 schp679     2528    19906     0.127  10×AAG          A           
+10 schp675     3687    20438     0.180  10×AAG          B           
+11 schp681     3705    20227     0.183  10×AAG          C           
+12 schp678     4378    20630     0.212  10×AAG          D           
+13 schp677     3967    20604     0.193  10×AAG          E           
+14 schp676     2657    20223     0.131  10×AAG          F           
+15 schp674     1270    20316     0.0625 10×AAG          G           
+16 schp680     1117    19377     0.0576 10×AAG          H           
 17 control       NA       NA    NA      &lt;NA&gt;            &lt;NA&gt;
 </pre>
 
 </section>
 <section >
-<h1 id="orgdb08901">Use <code>summarize</code> to calculate stats across rows</h1>
+<h1 id="orgaa1dd32">Use <code>summarize</code> to calculate stats across rows</h1>
 <div class="org-src-container">
 
 <pre  class="src src-R">data <span style="color: #268bd2; font-weight: bold;">%&gt;%</span>
@@ -601,14 +601,14 @@ data <span style="color: #268bd2; font-weight: bold;">&lt;-</span> read_tsv(<spa
 <pre class="example">
 # A tibble: 1 x 2
   max_yfp max_rfp
-    &lt;int&gt;   &lt;int&gt;
+    &lt;dbl&gt;   &lt;dbl&gt;
 1    9365   23866
 
 </pre>
 
 </section>
 <section >
-<h1 id="orgdbe84aa">Use <code>summarize</code> to calculate stats across rows</h1>
+<h1 id="org20eb408">Use <code>summarize</code> to calculate stats across rows</h1>
 <div class="org-src-container">
 
 <pre  class="src src-R">data <span style="color: #268bd2; font-weight: bold;">%&gt;%</span>
@@ -622,7 +622,7 @@ data <span style="color: #268bd2; font-weight: bold;">&lt;-</span> read_tsv(<spa
 <pre class="example">
 # A tibble: 1 x 2
   max_yfp max_rfp
-    &lt;int&gt;   &lt;int&gt;
+    &lt;dbl&gt;   &lt;dbl&gt;
 1    9365   23866
 
 </pre>
@@ -633,7 +633,7 @@ Other examples of summary functions:
 </p>
 
 
-<table border="0" cellspacing="0" cellpadding="6" rules="none" frame="none" width="80%" style="margin-top:50px;margin-bottom:100px;">
+<table border="0" cellspacing="0" cellpadding="6" rules="none" frame="none" class="shrunk" width="80%" style="margin-top:50px;margin-bottom:100px;">
 
 
 <colgroup>
@@ -660,7 +660,7 @@ Other examples of summary functions:
 
 </section>
 <section >
-<h1 id="org772481f">Use <code>group_by</code> to group subsets of rows</h1>
+<h1 id="org64a25d7">Use <code>group_by</code> to group subsets of rows</h1>
 <div class="org-src-container">
 
 <pre  class="src src-R">data <span style="color: #268bd2; font-weight: bold;">&lt;-</span> read_tsv(<span style="color: #2aa198;">"data/example_dataset_4.tsv"</span>) <span style="color: #268bd2; font-weight: bold;">%&gt;%</span> 
@@ -687,7 +687,7 @@ Other examples of summary functions:
 
 </section>
 <section >
-<h1 id="org96148ee">Use <code>group_by</code> to group subsets of rows</h1>
+<h1 id="orgb8502cf">Use <code>group_by</code> to group subsets of rows</h1>
 <div class="org-src-container">
 
 <pre  class="src src-R">data <span style="color: #268bd2; font-weight: bold;">%&gt;%</span> 
@@ -700,7 +700,7 @@ Other examples of summary functions:
 # A tibble: 74 x 4
 # Groups:   strain [16]
    strain    yfp   rfp replicate
-   &lt;chr&gt;   &lt;int&gt; &lt;int&gt;     &lt;int&gt;
+   &lt;chr&gt;   &lt;dbl&gt; &lt;dbl&gt;     &lt;dbl&gt;
  1 schp690  3640 20944         1
  2 schp690  3502 20881         2
  3 schp690  3569 20063         3
@@ -716,7 +716,7 @@ Other examples of summary functions:
 
 </section>
 <section >
-<h1 id="orge1a18a5"><code>group_by</code> + <code>summarize</code> for statistics by group</h1>
+<h1 id="org200b346"><code>group_by</code> + <code>summarize</code> for statistics by group</h1>
 <div class="org-src-container">
 
 <pre  class="src src-R">data <span style="color: #268bd2; font-weight: bold;">%&gt;%</span> 
@@ -727,6 +727,7 @@ Other examples of summary functions:
 </div>
 
 <pre class="example">
+`summarise()` ungrouping output (override with `.groups` argument)
 # A tibble: 16 x 3
    strain  mean_yfp mean_rfp
    &lt;chr&gt;      &lt;dbl&gt;    &lt;dbl&gt;
@@ -750,7 +751,7 @@ Other examples of summary functions:
 
 </section>
 <section >
-<h1 id="orgc5e7a69"><code>group_by</code> + <code>summarize</code> for statistics by group</h1>
+<h1 id="orgee64e5a"><code>group_by</code> + <code>summarize</code> for statistics by group</h1>
 <div class="org-src-container">
 
 <pre  class="src src-R">data <span style="color: #268bd2; font-weight: bold;">%&gt;%</span> 
@@ -763,6 +764,7 @@ Other examples of summary functions:
 </div>
 
 <pre class="example">
+`summarise()` ungrouping output (override with `.groups` argument)
 # A tibble: 16 x 5
    strain  mean_yfp mean_rfp se_yfp se_rfp
    &lt;chr&gt;      &lt;dbl&gt;    &lt;dbl&gt;  &lt;dbl&gt;  &lt;dbl&gt;
@@ -786,7 +788,7 @@ Other examples of summary functions:
 
 </section>
 <section >
-<h1 id="org25e5942"><code>%&gt;%</code> enables complex data analysis pipelines</h1>
+<h1 id="orgb13399c"><code>%&gt;%</code> enables complex data analysis pipelines</h1>
 <div class="org-src-container">
 
 <pre  class="src src-R">data <span style="color: #268bd2; font-weight: bold;">%&gt;%</span> 
@@ -799,6 +801,7 @@ Other examples of summary functions:
 </div>
 
 <pre class="example">
+`summarise()` ungrouping output (override with `.groups` argument)
 # A tibble: 16 x 6
    strain  mean_yfp mean_rfp mean_ratio insert_sequence kozak_region
    &lt;chr&gt;      &lt;dbl&gt;    &lt;dbl&gt;      &lt;dbl&gt; &lt;chr&gt;           &lt;chr&gt;       
@@ -822,7 +825,7 @@ Other examples of summary functions:
 
 </section>
 <section >
-<h1 id="org2d3fe7e"><code>%&gt;%</code> and <code>+</code> if you want to plot</h1>
+<h1 id="orgff97a89"><code>%&gt;%</code> and <code>+</code> if you want to plot</h1>
 <div class="org-src-container">
 
 <pre  class="src src-R">data <span style="color: #268bd2; font-weight: bold;">%&gt;%</span> 
@@ -837,18 +840,16 @@ Other examples of summary functions:
 </pre>
 </div>
 
+<pre class="example">
+`summarise()` ungrouping output (override with `.groups` argument)
+
+</pre>
+
 
 <div class="figure">
 <p><img src="img/complex_pipeline_example.png" alt="complex_pipeline_example.png" width="70%" />
 </p>
 </div>
-
-<aside class="notes">
-<p>
-Mention that you can also troubleshoot by removing lines in a pipeline !important
-</p>
-
-</aside>
 </section>
 </section>
 </div>

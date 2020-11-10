@@ -4,9 +4,11 @@
 #+REVEAL_THEME: default
 #+STARTUP: showeverything
 
-To view the slides below in presentation mode, open [[file:README.html]] in a web browser.
+* Note                                                             :noexport:
 
-* Lecture 6 – Working with data using =R= / =tidyverse=
+To view the slides below in presentation mode, open [[file:lecture.html]] in a web browser.
+
+* Lecture 13 – Working with data using =R= / =tidyverse=
 :PROPERTIES:
 :reveal_extra_attr: class="center"
 :END:
@@ -21,7 +23,7 @@ Fred Hutchinson Cancer Research Center
 
 
 * Contents                                            :toc:noexport:
-- [[#lecture-6--working-with-data-using-r--tidyverse][Lecture 6 – Working with data using =R= / =tidyverse=]]
+- [[#lecture-13--working-with-data-using-r--tidyverse][Lecture 13 – Working with data using =R= / =tidyverse=]]
 - [[#tidyverse-functions-for-working-with-tabular-data][=Tidyverse= Functions for Working with Tabular Data]]
 - [[#read-tabular-data-into-a-dataframe-tibble][Read tabular data into a =DataFrame= (=tibble=)]]
 - [[#use-the-pipe--operator-to-chain-commands][Use the pipe =%>%= operator to chain commands]]
@@ -447,7 +449,3 @@ Other examples of summary functions:
 #+END_SRC
 #+ATTR_HTML: :width 70%
 [[file:img/complex_pipeline_example.png]]
-
-#+BEGIN_NOTES
-Mention that you can also troubleshoot by removing lines in a pipeline !important
-#+END_NOTES

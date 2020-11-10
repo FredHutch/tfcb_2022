@@ -1,14 +1,17 @@
-# Lecture 5: Principles of Data Visualization
+# Lecture 6: Working with data using tidyverse
 
-Now that we can create basic plots in R, we'll talk more about best practices in data visualization: how are data best represented in a graph? How do we select colors and fonts to effectively convey information? What are the main goals of data visualization? This lecture will provide you with the foundational knowledge you need to continue adapting your code to suit the message conveyed by a visualization.
+Much of the time biologists spend while performing data analysis involves manipulating, reformatting, and transforming data. In this lecture, we'll use `tidyverse` functions from the `dplyr` package to perform these "data munging" tasks. We'll cover a few of the functions available for these tasks and learn a common programming structure (piping), which will equip you to continue developing powerful data manipulation code that will be foundational for visualization and statistical analysis.
 
 ## Learning objectives
 
-- Identify best practices (and common pitfalls) for data visualization
-- Differentiate among different types of data visualization
-- Apply strategies for effective data visualization
+- Select and apply functions from `tidyverse` to perform manipulations to tabular data
+- Apply pipes as a programming structure to connect input and output from multiple functions
 
 ## Class materials
 
 - To view slides in presentation mode, open [`lecture.html`](lecture.html). 
-- [Fundamentals of Data Visualization](https://serialmentor.com/dataviz/) by Claus Wilke is a great book that describes the concepts behind this lecture in more detail.
+- RStudio has a [data manipulation cheatsheet](https://github.com/rstudio/cheatsheets/raw/master/data-transformation.pdf) that should help you identify what functions are useful for certain tasks.
+
+## Reminders
+
+- We've had some questions about the difference between R Markdown documents and R Notebooks. The short answer is that R Notebooks are a specialized document written in R Markdown that updates as you run the code, while regular R Markdown documents need to be knit at the end of writing code for content to appear in the final document. More information can be found [here](http://uc-r.github.io/r_notebook). 

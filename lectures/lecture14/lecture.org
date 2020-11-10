@@ -6,7 +6,7 @@
 
 To view the slides below in presentation mode, open [[file:README.html]] in a web browser.
 
-* Lecture 6 – Working with data using =R= / =tidyverse=
+* Lecture 5 – Principles of Data Visualization
 :PROPERTIES:
 :reveal_extra_attr: class="center"
 :END:
@@ -19,435 +19,482 @@ Basic Sciences Division and Computational Biology Program
 
 Fred Hutchinson Cancer Research Center
 
-
 * Contents                                            :toc:noexport:
-- [[#lecture-6--working-with-data-using-r--tidyverse][Lecture 6 – Working with data using =R= / =tidyverse=]]
-- [[#tidyverse-functions-for-working-with-tabular-data][=Tidyverse= Functions for Working with Tabular Data]]
-- [[#read-tabular-data-into-a-dataframe-tibble][Read tabular data into a =DataFrame= (=tibble=)]]
-- [[#use-the-pipe--operator-to-chain-commands][Use the pipe =%>%= operator to chain commands]]
-- [[#all-these-commands-produce-the-same-output][All these commands produce the same output.]]
-- [[#simple-data-manipulations--select-columns][Simple Data Manipulations – =select= columns]]
-- [[#simple-data-manipulations--filter--rows][Simple Data Manipulations – =filter=  rows]]
-- [[#simple-data-manipulations--arrange--rows][Simple Data Manipulations – =arrange=  rows]]
-- [[#use-mutate-to-create-new-columns][Use =mutate= to create new columns]]
-- [[#use-mutate-to-create-new-columns-1][Use =mutate= to create new columns]]
-- [[#use-mutate-to-modify-existing-columns][Use =mutate= to modify existing columns]]
-- [[#use-type_join-to-join-two-data-frames][Use =TYPE_join= to join two data frames]]
-- [[#inner_join-keeps-common-rows][=inner_join= keeps common rows]]
-- [[#left_join-keeps-all-rows-in-left-data-frame][=left_join= keeps all rows in left data frame]]
-- [[#right_join-keeps-all-rows-in-right-data-frame][=right_join= keeps all rows in right data frame]]
-- [[#use-summarize-to-calculate-stats-across-rows][Use =summarize= to calculate stats across rows]]
-- [[#use-summarize-to-calculate-stats-across-rows-1][Use =summarize= to calculate stats across rows]]
-- [[#use-group_by-to-group-subsets-of-rows][Use =group_by= to group subsets of rows]]
-- [[#use-group_by-to-group-subsets-of-rows-1][Use =group_by= to group subsets of rows]]
-- [[#group_by--summarize-for-statistics-by-group][=group_by= + =summarize= for statistics by group]]
-- [[#group_by--summarize-for-statistics-by-group-1][=group_by= + =summarize= for statistics by group]]
-- [[#-enables-complex-data-analysis-pipelines][=%>%= enables complex data analysis pipelines]]
-- [[#-and--if-you-want-to-plot][=%>%= and =+= if you want to plot]]
+- [[#lecture-5--principles-of-data-visualization][Lecture 5 – Principles of Data Visualization]]
+- [[#learning-objectives][Learning Objectives]]
+- [[#goals-of-visualization][Goals of Visualization]]
+- [[#same-data-can-be-visualized-very-differently][Same data can be visualized very differently]]
+- [[#same-data-can-be-visualized-very-differently-1][Same data can be visualized very differently]]
+- [[#same-data-can-be-visualized-very-differently-2][Same data can be visualized very differently]]
+- [[#elements-of-a-visualization][Elements of a visualization]]
+- [[#aesthetics][Aesthetics]]
+- [[#how-do-you-pick-the-type-of-aesthetics][How do you pick the type of aesthetics?]]
+- [[#scales][Scales]]
+- [[#log-axes-suitable-for-p-values][Log axes suitable for P-values]]
+- [[#log-axes-suitable-for-fold-changes][Log axes suitable for fold-changes]]
+- [[#log-log-plots-are-common-in-biology][Log-log plots are common in biology]]
+- [[#labels][Labels]]
+- [[#cannot-read-labels][Cannot-read labels]]
+- [[#small-labels][Small labels]]
+- [[#appropriately-sized-labels][Appropriately-sized labels]]
+- [[#too-big-labels][Too-big labels]]
+- [[#seemingly-big-but-ok-labels][Seemingly big but ok labels]]
+- [[#exporting][Exporting]]
+- [[#colors][Colors]]
+- [[#color-to-distinguish-groups][Color to distinguish groups]]
+- [[#color-to-represent-quantitative-data][Color to represent quantitative data]]
+- [[#how-to-choose-colors][How to choose colors]]
+- [[#how-to-choose-colors-1][How to choose colors]]
+- [[#different-types-of-data-that-we-want-to-visualize][Different types of data that we want to visualize]]
+- [[#common-types-of-data-visualizations][Common types of data visualizations]]
+- [[#visualizing-uncertainty][Visualizing uncertainty]]
+- [[#visualizing-uncertainty-1][Visualizing uncertainty]]
+- [[#-or-][👍 or 👎?]]
+- [[#-or--1][👍 or 👎?]]
+- [[#-or--2][👍 or 👎?]]
+- [[#which-is-better--pie-or-bar][Which is better – pie or bar?]]
+- [[#which-is-better--pie-or-bar-1][Which is better – pie or bar?]]
+- [[#-or--3][👍 or 👎?]]
+- [[#-or--4][👍 or 👎?]]
+- [[#-or--5][👍 or 👎?]]
+- [[#-or--6][👍 or 👎?]]
+- [[#-or--7][👍 or 👎?]]
+- [[#-or--8][👍 or 👎?]]
+- [[#-or--9][👍 or 👎?]]
+- [[#-or--10][👍 or 👎?]]
+- [[#-or--11][👍 or 👎?]]
+- [[#-or--12][👍 or 👎?]]
 
-* =Tidyverse= Functions for Working with Tabular Data
+* Learning Objectives
+- Know general dos and donts of data visualization
+- Know about different types of data visualization
+- Effective strategies for visualization
 
 
-#+ATTR_HTML: :border 0 :rules none :frame none :style margin-top:100px;width:100%;
-| Import/Export | Visualize    | Transform   |
-|---------------+--------------+-------------|
-| =read_tsv=    | =geom_point= | =select=    |
-| =write_tsv=   | =geom_line=  | =filter=    |
-|               | =facet_grid= | =arrange=   |
-|               |              | =mutate=    |
-|               |              | =join=      |
-|               |              | =group_by=  |
-|               |              | =summarize= |
+#+ATTR_REVEAL: :frag appear :frag_idx 1
+#+ATTR_HTML: :style margin-top:50px;
+*Useful reference*
 
-* Read tabular data into a =DataFrame= (=tibble=)
+#+ATTR_REVEAL: :frag appear :frag_idx 1
+(Source of many figures in this lecture)
 
-#+BEGIN_SRC R :exports none :session
-  # turn off coloring of output that screws up org mode formatting
-  # of tibbles
-  options(crayon.enabled = FALSE)
-#+END_SRC
+#+ATTR_REVEAL: :frag appear :frag_idx 1
+[[https://serialmentor.com/dataviz/][Fundamentals of Data Visualization]] by Claus O. Wilke
 
-#+name: flow_data
-#+BEGIN_SRC R :exports code :session :results output
 
-  library(tidyverse)
 
-  data <- read_tsv("data/example_dataset_1.tsv")
-#+END_SRC
+* Goals of Visualization
 
-#+BEGIN_SRC R :exports both :session :results output
-  print(data, n = 5)
-
-#+END_SRC
-
-* Use the pipe =%>%= operator to chain commands
+#+ATTR_REVEAL: :frag (appear)
+- Show experimental design and results
+- Show relationships among variables
+- Range and interval of a variable
  
-#+BEGIN_SRC R :exports both  :session :results output
-  data %>%
-    print(n = 5)
-#+END_SRC
+* Same data can be visualized very differently
+
+[[file:img/temp-normals-vs-time-1.png]]
+
+#+ATTR_HTML: :class reference
+[[https://serialmentor.com/dataviz/][Wilke 2018]]
+
+* Same data can be visualized very differently
+
+[[file:img/four-locations-temps-by-month-1.png]]
+
+#+ATTR_HTML: :class reference
+[[https://serialmentor.com/dataviz/][Wilke 2018]]
+
+* Same data can be visualized very differently
+
+[[file:img/temperature-normals-polar-1.png]]
+
+#+ATTR_HTML: :class reference
+[[https://serialmentor.com/dataviz/][Wilke 2018]]
+
+* Elements of a visualization
+
+- Aesthetics
+- Scales
+- Labeling
+- Exporting
+
+* Aesthetics
+
+[[file:img/common-aesthetics-1.png]]
+
+
+#+ATTR_HTML: :class reference
+[[https://serialmentor.com/dataviz/][Wilke 2018]]
+
+* How do you pick the type of aesthetics?
+
+#+ATTR_REVEAL: :frag (appear)
+- How many variables and data points do you want to show?
+- Is your data continuous or discrete?
+- Is there a natural order of discrete variables?
+
 
 #+BEGIN_NOTES
-- Results from the LHS of the pipe are passed to the RHS.
-- This is one of the most useful and important features of =tidyverse=.
-- Remember that =ggplot2= uses =+= instead of =%>%=!
+Do not show more than 5 or 6 discrete categories in a graph.
 #+END_NOTES
 
-* All these commands produce the same output.
- 
-1) 
+* Scales
+[[file:img/basic-scales-example-1.png]]
 
-    #+BEGIN_SRC R :exports code :session :results output
-    print(data, n= 5)
-    #+END_SRC
-2) 
+#+ATTR_HTML: :class reference
+[[https://serialmentor.com/dataviz/][Wilke 2018]]
 
-    #+BEGIN_SRC R :exports code :session :results output
-    data %>%
-        print(., n = 5)
-    #+END_SRC
-3) 
+* Log axes suitable for P-values
 
-     #+BEGIN_SRC R :exports code :session :results output
-     data %>%
-         print(n = 5)
-     #+END_SRC
+[[file:img/dong_2019_crispr_screen.png]]
 
-* Simple Data Manipulations – =select= columns
+#+ATTR_HTML: :class reference
+[[https://www.ncbi.nlm.nih.gov/pubmed/31442407][Dong 2019]]
 
-#+BEGIN_SRC R :exports both  :session :results output
-  data %>%
-    print(n = 2)
-#+END_SRC
+* Log axes suitable for fold-changes 
 
-#+BEGIN_SRC R :exports both  :session :results output
-  data %>%
-    select(strain, mean_ratio, insert_sequence, kozak_region) %>%
-    print(n = 2)
-#+END_SRC
+[[file:img/10xaag_wt_log2.png]]
+
+#+ATTR_HTML: :class reference
+[[https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3000396][Park 2019]]
+
+* Log-log plots are common in biology
+
+[[file:img/dong_2019_volcano_plot.png]]
+
+#+ATTR_HTML: :class reference
+[[https://www.ncbi.nlm.nih.gov/pubmed/31442407][Dong 2019]]
+
+* Labels
+
+#+BEGIN_QUOTE
+If you take away only one single lesson from this book, make it this one: Pay attention to your axis labels, axis tick labels, and other assorted plot annotations. Chances are they are too small. In my experience, nearly all plot libraries and graphing softwares have poor defaults. If you use the default values, you’re almost certainly making a poor choice.
+#+END_QUOTE
+
+#+ATTR_HTML: :class reference
+/[[https://serialmentor.com/dataviz/][Wilke 2018]]/
+
+
 
 #+BEGIN_NOTES
-- You don't need to add quotes around variables.
-- However, this mean you cannot have weird characters in the name.
+Figures in presentations require bigger fonts than figures in papers.
+
+By having small fonts, you lose your audience especially in a presentation.
+
+Corollary of above is that taking a figure out of a paper and blowing it up for a presentation rarely retains the readability.
 #+END_NOTES
 
-* Simple Data Manipulations – =filter=  rows
+* Cannot-read labels
 
-#+BEGIN_SRC R :exports both  :session :results output
-  data %>%
-    filter(kozak_region == "A")
-#+END_SRC
+[[file:img/Aus-athletes-small-1.png]]
 
-#+BEGIN_SRC R :exports both  :session :results output
-  data %>%
-    filter(kozak_region == "A", insert_sequence == "10×AGA")
-#+END_SRC
+#+ATTR_HTML: :class reference
+[[https://serialmentor.com/dataviz/][Wilke 2018]]
 
-#+BEGIN_SRC R :exports both  :session :results output
-  data %>%
-    filter(kozak_region == "A") %>% 
-    filter(insert_sequence == "10×AGA")
-#+END_SRC
+* Small labels
+
+[[file:img/Aus-athletes-ugly-1.png]]
+
+#+ATTR_HTML: :class reference
+[[https://serialmentor.com/dataviz/][Wilke 2018]]
+
+* Appropriately-sized labels
+
+[[file:img/Aus-athletes-good-1.png]]
+
+#+ATTR_HTML: :class reference
+[[https://serialmentor.com/dataviz/][Wilke 2018]]
+
+* Too-big labels
+
+[[file:img/Aus-athletes-big-ugly-1.png]]
+
+#+ATTR_HTML: :class reference
+[[https://serialmentor.com/dataviz/][Wilke 2018]]
+
+* Seemingly big but ok labels
+
+[[file:img/Aus-athletes-big-good-1.png]]
+
+#+ATTR_HTML: :class reference
+[[https://serialmentor.com/dataviz/][Wilke 2018]]
+
+* Exporting
+
+#+ATTR_REVEAL: :frag (appear)
+- Finalize the figure within R as much as possible.
+- Use vector graphics for saving: PDF or SVG.
+- [[https://inkscape.org][Inkscape]] – useful open source vector graphics program for editing figures.
+- Make sure that text can be edited when you open the image.
 
 #+BEGIN_NOTES
-- Note composability
-- Note '==' sign
-- Note that you don't need quotes for the variables that are already defined but you need it for strings
+Do not use Powerpoint to draw figures. They are not easily editable by others.
 #+END_NOTES
 
-* Simple Data Manipulations – =arrange=  rows
+* Colors 
 
-#+BEGIN_SRC R :exports both  :session :results output
-  data %>%
-    arrange(mean_ratio)
-#+END_SRC
+Why use colors?
 
-#+BEGIN_NOTES
-- You can also arrange in descending order. That is one of the homework questions.
-#+END_NOTES
-* Use =mutate= to create new columns
-#+BEGIN_SRC R :exports none :session :results none
-  library(tidyverse)
-  # turn off coloring of output that screws up org mode formatting
-  # of tibbles
-  options(crayon.enabled = FALSE, messages = F, warnings = F)
-  library(rasilabRtemplates)
+#+ATTR_REVEAL: :frag (appear)
+1. As a tool to distinguish
+2. To represent data values
 
-  data <- read_tsv("data/example_dataset_2.tsv")
-#+END_SRC
+* Color to distinguish groups
 
-#+BEGIN_SRC R :exports both :results output :session :eval no
-  data <- read_tsv("data/example_dataset_2.tsv") %>%
-      print()
-#+END_SRC
+[[file:img/findlay_2018_colors_example.png]]
 
-#+RESULTS:
-#+begin_example
-# A tibble: 16 x 3
-   strain  mean_yfp mean_rfp
-   <chr>      <int>    <int>
- 1 schp688     1748    20754
- 2 schp684     3294    20585
- 3 schp690     3535    20593
- 4 schp687     4658    20860
- 5 schp686     5000    21171
- 6 schp685     7379    22956
- 7 schp683     9365    23866
- 8 schp689     8693    22649
- 9 schp679     2528    19906
-10 schp675     3687    20438
-11 schp681     3705    20227
-12 schp678     4378    20630
-13 schp677     3967    20604
-14 schp676     2657    20223
-15 schp674     1270    20316
-16 schp680     1117    19377
-#+end_example
+#+ATTR_HTML: :class reference
+[[https://www.ncbi.nlm.nih.gov/pubmed/30209399][Findlay 2018]]
 
-* Use =mutate= to create new columns
+* Color to represent quantitative data
 
-#+BEGIN_SRC R :exports both :results output :session
-  data <- data %>%
-    mutate(mean_ratio = mean_yfp / mean_rfp) %>%
-    print()
-#+END_SRC
+[[file:img/tukiainen_2017_heatmap.png]]
 
-* Use =mutate= to modify existing columns
-
-#+BEGIN_SRC R :exports both :results output :session
-  data %>%
-    mutate(mean_ratio = round(mean_ratio, 2)) %>%
-    print()
-#+END_SRC
-
-* Use =TYPE_join= to join two data frames
-
-#+BEGIN_SRC R :exports none :results output :session
-  annotations <- read_tsv("data/example_dataset_3.tsv") %>%
-    print()
-#+END_SRC
-
-#+BEGIN_SRC R :exports both :results output :session :eval no
-  annotations <- read_tsv("data/example_dataset_3.tsv") %>%
-    print()
-#+END_SRC
-
-#+RESULTS:
-#+begin_example
-# A tibble: 17 x 3
-   strain  insert_sequence kozak_region
-   <chr>   <chr>           <chr>       
- 1 schp674 10×AAG          G           
- 2 schp675 10×AAG          B           
- 3 schp676 10×AAG          F           
- 4 schp677 10×AAG          E           
- 5 schp678 10×AAG          D           
- 6 schp679 10×AAG          A           
- 7 schp680 10×AAG          H           
- 8 schp681 10×AAG          C           
- 9 schp683 10×AGA          G           
-10 schp684 10×AGA          B           
-11 schp685 10×AGA          F           
-12 schp686 10×AGA          E           
-13 schp687 10×AGA          D           
-14 schp688 10×AGA          A           
-15 schp689 10×AGA          H           
-16 schp690 10×AGA          C           
-17 control <NA>            <NA>
-#+end_example
-
-* =inner_join= keeps common rows
-
-#+BEGIN_SRC R :exports both :results output :session
-  data %>%
-    inner_join(annotations, by = "strain") %>% 
-    print()
-#+END_SRC
-
-#+RESULTS:
-#+begin_example
-# A tibble: 16 x 6
-   strain  mean_yfp mean_rfp mean_ratio insert_sequence kozak_region
-   <chr>      <int>    <int>      <dbl> <chr>           <chr>       
- 1 schp688     1748    20754     0.0842 10×AGA          A           
- 2 schp684     3294    20585     0.160  10×AGA          B           
- 3 schp690     3535    20593     0.172  10×AGA          C           
- 4 schp687     4658    20860     0.223  10×AGA          D           
- 5 schp686     5000    21171     0.236  10×AGA          E           
- 6 schp685     7379    22956     0.321  10×AGA          F           
- 7 schp683     9365    23866     0.392  10×AGA          G           
- 8 schp689     8693    22649     0.384  10×AGA          H           
- 9 schp679     2528    19906     0.127  10×AAG          A           
-10 schp675     3687    20438     0.180  10×AAG          B           
-11 schp681     3705    20227     0.183  10×AAG          C           
-12 schp678     4378    20630     0.212  10×AAG          D           
-13 schp677     3967    20604     0.193  10×AAG          E           
-14 schp676     2657    20223     0.131  10×AAG          F           
-15 schp674     1270    20316     0.0625 10×AAG          G           
-16 schp680     1117    19377     0.0576 10×AAG          H
-#+end_example
-
-#+BEGIN_NOTES
-- Joining data with annotations is a very common workflow and part of tidy data analysis that we will be talking about later.
-- Joining data with annotations is useful for slicing and dicing data by different experimental variables and is a common way to see dependence on different variables.
-#+END_NOTES
-
-* =left_join= keeps all rows in left data frame
-
-#+BEGIN_SRC R :exports both :results output :session
-  data %>%
-    left_join(annotations, by = "strain") %>% 
-    print()
-#+END_SRC
-
-#+RESULTS:
-#+begin_example
-# A tibble: 16 x 6
-   strain  mean_yfp mean_rfp mean_ratio insert_sequence kozak_region
-   <chr>      <int>    <int>      <dbl> <chr>           <chr>       
- 1 schp688     1748    20754     0.0842 10×AGA          A           
- 2 schp684     3294    20585     0.160  10×AGA          B           
- 3 schp690     3535    20593     0.172  10×AGA          C           
- 4 schp687     4658    20860     0.223  10×AGA          D           
- 5 schp686     5000    21171     0.236  10×AGA          E           
- 6 schp685     7379    22956     0.321  10×AGA          F           
- 7 schp683     9365    23866     0.392  10×AGA          G           
- 8 schp689     8693    22649     0.384  10×AGA          H           
- 9 schp679     2528    19906     0.127  10×AAG          A           
-10 schp675     3687    20438     0.180  10×AAG          B           
-11 schp681     3705    20227     0.183  10×AAG          C           
-12 schp678     4378    20630     0.212  10×AAG          D           
-13 schp677     3967    20604     0.193  10×AAG          E           
-14 schp676     2657    20223     0.131  10×AAG          F           
-15 schp674     1270    20316     0.0625 10×AAG          G           
-16 schp680     1117    19377     0.0576 10×AAG          H
-#+end_example
-
-* =right_join= keeps all rows in right data frame
-
-#+BEGIN_SRC R :exports both :results output :session
-  data %>%
-    right_join(annotations, by = "strain") %>% 
-    print()
-#+END_SRC
-
-* Use =summarize= to calculate stats across rows
-
-#+BEGIN_SRC R :exports both :results output :session
-  data %>%
-    summarize(max_yfp = max(mean_yfp),
-              max_rfp = max(mean_rfp)) %>%
-    print()
-    
-#+END_SRC
-
-* Use =summarize= to calculate stats across rows
-
-#+BEGIN_SRC R :exports both :results output :session
-  data %>%
-    summarize(max_yfp = max(mean_yfp),
-              max_rfp = max(mean_rfp)) %>%
-    print()
-    
-#+END_SRC
+#+ATTR_HTML: :class reference
+[[https://www.nature.com/articles/nature24265][Tukiainen 2017]]
 
 
-Other examples of summary functions:
+* How to choose colors
+
+Avoid using many colors in a single graph
+
+[[file:img/biddy_2018_lot_of_colors.png]]
+
+#+ATTR_HTML: :class reference
+[[https://www.ncbi.nlm.nih.gov/pubmed/30518857][Biddy 2018]]
+
+* How to choose colors
+
+[[file:img/fluorescent_micrograph_colorblind_example.jpg]]
+#+ATTR_REVEAL: :frag appear
+[[file:img/fluorescent_micrograph_colorblind_simulation.jpg]]
+
+#+ATTR_REVEAL: :frag appear
+Use colorblind-friendly palettes 
+
+#+ATTR_REVEAL: :frag appear
+#+ATTR_HTML: :style margine-top:100px
+[[file:img/colorblind_friendly_palette.png]]
 
 
-#+ATTR_HTML: :border 0 :rules none :frame none :width 80% :style margin-top:50px;margin-bottom:100px;
- | =min()= | =mean()= | =sd()= | =first()= | =n()= |
+#+ATTR_HTML: :style margine-top:20px
+#+ATTR_REVEAL: :frag appear
+- http://www.cookbook-r.com/Graphs/Colors_(ggplot2) 
+- https://jfly.uni-koeln.de/color/
 
-* Use =group_by= to group subsets of rows
+* Different types of data that we want to visualize
 
-#+BEGIN_SRC R :exports none :results none :session
-  data <- read_tsv("data/example_dataset_4.tsv") %>% 
-    arrange(desc(strain)) %>%
-    print(n = 10)
-#+END_SRC
+#+ATTR_HTML: :style margin:auto;
+| Amounts           |
+| X-Y Relationships |
+| Distributions     |
+| Proportions       |
 
-#+BEGIN_SRC R :exports both :results output :session :eval no
-  data <- read_tsv("data/example_dataset_4.tsv") %>% 
-    print(n = 10)
-#+END_SRC
 
-#+RESULTS:
-#+begin_example
-# A tibble: 74 x 4
-   strain    yfp   rfp replicate
-   <chr>   <int> <int>     <int>
- 1 schp690  3640 20944         1
- 2 schp690  3502 20881         2
- 3 schp690  3569 20063         3
- 4 schp690  3475 20773         4
- 5 schp690  3487 20307         5
- 6 schp689  9790 24399         1
- 7 schp689  9821 24932         2
- 8 schp689  9310 23007         3
- 9 schp689  6269 19075         4
-10 schp689  8273 21835         5
-# ... with 64 more rows
-#+end_example
+* Common types of data visualizations
 
-* Use =group_by= to group subsets of rows
+#+ATTR_HTML: :width 900px
+[[file:img/types_of_visualizations.png]]
 
-#+BEGIN_SRC R :exports both :results output :session
-  data %>% 
-    group_by(strain) %>%
-    print(n = 10)
-#+END_SRC
+* Visualizing uncertainty
 
-* =group_by= + =summarize= for statistics by group
+#+ATTR_HTML: :style margin:auto;
+| Standard Error   |
+| Confidence Bands |
 
-#+BEGIN_SRC R :exports both :results output :session
-  data %>% 
-    group_by(strain) %>%
-    summarize(mean_yfp = mean(yfp), mean_rfp = mean(rfp)) %>%
-    print()
-#+END_SRC
+#+ATTR_REVEAL: :frag appear
+#+ATTR_HTML: :width 900px 
+[[file:img/types_of_uncertainty.png]]
 
-* =group_by= + =summarize= for statistics by group
 
-#+BEGIN_SRC R :exports both :results output :session
-  data %>% 
-    group_by(strain) %>%
-    summarize(mean_yfp = mean(yfp), mean_rfp = mean(rfp),
-              se_yfp = sd(yfp) / sqrt(n()), 
-              se_rfp = sd(rfp) / sqrt(n())) %>%
-    print()
-#+END_SRC
+* Visualizing uncertainty
 
-* =%>%= enables complex data analysis pipelines
+#+ATTR_HTML: :style margin:auto;
+| Standard Error   |
+| Confidence Bands |
 
-#+BEGIN_SRC R :exports both :results output :session
-  data %>% 
-    group_by(strain) %>%
-    summarize(mean_yfp = mean(yfp), mean_rfp = mean(rfp)) %>%
-    mutate(mean_ratio = mean_yfp / mean_rfp) %>%
-    left_join(annotations, by = "strain") %>%
-    print()
-#+END_SRC
+#+ATTR_HTML: :style margin-top:100px;
+Standard deviation or standard error?
 
-* =%>%= and =+= if you want to plot
+#+ATTR_REVEAL: :frag appear
+#+ATTR_HTML: :style margin-top:30px;
+Standard deviation does not decrease with more measurements.
 
-#+BEGIN_SRC R :exports both :results output :session
-  data %>% 
-    group_by(strain) %>%
-    summarize(mean_yfp = mean(yfp), mean_rfp = mean(rfp)) %>%
-    mutate(mean_ratio = mean_yfp / mean_rfp) %>%
-    left_join(annotations, by = "strain") %>%
-    ggplot(aes(x = kozak_region, y = mean_ratio, 
-               color = insert_sequence, group = insert_sequence)) +
-    geom_line() +
-    geom_point()
-#+END_SRC
+* 👍 or 👎?
 
-#+BEGIN_SRC R :exports none :results output :session
-  ggsave("img/complex_pipeline_example.png", width = 4, height = 2)
-#+END_SRC
-#+ATTR_HTML: :width 70%
-[[file:img/complex_pipeline_example.png]]
+#+ATTR_HTML: :width 800px
+[[file:img/hawaii-income-bars-bad-1.png]]
 
-#+BEGIN_NOTES
-Mention that you can also troubleshoot by removing lines in a pipeline !important
-#+END_NOTES
+
+#+ATTR_REVEAL: :frag appear :frag_idx 1
+#+ATTR_HTML: :style margin-top:30px;
+Linear scales should begin at 0.
+#+ATTR_REVEAL: :frag appear :frag_idx 1
+#+ATTR_HTML: :class reference
+[[https://serialmentor.com/dataviz/][Wilke 2018]]
+
+* 👍 or 👎?
+
+[[file:img/oceania-gdp-logbars-1.png]]
+
+
+#+ATTR_REVEAL: :frag appear :frag_idx 1
+#+ATTR_HTML: :style margin-top:30px;
+Bar areas are not proportional to value.
+#+ATTR_REVEAL: :frag appear :frag_idx 2
+/Principle of proportional ink/
+#+ATTR_REVEAL: :frag appear :frag_idx 2
+#+ATTR_HTML: :class reference
+[[https://serialmentor.com/dataviz/][Wilke 2018]]
+
+
+* 👍 or 👎?
+
+[[file:img/oceania-gdp-dots-1.png]]
+
+
+#+ATTR_REVEAL: :frag appear :frag_idx 1
+#+ATTR_HTML: :style margin-top:30px;
+Log data values are best shown as points.
+#+ATTR_REVEAL: :frag appear :frag_idx 1
+#+ATTR_HTML: :class reference
+[[https://serialmentor.com/dataviz/][Wilke 2018]]
+
+* Which is better – pie or bar?
+
+#+ATTR_HTML: :width 800px
+[[file:img/RI-pop-pie-1.png]]
+
+* Which is better – pie or bar?
+
+#+ATTR_HTML: :width 800px
+[[file:img/RI-pop-bars-1.png]]
+
+
+#+ATTR_REVEAL: :frag appear :frag_idx 2
+#+ATTR_HTML: :style margin-top:30px;
+Bars are more accurately perceived than areas.
+#+ATTR_REVEAL: :frag appear :frag_idx 2
+#+ATTR_HTML: :class reference
+[[https://serialmentor.com/dataviz/][Wilke 2018]]
+
+
+* 👍 or 👎?
+
+#+ATTR_HTML: :width 750px
+[[file:img/mpg-cty-displ-solid-1.png]]
+
+#+ATTR_REVEAL: :frag appear :frag_idx 1
+#+ATTR_HTML: :style margin-top:30px;
+Overlapping points can be hidden.
+#+ATTR_REVEAL: :frag appear :frag_idx 1
+#+ATTR_HTML: :class reference
+[[https://serialmentor.com/dataviz/][Wilke 2018]]
+
+* 👍 or 👎?
+
+#+ATTR_HTML: :width 750px
+[[file:img/mpg-cty-displ-transp-1.png]]
+
+#+ATTR_REVEAL: :frag appear :frag_idx 1
+#+ATTR_HTML: :style margin-top:30px;
+Make points semi-transparent.
+#+ATTR_REVEAL: :frag appear :frag_idx 1
+#+ATTR_HTML: :class reference
+[[https://serialmentor.com/dataviz/][Wilke 2018]]
+
+* 👍 or 👎?
+
+#+ATTR_HTML: :width 750px
+[[file:img/mpg-cty-displ-jitter-1.png]]
+
+#+ATTR_REVEAL: :frag appear :frag_idx 1
+#+ATTR_HTML: :style margin-top:30px;
+Slightly jitter points along the direction of overlap.
+#+ATTR_REVEAL: :frag appear :frag_idx 1
+#+ATTR_HTML: :class reference
+[[https://serialmentor.com/dataviz/][Wilke 2018]]
+
+* 👍 or 👎?
+
+#+ATTR_HTML: :width 750px
+[[file:img/mpg-cty-displ-jitter-extreme-1.png]]
+
+#+ATTR_REVEAL: :frag appear :frag_idx 1
+#+ATTR_HTML: :style margin-top:30px;
+But too much jittering can be misleading.
+#+ATTR_REVEAL: :frag appear :frag_idx 1
+#+ATTR_HTML: :class reference
+[[https://serialmentor.com/dataviz/][Wilke 2018]]
+
+* 👍 or 👎?
+
+#+ATTR_HTML: :width 750px
+[[file:img/nycflights-points-1.png]]
+
+#+ATTR_REVEAL: :frag appear :frag_idx 1
+#+ATTR_HTML: :style margin-top:30px;
+Neither transparency nor jittering will help when data density is too high.
+#+ATTR_REVEAL: :frag appear :frag_idx 1
+#+ATTR_HTML: :class reference
+[[https://serialmentor.com/dataviz/][Wilke 2018]]
+
+* 👍 or 👎?
+
+#+ATTR_HTML: :width 750px
+[[file:img/nycflights-2d-bins-1.png]]
+
+#+ATTR_REVEAL: :frag appear :frag_idx 1
+#+ATTR_HTML: :style margin-top:30px;
+Binned 2D histograms is a good solution.
+#+ATTR_REVEAL: :frag appear :frag_idx 1
+#+ATTR_HTML: :class reference
+[[https://serialmentor.com/dataviz/][Wilke 2018]]
+
+* 👍 or 👎?
+
+#+ATTR_HTML: :width 750px
+[[file:img/nycflights-hex-bins-1.png]]
+
+#+ATTR_REVEAL: :frag appear :frag_idx 1
+#+ATTR_HTML: :style margin-top:30px;
+Hexagonal bins are slightly more accurate.
+#+ATTR_REVEAL: :frag appear :frag_idx 1
+#+ATTR_HTML: :class reference
+[[https://serialmentor.com/dataviz/][Wilke 2018]]
+
+* 👍 or 👎?
+
+#+ATTR_HTML: :width 800px
+[[file:img/tech-stocks-bad-legend-1.png]]
+
+#+ATTR_REVEAL: :frag appear :frag_idx 1
+#+ATTR_HTML: :style margin-top:30px;
+Legend order does not match plot order.
+#+ATTR_REVEAL: :frag appear :frag_idx 1
+#+ATTR_HTML: :class reference
+[[https://serialmentor.com/dataviz/][Wilke 2018]]
+
+* 👍 or 👎?
+
+#+ATTR_HTML: :width 800px
+[[file:img/tech-stocks-good-legend-1.png]]
+
+#+ATTR_REVEAL: :frag appear :frag_idx 1
+#+ATTR_HTML: :style margin-top:30px;
+Legend order matches plot order.
+#+ATTR_REVEAL: :frag appear :frag_idx 1
+#+ATTR_HTML: :class reference
+[[https://serialmentor.com/dataviz/][Wilke 2018]]
+
+* 👍 or 👎?
+
+#+ATTR_HTML: :width 800px
+[[file:img/tech-stocks-good-no-legend-1.png]]
+
+#+ATTR_REVEAL: :frag appear :frag_idx 1
+#+ATTR_HTML: :style margin-top:30px;
+Pick direct labeling over legend.
+#+ATTR_REVEAL: :frag appear :frag_idx 1
+#+ATTR_HTML: :class reference
+[[https://serialmentor.com/dataviz/][Wilke 2018]]

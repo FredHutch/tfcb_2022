@@ -28,12 +28,12 @@ Location: Zoom
 | 10      | Nov 3  | Phil Bradley     | [Modeling and machine learning in Python](lectures/lecture10)                                  |
 | 11      | Nov 5  | Phil Bradley     | [Modeling/machine learning in Python (continued)](lectures/lecture11)                          |
 | 12      | Nov 10 | Rasi Subramaniam | [Visualize data using R/ggplot2](lectures/lecture12/)                                          |
-| 13      | Nov 12 | Rasi Subramaniam | [Principles of data visualization](lectures/lecture13/)                                        |
-| 14      | Nov 17 | Rasi Subramaniam | [Working with data using R/tidyverse](lectures/lecture14/)                                     |
+| 13      | Nov 12 | Rasi Subramaniam | [Working with data using R/tidyverse](lectures/lecture13/)                                     |
+| 14      | Nov 17 | Rasi Subramaniam | [Principles of data visualization](lectures/lecture14/)                                        |
 | 15      | Nov 19 | Gavin Ha         | [Introduction to sequencing data](lectures/lecture15/)                                         |
 | 16      | Nov 24 | Gavin Ha         | [Genomic data in R](lectures/lecture16/)                                                       |
 | 17      | Dec 1  | Erick Matsen     | [Introduction to remote computing](lectures/lecture17)                                         |
-| 18      | Dec 3  | Kate Hertweck    | [Remote computing on the command line](lectures/lecture18) |
+| 18      | Dec 3  | Kate Hertweck    | [Remote computing on the command line](lectures/lecture18)                                     |
 | 19      | Dec 8  | Rasi Subramaniam | [Course summary and synthesis](lectures/lecture19)                                             |
 | 20      | Dec 10 | Kate Hertweck    | [Capstone project](lectures/lecture20)                                                         |
 

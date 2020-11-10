@@ -36,6 +36,7 @@ Fred Hutchinson Cancer Research Center
 -  [[#plotting-a-line-graph][Plotting a line graph]]
 -  [[#plotting-point-and-line-graphs][Plotting point and line graphs]]
 -  [[#faceting--plotting-in-multiple-panels][‘Faceting’ – Plotting in multiple panels]]
+- [[#play-time][Play time!]]
 
 * What you will learn over the next 3 lectures 
 Loading, Transforming, Visualizing Tabular Data using [[https://www.tidyverse.org/][Tidyverse]] packages
@@ -336,3 +337,10 @@ Explain that you can layer multiple =geoms= on top of each other.
 #+BEGIN_NOTES
 Explain =~=
 #+END_NOTES
+
+* Play time!
+
+- Get used to the RStudio interface.
+- Plot data and customize appearance.
+- Learn how to "Knit" RMarkdown files.
+- Learn more at https://ggplot2.tidyverse.org.

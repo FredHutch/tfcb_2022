@@ -1,4 +1,4 @@
-# Lecture 4: Visualize data using R/ggplot2
+# Lecture 12: Visualize data using R/ggplot2
 
 In addition to the Python programming language, we'll use R (as implemented in the RStudio interface) as a second programming language for data analysis tasks. In general, R is an excellent tool for data manipulation (cleaning, filtering, transforming), analysis (modeling and statistics), and visualization. 
 
@@ -15,4 +15,4 @@ In addition to the Python programming language, we'll use R (as implemented in t
 
 ## Reminders
 
-- [Homework 6](../../homeworks/homework06/) is posted today and is due by noon on November 17. 
+- [Homework 6](../../homeworks/homework06/) is posted today and is due November 19. 

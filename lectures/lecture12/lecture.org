@@ -1,12 +1,13 @@
-#+OPTIONS: num:nil toc:nil reveal_history:t reveal_control:nil reveal_progress:t reveal_center:nil reveal_title_slide:nil
+#+OPTIONS: num:nil toc:nil reveal_history:t reveal_control:nil reveal_progress:t reveal_center:nil reveal_title_slide:nil ^:nil
 #+REVEAL_HLEVEL: 0
 #+REVEAL_TRANS: fade
 #+REVEAL_THEME: default
 #+STARTUP: showeverything
 
-To view the slides below in presentation mode, open [[file:README.html]] in a web browser.
+* Note :noexport:
+To view the material below as a presentation, open [[file:lecture.html]].
 
-* Lecture 4 – Visualize data using =R= / =ggplot2=
+* Lecture 12 – Visualize data using =R= / =ggplot2=
 :PROPERTIES:
 :reveal_extra_attr: class="center"
 :END:
@@ -20,7 +21,7 @@ Basic Sciences Division and Computational Biology Program
 Fred Hutchinson Cancer Research Center
 
 * Contents                                            :toc:noexport:
-- [[#lecture-4--visualize-data-using-r--ggplot2][Lecture 4 – Visualize data using =R= / =ggplot2=]]
+- [[#lecture-12--visualize-data-using-r--ggplot2][Lecture 12 – Visualize data using =R= / =ggplot2=]]
 - [[#what-you-will-learn-over-the-next-3-lectures][What you will learn over the next 3 lectures]]
 - [[#example-datasets][Example Datasets]]
 - [[#raw-flow-cytometry-data][Raw Flow Cytometry Data]]

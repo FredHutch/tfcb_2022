@@ -1,6 +1,6 @@
 ---
-title: "TFCB 2019: Homework 2"
-date: "Oct 15, 2019"
+title: "TFCB 2020: Homework 6"
+date: "Nov 10, 2020"
 output:
   github_document:
     toc: 2
@@ -23,11 +23,6 @@ You may find [RStudio's cheatsheets](https://rstudio.com/resources/cheatsheets/)
 for data manipulation and data visualization useful, as well as
 [this information](https://support.rstudio.com/hc/en-us/articles/200532077-Version-Control-with-Git-and-SVN)
 about integrating Git/GitHub with RStudio.
-
-**This assignment is due at 12pm on Oct 22, 2019. Your responses should be submitted
-through the private repository created via GitHub Classroom using the link emailed to
-you. See the note at the bottom of this document for more information on
-formatting your final submission.**
 
 ```{r}
 library(tidyverse)
@@ -190,6 +185,4 @@ Write a few sentences to justify the choices you made when creating your figure.
 
 **When you are satisfied with your code and answers,
 use the "Knit" button in RStudio to create the final set of files.
-that you may then commit to your private repo and push to GitHub for grading.
-Please inspect the files after pushing to GitHub to ensure
-your code and figures are rendering as you expect.**
+Save the result as a PDF and  and submit it.**

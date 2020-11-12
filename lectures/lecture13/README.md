@@ -10,6 +10,7 @@ Much of the time biologists spend while performing data analysis involves manipu
 ## Class materials
 
 - To view slides in presentation mode, open [`lecture.html`](lecture.html). 
+- To download the in-class exercise, use [class_exercise.md](class_exercise.md) as a template to create a `.Rmd` file with your own title block and code cells.
 - RStudio has a [data manipulation cheatsheet](https://github.com/rstudio/cheatsheets/raw/master/data-transformation.pdf) that should help you identify what functions are useful for certain tasks.
 
 ## Reminders

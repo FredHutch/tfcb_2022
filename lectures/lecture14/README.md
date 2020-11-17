@@ -11,4 +11,5 @@ Now that we can create basic plots in R, we'll talk more about best practices in
 ## Class materials
 
 - To view slides in presentation mode, open [`lecture.html`](lecture.html). 
+- To download the in-class exercise, use [class_exercise.md](class_exercise.md) as a template to create a `.Rmd` file with your own title block and code cells.
 - [Fundamentals of Data Visualization](https://serialmentor.com/dataviz/) by Claus Wilke is a great book that describes the concepts behind this lecture in more detail.

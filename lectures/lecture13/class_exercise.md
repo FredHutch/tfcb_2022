@@ -1,20 +1,22 @@
 Lecture 13: In-class exercises
 ================
-
 PUT YOUR NAME HERE
-
 11/12/2020
 
 # Load packages you need
 
-    ## ── Attaching packages ───────────
+``` r
+library(tidyverse)
+```
+
+    ## ── Attaching packages ─────────────────────────────────────── tidyverse 1.3.0 ──
 
     ## ✓ ggplot2 3.3.2     ✓ purrr   0.3.4
     ## ✓ tibble  3.0.3     ✓ dplyr   1.0.2
     ## ✓ tidyr   1.1.2     ✓ stringr 1.4.0
     ## ✓ readr   1.3.1     ✓ forcats 0.5.0
 
-    ## ── Conflicts ────────────────────
+    ## ── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
     ## x dplyr::filter() masks stats::filter()
     ## x dplyr::lag()    masks stats::lag()
 
@@ -23,7 +25,21 @@ PUT YOUR NAME HERE
 Note that the first line is a comment that mentions the column names.
 This annoying structure is typical of datasets that you might receive
 from someone else. Look at the documentation of `read_csv` and figure
-out how to skip commented out lines and assign your own column names.
+out how to skip commented out lines and assign your own column
+names.
+
+``` r
+flow_data <- read_csv("data/example_dataset_5.csv", col_names = c("strain", "yfp", "rfp", "replicate"), comment = "#") %>% 
+  print()
+```
+
+    ## Parsed with column specification:
+    ## cols(
+    ##   strain = col_character(),
+    ##   yfp = col_double(),
+    ##   rfp = col_double(),
+    ##   replicate = col_double()
+    ## )
 
     ## # A tibble: 74 x 4
     ##    strain    yfp   rfp replicate
@@ -41,6 +57,18 @@ out how to skip commented out lines and assign your own column names.
     ## # … with 64 more rows
 
 # Read in example dataset 3 in the `data` subfolder which contains the annotations for the above table and store it in a variable `annotations`
+
+``` r
+annotations <- read_tsv("data/example_dataset_3.tsv") %>% 
+  print()
+```
+
+    ## Parsed with column specification:
+    ## cols(
+    ##   strain = col_character(),
+    ##   insert_sequence = col_character(),
+    ##   kozak_region = col_character()
+    ## )
 
     ## # A tibble: 17 x 3
     ##    strain  insert_sequence kozak_region
@@ -65,6 +93,11 @@ out how to skip commented out lines and assign your own column names.
 
 # Join the two tables above and assign to a new variable `data`
 
+``` r
+data <- inner_join(flow_data, annotations, by = "strain") %>% 
+  print()
+```
+
     ## # A tibble: 74 x 6
     ##    strain    yfp   rfp replicate insert_sequence kozak_region
     ##    <chr>   <dbl> <dbl>     <dbl> <chr>           <chr>       
@@ -83,6 +116,12 @@ out how to skip commented out lines and assign your own column names.
 # Create a new column `ratio` containing ratio of YFP and RFP signals for each strain replicate.
 
 Store the result in the same `data` variable.
+
+``` r
+data <- data %>% 
+  mutate(ratio = yfp / rfp) %>% 
+  print()
+```
 
     ## # A tibble: 74 x 7
     ##    strain    yfp   rfp replicate insert_sequence kozak_region  ratio
@@ -106,6 +145,15 @@ after grouping all replicates.
 
 Assign the result to `avg_data` variable.
 
+``` r
+avg_data <- data %>% 
+  group_by(strain) %>%
+  summarize(mean_ratio = mean(ratio), std_ratio = sd(ratio)) %>%
+  print()
+```
+
+    ## `summarise()` ungrouping output (override with `.groups` argument)
+
     ## # A tibble: 16 x 3
     ##    strain  mean_ratio std_ratio
     ##    <chr>        <dbl>     <dbl>
@@ -127,6 +175,11 @@ Assign the result to `avg_data` variable.
     ## 16 schp690     0.172   0.00442
 
 # What happened to the annotations? Can you join them back with `avg_data`?
+
+``` r
+avg_data <- inner_join(avg_data, annotations, by = "strain") %>% 
+  print()
+```
 
     ## # A tibble: 16 x 5
     ##    strain  mean_ratio std_ratio insert_sequence kozak_region
@@ -162,4 +215,18 @@ Can you make the error bars half as wide as their default width?
 Store the result as a PDF file named `demo_plot.pdf` in `figures`
 subfolder.
 
+``` r
+avg_data %>% 
+ggplot(aes(x = kozak_region, y = mean_ratio, color = insert_sequence, shape = insert_sequence, group = insert_sequence)) +
+  geom_point(size = 2) +
+  geom_line() +
+  geom_errorbar(aes(ymin = mean_ratio - std_ratio, ymax = mean_ratio  + std_ratio), width = 0.5)
+```
+
 ![](class_exercise_files/figure-gfm/unnamed-chunk-8-1.png)<!-- -->
+
+``` r
+ggsave("figures/example_plot.pdf")
+```
+
+    ## Saving 4 x 3 in image

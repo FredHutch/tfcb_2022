@@ -1,9 +1,12 @@
 Lecture 14: In-class exercises
 ================
+
 PUT YOUR NAME HERE
+
 11/12/2020
 
-# Load packages you need
+Load packages you need
+======================
 
 ``` r
 library(tidyverse)
@@ -11,22 +14,19 @@ library(tidyverse)
 
     ## ── Attaching packages ─────────────────────────────────────── tidyverse 1.3.0 ──
 
-    ## ✓ ggplot2 3.3.2     ✓ purrr   0.3.4
-    ## ✓ tibble  3.0.3     ✓ dplyr   1.0.2
-    ## ✓ tidyr   1.1.2     ✓ stringr 1.4.0
-    ## ✓ readr   1.3.1     ✓ forcats 0.5.0
+    ## ✔ ggplot2 3.3.2     ✔ purrr   0.3.4
+    ## ✔ tibble  3.0.3     ✔ dplyr   1.0.2
+    ## ✔ tidyr   1.1.2     ✔ stringr 1.4.0
+    ## ✔ readr   1.3.1     ✔ forcats 0.5.0
 
     ## ── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
-    ## x dplyr::filter() masks stats::filter()
-    ## x dplyr::lag()    masks stats::lag()
+    ## ✖ dplyr::filter() masks stats::filter()
+    ## ✖ dplyr::lag()    masks stats::lag()
 
-# Read in example dataset 5 in the `data` subfolder and store the result in `flow_data` variable
+Read in example dataset 5 in the `data` subfolder and store the result in `flow_data` variable
+==============================================================================================
 
-Note that the first line is a comment that mentions the column names.
-This annoying structure is typical of datasets that you might receive
-from someone else. Look at the documentation of `read_csv` and figure
-out how to skip commented out lines and assign your own column
-names.
+Note that the first line is a comment that mentions the column names. This annoying structure is typical of datasets that you might receive from someone else. Look at the documentation of `read_csv` and figure out how to skip commented out lines and assign your own column names.
 
 ``` r
 flow_data <- read_csv("data/example_dataset_5.csv", col_names = c("strain", "yfp", "rfp", "replicate"), comment = "#") %>% 
@@ -56,7 +56,8 @@ flow_data <- read_csv("data/example_dataset_5.csv", col_names = c("strain", "yfp
     ## 10 schp683  9949 25406         1
     ## # … with 64 more rows
 
-# Read in example dataset 3 in the `data` subfolder which contains the annotations for the above table and store it in a variable `annotations`
+Read in example dataset 3 in the `data` subfolder which contains the annotations for the above table and store it in a variable `annotations`
+=============================================================================================================================================
 
 ``` r
 annotations <- read_tsv("data/example_dataset_3.tsv") %>% 
@@ -91,7 +92,8 @@ annotations <- read_tsv("data/example_dataset_3.tsv") %>%
     ## 16 schp690 10×AGA          C           
     ## 17 control <NA>            <NA>
 
-# Join the two tables above and assign to a new variable `data`
+Join the two tables above and assign to a new variable `data`
+=============================================================
 
 ``` r
 data <- inner_join(flow_data, annotations, by = "strain") %>% 
@@ -113,7 +115,8 @@ data <- inner_join(flow_data, annotations, by = "strain") %>%
     ## 10 schp683  9949 25406         1 10×AGA          G           
     ## # … with 64 more rows
 
-# Create a new column `ratio` containing ratio of YFP and RFP signals for each strain replicate.
+Create a new column `ratio` containing ratio of YFP and RFP signals for each strain replicate.
+==============================================================================================
 
 Store the result in the same `data` variable.
 
@@ -138,10 +141,10 @@ data <- data %>%
     ## 10 schp683  9949 25406         1 10×AGA          G            0.392 
     ## # … with 64 more rows
 
-# Calculate the mean and standard deviation of the YFP-RFP ratio across all replicates for each strain.
+Calculate the mean and standard deviation of the YFP-RFP ratio across all replicates for each strain.
+=====================================================================================================
 
-To do the above, create new summary columns `mean_ratio` and `std_ratio`
-after grouping all replicates.
+To do the above, create new summary columns `mean_ratio` and `std_ratio` after grouping all replicates.
 
 Assign the result to `avg_data` variable.
 
@@ -174,7 +177,8 @@ avg_data <- data %>%
     ## 15 schp689     0.381   0.0311  
     ## 16 schp690     0.172   0.00442
 
-# What happened to the annotations? Can you join them back with `avg_data`?
+What happened to the annotations? Can you join them back with `avg_data`?
+=========================================================================
 
 ``` r
 avg_data <- inner_join(avg_data, annotations, by = "strain") %>% 
@@ -201,10 +205,10 @@ avg_data <- inner_join(avg_data, annotations, by = "strain") %>%
     ## 15 schp689     0.381   0.0311   10×AGA          H           
     ## 16 schp690     0.172   0.00442  10×AGA          C
 
-# Plot the mean and standard deviation of the YFP-RFP ratio as a function of the Kozak region.
+Plot the mean and standard deviation of the YFP-RFP ratio as a function of the Kozak region.
+============================================================================================
 
-Display the result as a point graph and a line graph with error bars
-around the mean.
+Display the result as a point graph and a line graph with error bars around the mean.
 
 Give the insert\_sequences different shapes and colors.
 
@@ -212,8 +216,7 @@ Can you make the markers twice their default size?
 
 Can you make the error bars half as wide as their default width?
 
-Store the result as a PDF file named `demo_plot.pdf` in `figures`
-subfolder.
+Store the result as a PDF file named `demo_plot.pdf` in `figures` subfolder.
 
 ``` r
 avg_data %>%
@@ -223,7 +226,7 @@ ggplot(aes(x = kozak_region, y = mean_ratio, color = insert_sequence, shape = in
   geom_errorbar(aes(ymin = mean_ratio - std_ratio, ymax = mean_ratio  + std_ratio), width = 0.5)
 ```
 
-![](class_exercise_files/figure-gfm/unnamed-chunk-8-1.png)<!-- -->
+![](class_exercise_files/figure-markdown_github/unnamed-chunk-8-1.png)
 
 ``` r
 ggsave("figures/example_plot.pdf")
@@ -231,60 +234,152 @@ ggsave("figures/example_plot.pdf")
 
     ## Saving 4 x 3 in image
 
-# We start from where we left off last week in Lecture 13
+We start from where we left off last week in Lecture 13
+=======================================================
 
-# Modify the above plot to change X-axis label to “Kozak Region” and Y-axis label to “Mean Ratio (a.u.)”
+Modify the above plot to change X-axis label to "Kozak Region" and Y-axis label to "Mean Ratio (a.u.)"
+======================================================================================================
 
-![](class_exercise_files/figure-gfm/unnamed-chunk-9-1.png)<!-- -->
+``` r
+avg_data %>%
+ggplot(aes(x = kozak_region, y = mean_ratio, color = insert_sequence, shape = insert_sequence, group = insert_sequence)) +
+  geom_point(size = 2) +
+  geom_line() +
+  geom_errorbar(aes(ymin = mean_ratio - std_ratio, ymax = mean_ratio  + std_ratio), width = 0.5) +
+  labs(x = "Kozak Region", y = "Mean Ratio (a.u.)")
+```
 
-# Find and use another standard `ggplot2` theme that converts the grey backgound to white and without grids
+![](class_exercise_files/figure-markdown_github/unnamed-chunk-9-1.png)
 
-![](class_exercise_files/figure-gfm/unnamed-chunk-10-1.png)<!-- -->
+Find and use another standard `ggplot2` theme that converts the grey backgound to white and without grids
+=========================================================================================================
 
-# Adjust figure size to have `proportional ink`
+``` r
+avg_data %>%
+ggplot(aes(x = kozak_region, y = mean_ratio, color = insert_sequence, shape = insert_sequence, group = insert_sequence)) +
+  geom_point(size = 2) +
+  geom_line() +
+  geom_errorbar(aes(ymin = mean_ratio - std_ratio, ymax = mean_ratio  + std_ratio), width = 0.5) +
+  labs(x = "Kozak Region", y = "Mean Ratio (a.u.)") +
+  theme_classic()
+```
 
-![](class_exercise_files/figure-gfm/unnamed-chunk-11-1.png)<!-- -->
+![](class_exercise_files/figure-markdown_github/unnamed-chunk-10-1.png)
 
-# Adjust the bottom of Y-scale to start from zero
+Adjust figure size to have `proportional ink`
+=============================================
 
-![](class_exercise_files/figure-gfm/unnamed-chunk-12-1.png)<!-- -->
+``` r
+avg_data %>%
+ggplot(aes(x = kozak_region, y = mean_ratio, color = insert_sequence, shape = insert_sequence, group = insert_sequence)) +
+  geom_point(size = 2) +
+  geom_line() +
+  geom_errorbar(aes(ymin = mean_ratio - std_ratio, ymax = mean_ratio  + std_ratio), width = 0.5) +
+  labs(x = "Kozak Region", y = "Mean Ratio (a.u.)") +
+  theme_classic()
+```
 
-# Change colors to be color-blind friendly
+![](class_exercise_files/figure-markdown_github/unnamed-chunk-11-1.png)
+
+Adjust the bottom of Y-scale to start from zero
+===============================================
+
+``` r
+avg_data %>%
+ggplot(aes(x = kozak_region, y = mean_ratio, color = insert_sequence, shape = insert_sequence, group = insert_sequence)) +
+  geom_point(size = 2) +
+  geom_line() +
+  geom_errorbar(aes(ymin = mean_ratio - std_ratio, ymax = mean_ratio  + std_ratio), width = 0.5) +
+  labs(x = "Kozak Region", y = "Mean Ratio (a.u.)") +
+  theme_classic() +
+  scale_y_continuous(limits = c(0, NA))
+```
+
+![](class_exercise_files/figure-markdown_github/unnamed-chunk-12-1.png)
+
+Change colors to be color-blind friendly
+========================================
 
 You have two options:
 
-1.  Install the `ggthemes` package and use the `scale_color_colorblind`
-    function from there.
-2.  Set the color manually to one of the hex colors in `c("#999999",
-    "#E69F00", "#56B4E9", "#009E73", "#F0E442", "#0072B2", "#D55E00",
-    "#CC79A7")`.
+1.  Install the `ggthemes` package and use the `scale_color_colorblind` function from there.
+2.  Set the color manually to one of the hex colors in `c("#999999", "#E69F00", "#56B4E9", "#009E73", "#F0E442", "#0072B2", "#D55E00", "#CC79A7")`.
 
-![](class_exercise_files/figure-gfm/unnamed-chunk-13-1.png)<!-- -->
+``` r
+avg_data %>%
+ggplot(aes(x = kozak_region, y = mean_ratio, color = insert_sequence, shape = insert_sequence, group = insert_sequence)) +
+  geom_point(size = 2) +
+  geom_line() +
+  geom_errorbar(aes(ymin = mean_ratio - std_ratio, ymax = mean_ratio  + std_ratio), width = 0.5) +
+  labs(x = "Kozak Region", y = "Mean Ratio (a.u.)") +
+  theme_classic() +
+  scale_y_continuous(limits = c(0, NA)) +
+  ggthemes::scale_color_colorblind()
+```
 
-# Notice that the legend is in the opposite order to the plot lines. Can you change their order to match?
+![](class_exercise_files/figure-markdown_github/unnamed-chunk-13-1.png)
 
-Hint: use `mutate` with `fct_reorder` and `.desc = TRUE` to modify the
-`insert_sequence` column before feeding it to
-`ggplot`.
+Notice that the legend is in the opposite order to the plot lines. Can you change their order to match?
+=======================================================================================================
 
-![](class_exercise_files/figure-gfm/unnamed-chunk-14-1.png)<!-- -->
+Hint: use `mutate` with `fct_reorder` and `.desc = TRUE` to modify the `insert_sequence` column before feeding it to `ggplot`.
 
-# Can you remove the legend altogether before we proceed to the next step?
+``` r
+avg_data %>%
+  mutate(insert_sequence = fct_reorder(insert_sequence, mean_ratio, .desc = T)) %>% 
+  ggplot(aes(x = kozak_region, y = mean_ratio, color = insert_sequence, shape = insert_sequence, group = insert_sequence)) +
+  geom_point(size = 2) +
+  geom_line() +
+  geom_errorbar(aes(ymin = mean_ratio - std_ratio, ymax = mean_ratio  + std_ratio), width = 0.5) +
+  labs(x = "Kozak Region", y = "Mean Ratio (a.u.)") +
+  theme_classic() +
+  scale_y_continuous(limits = c(0, NA)) +
+  ggthemes::scale_color_colorblind()
+```
 
-![](class_exercise_files/figure-gfm/unnamed-chunk-15-1.png)<!-- -->
+![](class_exercise_files/figure-markdown_github/unnamed-chunk-14-1.png)
 
-# Put the `insert_sequence` label physically close to each line.
+Can you remove the legend altogether before we proceed to the next step?
+========================================================================
 
-Hint: Use `geom_text` with `label` aesthetic and the `data` argument
-modified to include only the one data point for each `insert_sequence`
-from `avg_data` and placing it.
+``` r
+avg_data %>%
+  ggplot(aes(x = kozak_region, y = mean_ratio, color = insert_sequence, shape = insert_sequence, group = insert_sequence)) +
+  geom_point(size = 2) +
+  geom_line() +
+  geom_errorbar(aes(ymin = mean_ratio - std_ratio, ymax = mean_ratio  + std_ratio), width = 0.5) +
+  labs(x = "Kozak Region", y = "Mean Ratio (a.u.)") +
+  theme_classic() +
+  theme(legend.position = "none") +
+  scale_y_continuous(limits = c(0, NA)) +
+  ggthemes::scale_color_colorblind()
+```
 
-Note that you will have to adjust `mean_ratio` so that the text is not
-on top of your data.
+![](class_exercise_files/figure-markdown_github/unnamed-chunk-15-1.png)
 
-Note that you can play with `hjust` argument of `geom_text` to tweak
-horizontal placement.
+Put the `insert_sequence` label physically close to each line.
+==============================================================
 
-Adjust the plot dimensions so that it looks ‘nice’.
+Hint: Use `geom_text` with `label` aesthetic and the `data` argument modified to include only the one data point for each `insert_sequence` from `avg_data` and placing it.
 
-![](class_exercise_files/figure-gfm/unnamed-chunk-16-1.png)<!-- -->
+Note that you will have to adjust `mean_ratio` so that the text is not on top of your data.
+
+Note that you can play with `hjust` argument of `geom_text` to tweak horizontal placement.
+
+Adjust the plot dimensions so that it looks 'nice'.
+
+``` r
+avg_data %>%
+  ggplot(aes(x = kozak_region, y = mean_ratio, color = insert_sequence, shape = insert_sequence, group = insert_sequence)) +
+  geom_point(size = 2) +
+  geom_line() +
+  geom_text(aes(label = insert_sequence), data = avg_data %>% filter(kozak_region == "G") %>% mutate(mean_ratio = mean_ratio + 0.08), hjust = 0.3) +
+  geom_errorbar(aes(ymin = mean_ratio - std_ratio, ymax = mean_ratio  + std_ratio), width = 0.5) +
+  labs(x = "Kozak Region", y = "Mean Ratio (a.u.)") +
+  theme_classic() +
+  theme(legend.position = "none") +
+  scale_y_continuous(limits = c(0, 0.5)) +
+  ggthemes::scale_color_colorblind()
+```
+
+![](class_exercise_files/figure-markdown_github/unnamed-chunk-16-1.png)

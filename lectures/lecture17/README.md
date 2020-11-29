@@ -48,7 +48,7 @@ If you want to know more (e.g. how to set a variable), here are two excellent re
 
 ### Cluster use
 
-The `slow.sh` script is the same one that I demoed in the video.
+The `slow.sh` script in this `lecture17` directory is the same one that I demoed in the video.
 
 * change it so that it emails you, not me
 * change the job output file names

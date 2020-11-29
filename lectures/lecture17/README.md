@@ -2,8 +2,6 @@
 
 **Erick Matsen ([@ematsen](https://twitter.com/ematsen), [matsen.group](http://matsen.group))**
 
-TODO Rasi!
-
 ## Learning objectives
 
 After this course, you should:

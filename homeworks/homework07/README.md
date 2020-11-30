@@ -1,6 +1,6 @@
 MCB536 Homework 7
 ================
-This assignment is due on **Dec 1, 2020**. 
+This assignment is due on **Dec 3, 2020**. 
 
 ***Total: 50 points***
 

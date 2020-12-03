@@ -62,8 +62,8 @@ You should also cite any online source or person that helped you arrive at your 
 | 4        | Oct 27        | Nov 3    | [Python analysis, lecture 9](homeworks/homework04)  |
 | 5        | Nov 5         | Nov 12   | [Modeling and machine learning in Python](homeworks/homework05)           |
 | 6        | Nov 10        | Nov 19   | [Data visualization and manipulation in R](homeworks/homework06)          |
-| 7        | Nov 19        | Dec 3    | [Genomic data in R](homeworks/homework06)        |
-| 8        | Dec 3         | Dec 10   | Capstone                                          |
+| 7        | Nov 19        | Dec 3    | [Genomic data in R](homeworks/homework07)        |
+| 8        | Dec 3         | Dec 10   | [Capstone](homeworks/homework08)                                          |
 
 ## Course description
 

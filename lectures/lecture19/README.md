@@ -14,7 +14,7 @@ After this session, you should be able to:
 
 ## Class materials
 
-- RNA-Seq experiment annotations: <sample_annotations.tsv>
-- Snakemake workflow for RNA-Seq analysis: <Snakefile>
-- Script for counting RNA-Seq reads for each gene: <calculate_gene_counts.R>
-- Rmarkdown file for identifying differentially expressed genes: <identify_differentially_expressed_genes.Rmd>
+- [RNA-Seq experiment annotations](sample_annotations.tsv)
+- [Snakemake workflow for RNA-Seq analysis](Snakefile)
+- [Script for counting RNA-Seq reads for each gene](calculate_gene_counts.R)
+- [Rmarkdown file for identifying differentially expressed genes](identify_differentially_expressed_genes.Rmd)

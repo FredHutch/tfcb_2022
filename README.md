@@ -17,10 +17,10 @@ Location: TBD - Zoom
 | Lecture | Date   | Instructor       | Topic                                                                           |
 | ------- | ------ | ---------------- | ------------------------------------------------------------------------------- |
 | 1       | Sep 30 | Rasi Subramaniam | [Introduction to course, markdown, git](lectures/lecture01/)                    |
-| 2       | Oct 5  | Erick Matsen     | [Introduction to the command line](lectures/lecture02/)                         |
-| 3       | Oct 7  | Erick Matsen     | [Intro to the command line (continued)](lectures/lecture03/)                    |
-| 4       | Oct 12 | Erick Matsen     | [Introduction to remote computing](lectures/lecture17)                          |
-| 5       | Oct 14 | Rasi Subramaniam | [Introduction to data](lectures/lecture05/)                                     |
+| 2       | Oct 5  | Rasi Subramaniam | [Introduction to data](lectures/lecture05/)                                     |
+| 3       | Oct 7  | Erick Matsen     | [Introduction to the command line](lectures/lecture02/)                         |
+| 4       | Oct 12 | Erick Matsen     | [Intro to the command line (continued)](lectures/lecture03/)                    |
+| 5       | Oct 14 | Erick Matsen     | [Introduction to remote computing](lectures/lecture17)                          |
 | 6       | Oct 19 | Phil Bradley     | [Introduction to Python](lectures/lecture06/)                                   |
 | 7       | Oct 21 | Phil Bradley     | [Intro to Python (continued)](lectures/lecture07/)                              |
 | 8       | Oct 26 | Jesse Bloom      | [Data structures and biological analyses using Python](lectures/lecture08/)     |

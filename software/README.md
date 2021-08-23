@@ -21,7 +21,7 @@ Python 3.x for your particular operating system.
 
 Biological data is almost exclusively represented as text, and we will be writing code and documentation in text files. It's useful to be able to open, examine, and edit text files using a light-weight text editor. Microsoft Word is not suitable for these types of files, and we do not recommend the text editors set as default on your computer, as these programs are often not optimized for working with code. 
 
-We will use VSCode as the source code and text editor for this class. Install [VSCode](https://code.visualstudio.com/docs/editor/versioncontrol) on your computer and view the introductory videos [here](https://code.visualstudio.com/docs/introvideos/basics) before the first class to familiarize yourself with the user interface.
+We will use VSCode as the source code and text editor for this class. Install [VSCode](https://code.visualstudio.com/docs/editor/versioncontrol) on your computer and view the introductory video [here](https://code.visualstudio.com/docs/introvideos/basics) before the first class to familiarize yourself with the user interface.
 
 ## Spreadsheet program
 

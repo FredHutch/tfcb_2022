@@ -25,11 +25,11 @@ We will use VSCode as the source code and text editor for this class. Install [V
 
 We will use the following features in VSCode as part of this class:
 
-1. Work with Git and GitHub for version control (see more below).
-2. Write and edit Markdown files and view rendered versions.
-3. Write Python code in native Jupyter notebooks.
-4. Use the integrated terminal.
-5. Connect to and work on remote hosts such as the Fred Hutch Rhino computing cluster.
+1. Work with [Git and GitHub](https://code.visualstudio.com/docs/introvideos/versioncontrol) for version control (see more below).
+2. Edit Markdown files and [preview rendered versions](https://code.visualstudio.com/docs/languages/markdown).
+3. Write Python code in [native Jupyter notebooks](https://code.visualstudio.com/docs/datascience/jupyter-notebooks).
+4. Use the [integrated terminal](https://code.visualstudio.com/docs/editor/integrated-terminal).
+5. [Connect to and work on remote hosts](https://code.visualstudio.com/docs/remote/ssh) such as the Fred Hutch Rhino computing cluster.
 
 ## Spreadsheet program
 

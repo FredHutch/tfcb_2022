@@ -1,25 +1,27 @@
 # Software installation
 
-We ask you come prepared to class with a laptop on which you can participate in coding activities (talk to Kate if you don't have access to a computer and we can arrange one to borrow). Please follow the instructions below to install the required software for this course (all programs should come pre-installed on your computer, or are freely available for academic use). We'll use the other files in this directory to test the software together in class. The tools you'll need include:
+We ask you come prepared to class with a laptop on which you can participate in coding activities. Please follow the instructions below to install the required software for this course (all programs should come pre-installed on your computer, or are freely available for academic use). We'll use the other files in this directory to test the software together in class. The tools you'll need include:
 
-- [Text Editor](#text-editor) for simple file viewing / manipulation
-- [Spreadsheet program](#spreadsheet-program), like Microsoft Excel
-- [Git and GitHub](#git) for version control (please note you'll also need to share your GitHub username with us!)
+- [Jupyter Notebooks via Anaconda](#python) for Python
+- [Text Editor](#text-editor) for file viewing / manipulation
+- [Spreadsheet program](#spreadsheet-program), like Microsoft Excel or LibreOffice Calc
 - [R and RStudio](#r) for R statistical programming
 - [WSL or Terminal](#unix-command-line) for Unix command line
-- [Jupyter Notebooks via Anaconda](#python) for Python
+
+
+## Python
+
+We will use [Jupyter notebooks](http://jupyter.org) to record code, output, and text throughout the course.
+We recommend installing Python using Anaconda, which includes Jupyter notebooks and most of the other packages we'll use for the course, according to the following instructions:
+- Download the [Anaconda](https://www.anaconda.com/download/) installer for
+Python 3.x for your particular operating system.
+- Double-click the downloaded file and follow the prompts to install Anaconda (default options are acceptable).
 
 ## Text Editor
 
-Biological data is almost exclusively represented as text, and we will be writing code in text files. It's useful to be able to open, examine, and edit text files using a light-weight text editor. Microsoft Word is not suitable for these types of files, and we do not recommend the text editors set as default on your computer, as these programs are often not optimized for working with code. If you have a text editor already installed that you have previously used for code, you are welcome to use that software. If not, please install one of our recommendations below, which are appropriate for viewing very large text files and doing find-and-replace tasks using regular expressions.
+Biological data is almost exclusively represented as text, and we will be writing code and documentation in text files. It's useful to be able to open, examine, and edit text files using a light-weight text editor. Microsoft Word is not suitable for these types of files, and we do not recommend the text editors set as default on your computer, as these programs are often not optimized for working with code. 
 
-### MacOSX
-
-BBEdit can be downloaded from [here](https://www.barebones.com/products/bbedit/download.html) or installed via the App Store.
-
-### Windows
-
-[Notepad++](https://notepad-plus-plus.org) can be downloaded by going to the [Download page](https://notepad-plus-plus.org/downloads/) and selecting the latest release.
+We will use VSCode as the source code and text editor for this class. Install [VSCode](https://code.visualstudio.com/docs/editor/versioncontrol) on your computer and view the introductory videos [here](https://code.visualstudio.com/docs/introvideos/basics) before the first class to familiarize yourself with the user interface.
 
 ## Spreadsheet program
 
@@ -30,17 +32,12 @@ Once the installer is downloaded, double click on it and LibreOffice should inst
 
 ## Git
 
-Git is version control software, which helps you keep track of changes made to files. GitHub is a repository for data and code tracked with Git, and is a mechanism for publishing and collaborating on project development.
+Git is version control software, which helps you keep track of changes made to files. GitHub is a repository for data and code tracked with Git, and is a mechanism for publishing and collaborating on project development. VSCode and GitHub play nicely together and you will be able to do lot of Git-related activities from within VSCode. Installing VScode should also install Git on your computer.
 
 ### GitHub Account
 
 If you do not already have one, please register for a [GitHub account](https://github.com). Please note that your name and email will be publicly visible through GitHub by default, but more information on controlling privacy settings can be found [here](https://help.github.com/en/articles/setting-your-commit-email-address).
 
-**Please share your GitHub username with us [here](https://docs.google.com/forms/d/e/1FAIpQLSdtlewc-Py9BZ33_Kgi-u2d2ilHYEDEYniwKVjW8mIp508r8A/viewform?usp=sf_link) so we can add you to GitHub classroom (used for homework submission).**
-
-### GitHub Desktop App
-
-The website for [GitHub Desktop](https://desktop.github.com) should auto-detect your operating system and allow you to download and install the software. If you are using a Windows machine, please select the option to install command line tools.
 
 ## R
 
@@ -95,13 +92,3 @@ Macintosh operating systems are built on Unix, so many of the tools you'll need 
 ### Logging on to rhino
 
 We'll be using a computer cluster at Fred Hutch called rhino for the unix classes. Please see [these instructions](https://fredhutchio.github.io/tfcb_2020/software/unix_rhino) for logging on to rhino, and note there is an extra step to log in off campus.
-
-## Python
-
-We will use [Jupyter notebooks](http://jupyter.org) to record code, output, and text throughout the course.
-We recommend installing Python using Anaconda,
-which includes Jupyter notebooks and most of the other packages we'll use for the course, according to the following instructions:
-- Download the [Anaconda](https://www.anaconda.com/download/) installer for
-Python 3.x for your particular operating system.
-- Double-click the downloaded file and follow the prompts to install Anaconda (default options are acceptable).
-- For assistance troubleshooting installation, please go [here](https://jupyter.readthedocs.io/en/latest/install.html).

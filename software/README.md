@@ -29,7 +29,7 @@ We will use the following features in VSCode as part of this class:
 2. Write and edit Markdown files and view rendered versions.
 3. Write Python code in native Jupyter notebooks.
 4. Use the integrated terminal.
-5. Connect to and work on remote hosts such as the Fred Hutch computing computer.
+5. Connect to and work on remote hosts such as the Fred Hutch Rhino computing cluster.
 
 ## Spreadsheet program
 

@@ -23,6 +23,14 @@ Biological data is almost exclusively represented as text, and we will be writin
 
 We will use VSCode as the source code and text editor for this class. Install [VSCode](https://code.visualstudio.com/docs/editor/versioncontrol) on your computer and view the introductory video [here](https://code.visualstudio.com/docs/introvideos/basics) before the first class to familiarize yourself with the user interface.
 
+We will use the following features in VSCode as part of this class:
+
+1. Work with Git and GitHub for version control (see more below).
+2. Write and edit Markdown files and view rendered versions.
+3. Write Python code in native Jupyter notebooks.
+4. Use the integrated terminal.
+5. Connect to and work on remote hosts such as the Fred Hutch computing computer.
+
 ## Spreadsheet program
 
 Spreadsheet programs are a useful way for us as humans to interact with data. The most common of these is Microsoft Excel. Commands may differ a bit between programs, but the general ideas for thinking about spreadsheets are the same. If you are working on a computer owned by Fred Hutch, Microsoft Office (including Excel) is available through the Self Service application. If you are working on a personal computer that doesn’t have a spreadsheet program, you can use a free, open source program called LibreOffice.

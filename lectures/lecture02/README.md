@@ -1,4 +1,4 @@
-# Lecture 5: Introduction to Data
+# Lecture 2: Introduction to Data
 
 **Trevor Bedford ([@trvrb](https://twitter.com/trvrb), [bedford.io](https://bedford.io))**
 

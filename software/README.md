@@ -2,6 +2,62 @@
 
 We ask you come prepared to class with a laptop on which you can participate in coding activities. Please follow the instructions below to install the required software for this course (all programs should come pre-installed on your computer, or are freely available for academic use). We'll use the other files in this directory to test the software together in class. The tools you'll need include:
 
+- [WSL or Terminal](#unix-command-line) for Unix command line
+- [Jupyter Notebooks via Anaconda](#python) for Python
+- [Conda Environment](#conda-environment) for installing R and R packages
+- [Text Editor](#text-editor) for file viewing / manipulation
+
+## Unix command line
+
+### For Windows users
+
+Windows 10 comes with a new feature called Windows Subsystem for Linux (WSL) that allows you to access Unix tools on your computer. Please install WSL with the instructions [here](https://docs.microsoft.com/en-us/windows/wsl/install-win10).
+
+### For MacOSX users
+
+Macintosh operating systems are built on Unix, so many of the tools you'll need are pre-installed on your computer. You can access the command line through an application called **Terminal**. You can either search for this in Finder, or use the Go drop-down menu to locate it in the Utilities folder.
+
+## Python
+
+We will use [Jupyter notebooks](http://jupyter.org) to record code, output, and text throughout the course.
+Please install Python using Anaconda, which includes Jupyter notebooks and most of the other packages we'll use for the course, according to the following instructions:
+- Download the [Anaconda](https://www.anaconda.com/download/) installer for
+Python 3.x for your particular operating system.
+- Double-click the downloaded file and follow the prompts to install Anaconda (default options are acceptable).
+
+## Conda Environment
+
+A conda environment is a directory that stores a specific collection of packages that you have installed.
+- Check that Anaconda has been installed.
+- In WSL or Terminal, follow the instructions under the "Managing Python" section [here](https://conda.io/projects/conda/en/latest/user-guide/getting-started.html#managing-conda) to create a new conda environment named `tfcb2021`. Please use Python version x.x (`conda create --name snakes python=x.x`).
+- After activating the `tfcb2021` environment, install the following packages using these commands:
+  * Install r-tidyverse through the conda-forge channel: `conda install -c conda-forge r-tidyverse`.
+  * Install r-irkernel through the conda-forge channel: `conda install -c conda-forge r-irkernel`.
+  * Install bioconductor-plyranges through the bioconda channel: `conda install -c bioconda bioconductor-plyranges`.
+  * Install bioconductor-genomicfeatures through the bioconda channel: `conda install -c bioconda bioconductor-genomicfeatures`.
+  * (for each installation, when conda asks if you want to proceed, type "y" and press Enter)
+
+## Text Editor
+
+Biological data is almost exclusively represented as text, and we will be writing code and documentation in text files. It's useful to be able to open, examine, and edit text files using a light-weight text editor. Microsoft Word is not suitable for these types of files, and we do not recommend the text editors set as default on your computer, as these programs are often not optimized for working with code. 
+
+We will use VSCode as the source code and text editor for this class. Install [VSCode](https://code.visualstudio.com/docs/editor/versioncontrol) on your computer and view the introductory video [here](https://code.visualstudio.com/docs/introvideos/basics) before the first class to familiarize yourself with the user interface.
+
+We will use the following features in VSCode as part of this class:
+
+1. Work with [Git and GitHub](https://code.visualstudio.com/docs/introvideos/versioncontrol) for version control (see more below).
+2. Edit Markdown files and [preview rendered versions](https://code.visualstudio.com/docs/languages/markdown).
+3. Write Python code in [native Jupyter notebooks](https://code.visualstudio.com/docs/datascience/jupyter-notebooks).
+4. Use the [integrated terminal](https://code.visualstudio.com/docs/editor/integrated-terminal).
+5. [Connect to and work on remote hosts](https://code.visualstudio.com/docs/remote/ssh) such as the Fred Hutch Rhino computing cluster.
+
+## Check that everything is installed properly
+
+<!---
+# Software installation
+
+We ask you come prepared to class with a laptop on which you can participate in coding activities. Please follow the instructions below to install the required software for this course (all programs should come pre-installed on your computer, or are freely available for academic use). We'll use the other files in this directory to test the software together in class. The tools you'll need include:
+
 - [Jupyter Notebooks via Anaconda](#python) for Python
 - [Text Editor](#text-editor) for file viewing / manipulation
 - [Spreadsheet program](#spreadsheet-program), like Microsoft Excel or LibreOffice Calc
@@ -100,3 +156,4 @@ Macintosh operating systems are built on Unix, so many of the tools you'll need 
 ### Logging on to rhino
 
 We'll be using a computer cluster at Fred Hutch called rhino for the unix classes. Please see [these instructions](https://fredhutchio.github.io/tfcb_2020/software/unix_rhino) for logging on to rhino, and note there is an extra step to log in off campus.
+-->

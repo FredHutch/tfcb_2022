@@ -18,7 +18,7 @@ This class requires Microsoft Excel (or an equivalent program that can open `.xl
 
 - Recommended reading is available throughout each section
 - Please have Python installed before the next class session. See [Software installation](../../software/) for more information.
-- The homework assignment is currently available and is due Tuesday, October 20 at 1pm.
+- The homework assignment is available on October 7 and is due October 14 at 1pm.
 
 ## Project and data organization
 

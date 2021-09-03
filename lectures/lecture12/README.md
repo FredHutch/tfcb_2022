@@ -15,4 +15,4 @@ In addition to the Python programming language, we'll use R (as implemented in t
 
 ## Reminders
 
-- [Homework 6](../../homeworks/homework06/) is posted today and is due November 19. 
+- [Homework 6](../../homeworks/homework06/) is posted today and is due November 23. 

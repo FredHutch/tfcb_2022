@@ -22,7 +22,7 @@ _Did you hit any points of frustration, and if so, how could we improve the mate
 **20 points**
 
 Learn about the difference between standard out ("stdout") and standard error ("stderr") from [this article](https://www.howtogeek.com/435903/what-are-stdin-stdout-and-stderr-on-linux/) (feel free to read the whole thing, but you can stop before the section "Detecting Redirection Within a Script").
-Note that in reading this article, you don't need to come up with a script that will throw an error: we have one at `tfcb_2020/lectures/lecture02/scripting/script2.sh`.
+Note that in reading this article, you don't need to come up with a script that will throw an error: we have one at `tfcb_2021/lectures/lecture02/scripting/script2.sh`.
 
 _Write a command here that redirects stdout from `script2.sh` to a file named `stdout.txt` and redirects stderr to a file named `stderr.txt`._
 

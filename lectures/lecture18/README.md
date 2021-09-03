@@ -11,4 +11,4 @@ After this session, you should be able to:
 ## Class materials
 
 - The course materials are contained in the file [`lecture18.md`](lecture18.md).
-- You should log into Rhino using the [class instructions](https://fredhutchio.github.io/tfcb_2020/software/unix_rhino) we used earilier in the quarter.
+- You should log into Rhino using the [class instructions](https://fredhutchio.github.io/tfcb_2021/software/unix_rhino) we used earilier in the quarter.

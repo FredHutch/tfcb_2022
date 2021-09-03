@@ -1,6 +1,6 @@
-TFCB 2020: Homework 6
+TFCB 2021: Homework 6
 ================
-Nov 10, 2020
+Nov 11, 2021
 
 
 You can work through this homework by opening [homework06.Rmd](homework06.Rmd)

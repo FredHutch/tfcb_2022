@@ -155,5 +155,5 @@ Macintosh operating systems are built on Unix, so many of the tools you'll need 
 
 ### Logging on to rhino
 
-We'll be using a computer cluster at Fred Hutch called rhino for the unix classes. Please see [these instructions](https://fredhutchio.github.io/tfcb_2020/software/unix_rhino) for logging on to rhino, and note there is an extra step to log in off campus.
+We'll be using a computer cluster at Fred Hutch called rhino for the unix classes. Please see [these instructions](https://fredhutchio.github.io/tfcb_2021/software/unix_rhino) for logging on to rhino, and note there is an extra step to log in off campus.
 -->

@@ -1,7 +1,7 @@
 Lecture 13: In-class exercises
 ================
 PUT YOUR NAME HERE
-11/12/2020
+11/1666666/2021
 
 # Load packages you need
 

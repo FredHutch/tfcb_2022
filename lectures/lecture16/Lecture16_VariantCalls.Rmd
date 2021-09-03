@@ -1,7 +1,7 @@
 ---
 title: "MCB536 Lecture 16 (Part 3): Read Variant Call Format (VCF) Files in R"
 author: "Gavin Ha"
-date: "11/22/2020"
+date: "11/30/2021"
 output: pdf_document
 ---
 

@@ -3,7 +3,7 @@ Lecture 14: In-class exercises
 
 PUT YOUR NAME HERE
 
-11/12/2020
+11/18/2021
 
 Load packages you need
 ======================

@@ -1,7 +1,7 @@
 ---
 title: "MCB536 Lecture 16 (Part 2): Sequence Data Analysis in R"
 author: "Gavin Ha"
-date: "11/24/2020"
+date: "11/30/2021"
 output: pdf_document
 ---
 

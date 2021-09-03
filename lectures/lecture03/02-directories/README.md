@@ -22,7 +22,7 @@ The `pwd` command is short for "print working directory."
 
 On my computer the `pwd` command outputs
 
-    /home/ematsen/writing/tfcb_20202/lectures/lecture02/02-directories
+    /home/ematsen/writing/tfcb_2021/lectures/lecture02/02-directories
 
 which shows the list of directories I'm in.
 Such a list of directories (perhaps ending with a file name) is called an _absolute path_.

@@ -62,7 +62,7 @@ You should also cite any online source or person that helped you arrive at your 
 | 5        | Nov 4         | Nov 16   | [Modeling and machine learning in Python](homeworks/homework05)        |
 | 6        | Nov 16        | Nov 23   | [Data visualization and manipulation in R](homeworks/homework06)       |
 | 7        | Nov 23        | Dec 2    | [Genomic data in R](homeworks/homework07)                              |
-| 8        | Dec 7         | Dec 14   | [Homework 8](homeworks/homework08)                                     |
+| 8        | Dec 7         | Dec 14   | [Homework 8]                                                           |
 
 ## Course description
 

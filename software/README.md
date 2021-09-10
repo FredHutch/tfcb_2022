@@ -3,7 +3,7 @@
 We ask you come prepared to class with a laptop on which you can participate in coding activities. Please follow the instructions below to install the required software for this course (all programs should come pre-installed on your computer, or are freely available for academic use). We'll use the other files in this directory to test the software together in class. The tools you'll need include:
 
 - [WSL or Terminal](#unix-command-line) for Unix command line
-- [Jupyter Notebooks via Anaconda](#python) for Python
+- [Anaconda](#python) for installing Python
 - [Conda Environment](#conda-environment) for installing R and R packages
 - [Text Editor](#text-editor) for file viewing / manipulation
 
@@ -19,23 +19,18 @@ Macintosh operating systems are built on Unix, so many of the tools you'll need 
 
 ## Python
 
-We will use [Jupyter notebooks](http://jupyter.org) to record code, output, and text throughout the course.
 Please install Python using Anaconda, which includes Jupyter notebooks and most of the other packages we'll use for the course, according to the following instructions:
-- Download the [Anaconda](https://www.anaconda.com/download/) installer for
-Python 3.x for your particular operating system.
+- Download the [Anaconda](https://www.anaconda.com/download/) installer for Python 3.x for your particular operating system.
 - Double-click the downloaded file and follow the prompts to install Anaconda (default options are acceptable).
 
 ## Conda Environment
 
-A conda environment is a directory that stores a specific collection of packages that you have installed.
+A conda environment is a directory that stores a specific collection of packages that you have installed. For this course, we ask that you create a custom conda environment with certain R packages so that everyone will be on the same page. To do this:
 - Check that Anaconda has been installed.
-- In WSL or Terminal, follow the instructions under the "Managing Python" section [here](https://conda.io/projects/conda/en/latest/user-guide/getting-started.html#managing-conda) to create a new conda environment named `tfcb2021`. Please use Python version x.x (`conda create --name snakes python=x.x`).
-- After activating the `tfcb2021` environment, install the following packages using these commands:
-  * Install r-tidyverse through the conda-forge channel: `conda install -c conda-forge r-tidyverse`.
-  * Install r-irkernel through the conda-forge channel: `conda install -c conda-forge r-irkernel`.
-  * Install bioconductor-plyranges through the bioconda channel: `conda install -c bioconda bioconductor-plyranges`.
-  * Install bioconductor-genomicfeatures through the bioconda channel: `conda install -c bioconda bioconductor-genomicfeatures`.
-  * (for each installation, when conda asks if you want to proceed, type "y" and press Enter)
+- In WSL or Terminal, create a new conda environment with the packages we'll need for this course using the following command. Type 'y' when asked to Proceed. (NOTE: if prompted with a "To use the java command-line tool...", just press OK).
+  * `conda create -n tfcb2021 r r-tidyverse r-irkernel bioconductor-plyranges bioconductor-genomicfeatures -c conda-forge -c bioconda`
+- Activate the environment with:
+  * `conda activate tfcb2021`
 
 ## Text Editor
 
@@ -51,7 +46,30 @@ We will use the following features in VSCode as part of this class:
 4. Use the [integrated terminal](https://code.visualstudio.com/docs/editor/integrated-terminal).
 5. [Connect to and work on remote hosts](https://code.visualstudio.com/docs/remote/ssh) such as the Fred Hutch Rhino computing cluster.
 
-## Check that everything is installed properly
+## Getting started with using Terminal/Python/R in VSCode
+
+**To get started on using VSCode**:
+1. Open VSCode and click on 'Extensions' on the left-side menu.
+2. Install Python (by Microsoft), Markdown Preview Enhanced (by Yiyi Wang), and Remote - SSH (by Microsoft).
+3. Clone the `tfcb2021` GitHub repository in VSCode with View > Command Palette > Git: Clone > https://github.com/FredHutch/tfcb_2021.git.
+4. Click on 'Explorer' on the left-side menu, and you should be able to open and manipulate all the files in the TFCB 2021 GitHub repository.
+
+**To use Python in Jupyter notebook**:
+1. Open the test Jupyter notebook `test_python.ipynb`. 
+2. In the upper right corner, you should see an icon to select a kernel. Select the anaconda environment that you created, which should look something like `Python 3.x.x 64-bit (conda)`.
+3. On the left-side of the code block, click the triangle to execute the code.
+4. You should see a 2 x 2 table filled with 1's (and no error messages).
+
+**To use R in Jupyter notebook**:
+1. Open the Terminal window in VSCode (Terminal > New Terminal) and activate the `tfcb2021` environment you previously created with `conda activate tfcb2021`.
+2. Type `which R` into Terminal to identify where the R interpreter is located in the environment (ex. `/usr/local/bin/R`).
+3. Now switch back to the base environment with `conda activate base`. 
+4. Type the location identified in Step 2 (ex. `/usr/local/bin/R`). This should start the R interpreter.
+5. In the R interpreter, type `IRkernel::installspec()` after the >. This should install kernelspec in the right location.
+6. Open the test Jupyter notebook `test_R.ipynb`.
+7. In the upper right corner, select `R` as the kernel this time. 
+8. Run the code block.
+9. You should see a scatter plot of hwy vs. displ.
 
 <!---
 # Software installation

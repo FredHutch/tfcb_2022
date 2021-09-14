@@ -17,7 +17,7 @@ Location: TBD - Zoom
 | Lecture | Date   | Instructor       | Topic                                                                           |
 | ------- | ------ | ---------------- | ------------------------------------------------------------------------------- |
 | 1       | Sep 30 | Rasi Subramaniam | [Introduction to course, markdown, git](lectures/lecture01/)                    |
-| 2       | Oct 5  | Rasi Subramaniam | [Introduction to data](lectures/lecture02/)                                     |
+| 2       | Oct 5  | Trevor Bedford   | [Introduction to data](lectures/lecture02/)                                     |
 | 3       | Oct 7  | Erick Matsen     | [Introduction to the command line](lectures/lecture03/)                         |
 | 4       | Oct 12 | Erick Matsen     | [Intro to the command line (continued)](lectures/lecture04/)                    |
 | 5       | Oct 14 | Erick Matsen     | [Introduction to remote computing](lectures/lecture05)                          |
@@ -55,8 +55,8 @@ You should also cite any online source or person that helped you arrive at your 
 
 | Homework | Assigned Date | Due Date | Topic                                                                  |
 | -------- | ------------- | -------- | ---------------------------------------------------------------------- |
-| 1        | Oct 7         | Oct 14   | [Unix command line](homeworks/homework01)                              |
-| 2        | Oct 14        | Oct 21   | [Reproducible science, Git and GitHub, Markdown](homeworks/homework02) |
+| 1        | Oct 7         | Oct 14   | [Reproducible science, Git and GitHub, Markdown](homeworks/homework01) |
+| 2        | Oct 14        | Oct 21   | [Unix command line](homeworks/homework02)                              |
 | 3        | Oct 21        | Oct 28   | [Programming in Python](homeworks/homework03)                          |
 | 4        | Oct 28        | Nov 4    | [Python analysis, lecture 9](homeworks/homework04)                     |
 | 5        | Nov 4         | Nov 16   | [Modeling and machine learning in Python](homeworks/homework05)        |
@@ -92,6 +92,7 @@ accommodations can be found on [this page](https://registrar.washington.edu/staf
 
 For general inquiries about this course, please contact rasi at fredhutch.org
 
+- [Trevor Bedford](https://bedford.io/)
 - [Jesse Bloom](https://www.fredhutch.org/en/labs/profiles/bloom-jesse.html)
 - [Phil Bradley](https://www.fredhutch.org/en/labs/profiles/bradley-phil.html)
 - [Gavin Ha](https://gavinhalab.org/people/Gavin-Ha/)

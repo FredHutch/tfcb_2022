@@ -69,7 +69,7 @@ Assuming you are on `rhino`, try
 to see all of these files.
 
 Now it's your turn to pretend you made a mistake.
-I will assume that you are in `tfcb_2021/lectures/lecture02`.
+I will assume that you are in `tfcb_2021/lectures/lecture03`.
 Try removing some non-essential file, say doing
 
     rm vader.txt

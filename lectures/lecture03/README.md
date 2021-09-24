@@ -5,7 +5,7 @@
 This lesson introduces you to the command line (a.k.a. Unix shell), which is useful (and necessary) for automating tasks, working with files/directories, and using compute clusters.
 
 * [Recorded lecture](https://www.youtube.com/watch?v=dzkacZ2BTjw)
-* [Corresponding slides](https://fredhutchio.github.io/tfcb_2021/lectures/lecture02/slides/slides.html)
+* [Corresponding slides](https://fredhutchio.github.io/tfcb_2021/lectures/lecture03/slides/slides.html)
 
 
 ## Learning objectives

@@ -12,7 +12,9 @@ This document is the syllabus for this course.
 
 Time: 3:20PM-4:40PM, Tue & Thu, Sep 30 - Dec 9 2021
 
-Location: TBD - Zoom
+Location: Zoom
+
+TA Office hours: 1:00PM-2:00PM, Mon & Wed, Oct 4 - Dec 15 2021
 
 | Lecture | Date   | Instructor       | Topic                                                                           |
 | ------- | ------ | ---------------- | ------------------------------------------------------------------------------- |

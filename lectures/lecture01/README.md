@@ -6,6 +6,10 @@
 - Install [VSCode](https://code.visualstudio.com/#alt-downloads) and watch [this](https://code.visualstudio.com/docs/introvideos/basics) 5 minute intro video (no need to install anything until the class).
 - Create an account on [GitHub](https://github.com/signup) (note down your username and password in an accessible location for the class)
 
+<!-- Pre-class tasks for Isntructor
+
+- Send info on Zoom link and course website to students the day before -->
+
 ## Learning objectives
 
 - Locate information relevant to the course (lecture materials, assessment, communication streams)

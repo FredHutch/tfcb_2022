@@ -31,10 +31,9 @@ enableSearch: false
 - Same Zoom link for duration of class 
 - Separate Zoom link for TA office hours 
 
-Zoom link pinned on #lectures-homework Slack channel
+<div style="font-size:smaller;">Zoom link pinned on #lectures-homework Slack channel</div>
 
-<br/>
-<br/>
+<br>
 
 #### Etiquette
 

@@ -1,0 +1,8 @@
+.reveal table {
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.reveal table td, .reveal table th {
+    border: none;
+}

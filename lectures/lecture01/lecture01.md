@@ -7,6 +7,7 @@ enableChalkboard: false
 enableTitleFooter: false
 enableZoom: false
 enableSearch: false
+customTheme: custom
 ---
 
 
@@ -21,8 +22,7 @@ enableSearch: false
 
 - Locate information relevant to the course (lecture materials, assessment, communication streams)
 - Identify range of skills and concepts covered in this course
-- Learn basics of version control with `git`
-- Learn basics of plain text writing in `Markdown`
+- Learn basics of VSCode, Git, Markdown
 
 ---
 
@@ -64,35 +64,15 @@ Slack Workspace: TFCB2021
 
 ---
 
-## Teaching assistants 
+## Teaching assistants & office hours
 
-<table>
-<tr>
-<td>
-<img src="./img/instructors/ty_bottorff.jpg" style="width:150px;"/>
-</td>
-<td>
-<img src="./img/instructors/timothy_yu.jpg" style="width:150px;"/>
-</td>
-</tr>
-</table>
-<table>
-<tr>
-<td>
-Ty Bottorff
-</td>
-<td>
-Timothy Yu
-</td>
-</tr>
-</table>
+| | 
+|-|-
+| <img src="./img/instructors/ty_bottorff.jpg" style="width:150px;display:block;margin: auto;"/> | <img src="./img/instructors/timothy_yu.jpg"  style="width:150px;display:block;margin: auto;"/>
+| Ty Bottorff | Timothy Yu
+| Mon 1-2PM | Wed 1-2 PM
 
-<p>
 
-#### Office hours
-
-- Ty: Monday 1-2PM
-- Timothy: Wednesday 1-2PM
 
 ---
 
@@ -101,12 +81,10 @@ Timothy Yu
 <img src="./img/instructors/trevor_bedford.png" style="width:150px;"/>
 <img src="./img/instructors/jesse_bloom.png" style="width:150px;"/>
 <img src="./img/instructors/phil_bradley.png" style="width:150px;"/>
-<p>
-
+<br>
 <img src="./img/instructors/gavin_ha.png" style="width:150px;"/>
 <img src="./img/instructors/erick_matsen.png" style="width:150px;"/>
 <img src="./img/instructors/manu_setty.png" style="width:150px;"/>
-<p>
 
 Herbold Computational Biology Program  
 Fred Hutch

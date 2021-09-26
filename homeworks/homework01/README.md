@@ -1,60 +1,74 @@
-# Homework 1: Unix shell
+# Homework 2
 
-This homework will assess your ability to run commands in the shell and make a simple script.
-
-Replace the lines specified in _italics_ with your answers and save as a text file.
-
-<!--
-The assignment is worth 100 points, is due on Thursday, November 7 at noon, and includes material from lectures 9 and 12. This assignment will be available in GitHub Classroom on Tuesday, November 5.
--->
-
-## Problem 0
-
-**60 points**
-
-Complete the interactive tutorial.
-
-_Did you hit any points of frustration, and if so, how could we improve the material to avoid that frustration?_
-
+This homework will assess your ability to use GitHub, organize projects, and apply tidy data principles, and represents content covered in lectures 4 and 5.
 
 ## Problem 1
 
-**20 points**
+**15 points**
 
-Learn about the difference between standard out ("stdout") and standard error ("stderr") from [this article](https://www.howtogeek.com/435903/what-are-stdin-stdout-and-stderr-on-linux/) (feel free to read the whole thing, but you can stop before the section "Detecting Redirection Within a Script").
-Note that in reading this article, you don't need to come up with a script that will throw an error: we have one at `tfcb_2021/lectures/lecture03/scripting/script2.sh`.
+Make a GitHub account and populate your bio by including your research interests, place of work, location, professional webpage (or science-focused twitter account!). Here's an example [github.com/trvrb](https://github.com/trvrb/).
 
-_Write a command here that redirects stdout from `script2.sh` to a file named `stdout.txt` and redirects stderr to a file named `stderr.txt`._
-
+_Include the link to your GitHub profile here._
 
 ## Problem 2
 
+**15 points**
+
+This question assesses your ability to track a project using Git.
+
+Download the course files with the following link: [github.com/fredhutchio/tfcb_2021/archive/master.zip](https://github.com/fredhutchio/tfcb_2021/archive/master.zip). Copy the contents of `homeworks/homework02/messy-project-directory/` to a new directory on your computer named `tfcb-homework02`.
+
+Open GitHub Desktop and make a "New repository" with name `tfcb-homework02`. Set "Local Path" to the location in your computer where your `tfcb-homework02` directory can be found.
+
+Create an initial commit that adds all the local files in `tfcb-homework02`:
+- `Survey Data.xlsx`
+- `get Species_list.py`
+- etc...
+
+You do not need to submit anything for this problem; your success will be evaluated in the next problem.
+
+## Problem 3
+
+**15 points**
+
+This question assesses your ability to publish projects to GitHub.
+
+Publish `tfcb-homework02` to GitHub using GitHub Desktop. Make sure to set this to be a "public" repository. The resulting repository can now be accessed at github.com/{your_name}/tfcb-homework02. If necessary, you can make this repository public by going to "Settings" from this page.
+
+_Include the link to your `tfcb-homework02` GitHub repository here._
+
+## Problem 4
+
+**15 points**
+
+This question assesses your ability to organize files and directories associated with research projects.
+
+Organize files into a more consistent structure. Group images into a `images/` directory. Separate source code and data. Rename files to remove spaces and improve consistency. Commit changes and publish to your public GitHub repository.
+
+_Include the link to your `tfcb-homework02` GitHub repository here._
+
+## Problem 5
+
 **20 points**
 
-You might have noticed that the files we're dealing with have "extensions" that describe their file type.
-For example, text files are marked with `.txt`, and shell scripts are labeled with `.sh`.
+This question assesses your ability to write a README with Markdown formatting.
 
-This is a handy convention which is used heavily by a command-line library called [imagemagick](https://imagemagick.org/index.php) to manipulate images.
-ImageMagick has been installed on rhino, but needs to be loaded before you use it:
+Create a file called `README.md` and populate with Markdown. Demonstrate headers, lists, links, embedded images (by linking to images contained in the directory) and tables in this readme.
 
-    ml ImageMagick
+Commit this file and publish to your public GitHub repository.
 
-Don't forget to load the updated version of parallel:
+_Include the link to your `README.md` here._
 
-    ml parallel
+## Problem 6
 
-Once the library is loaded, go to the `lecture03/slides/images` directory and try
+**20 points**
 
-    convert betty-crocker.jpg betty-crocker.png
+This question assesses your understanding of tidy data principles.
 
-which converts `betty-crocker.jpg` (a JPG image) to `betty-crocker.png` (a PNG image).
-You can confirm proper conversion using `file`.
-Now, your turn:
+Clean up the file that was originally named `Survey Data.xlsx`. Some points to remember: aim for a single tidy data frame in a single tab, don't use formatting as data, use preferred date format, properly record null values.
 
-_Use parallel to convert all of the JPGs in this directory to PNG images._
+Export this as a tab-delimited `.tsv` text file with Unix line endings.
 
-Big hint: There is a very similar sort of command in the "Compute intensive jobs and substitution" section of the `parallel` man page.
+Commit the modified `.xlsx` file and the `.tsv` file and publish to your public GitHub repository.
 
-Next:
-
-_Write a script that will take all of the JPGs in the current directory, convert them to PNGs, and then assemble all of the PNGs in the current directory into a file called `montage.png` using the `montage` command. Paste that script here._
+_Include the link to your `.tsv` file on GitHub here._

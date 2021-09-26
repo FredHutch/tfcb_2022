@@ -1,6 +1,6 @@
 # Homework 5: Python data analysis
 
-This assignment includes material from lectures 10 and 11 (Python data analysis and modeling). It is due on Thursday, November 11th.
+This assignment includes material from lectures 10 and 11 (Python data analysis and modeling). It is due on November 16th.
 
 Point values are listed with each question, and the assignment is worth 50 points total.
 Add your answers to the [jupyter notebook](https://github.com/fredhutchio/tfcb_2021/blob/master/homeworks/homework05/homework05.ipynb), 

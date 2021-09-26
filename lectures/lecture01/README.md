@@ -23,8 +23,4 @@
 
 ## Class materials
 
-- Rubric for participation grading available [here](participation_rubric.md) (will be assessed at end of the semester)
-- Recommended reading:
-  - [Good Enough Practices in Scientific Computing](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005510)
-  - [A Quick Guide to Organizing Computational Biology Projects](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1000424)
-
+- [Lecture Slides](lecture01.md) in Markdown format

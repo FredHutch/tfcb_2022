@@ -129,6 +129,13 @@ By the end of the course, you should be able to:
 
 </div>
 
+<!-- 
+- Learn outside class. You will get most benefit if you spend time studying on your own on the internet.
+- Learning curve will be steep. Your ability to do things will be limited for a while. This is quite normal.
+- You are really learning a new language and also a new way of thinking about problems and solving them. So it will take time to get comfortable.
+- Think of this class as a rapid tour through Africa or Europe or South America where everyone speaks a different language than you. You can appreciate what is there, but to be comfortable or get really good, you need to spend lot of time immersed in that culture. 
+-->
+
 ---
 
 ## Course website

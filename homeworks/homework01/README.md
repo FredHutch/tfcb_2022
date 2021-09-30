@@ -16,7 +16,7 @@ _Include the link to your GitHub profile here._
 
 This question assesses your ability to track a project using Git.
 
-Download the course files with the following link: [github.com/fredhutchio/tfcb_2021/archive/master.zip](https://github.com/fredhutchio/tfcb_2021/archive/master.zip). Copy the contents of `homeworks/homework02/messy-project-directory/` to a new directory on your computer named `tfcb-homework02`.
+Download the course files with the following link: [github.com/fredhutch/tfcb_2021/archive/master.zip](https://github.com/fredhutch/tfcb_2021/archive/master.zip). Copy the contents of `homeworks/homework02/messy-project-directory/` to a new directory on your computer named `tfcb-homework02`.
 
 Open GitHub Desktop and make a "New repository" with name `tfcb-homework02`. Set "Local Path" to the location in your computer where your `tfcb-homework02` directory can be found.
 

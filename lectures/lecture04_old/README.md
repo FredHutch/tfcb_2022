@@ -111,7 +111,7 @@ Some suggested readings on reproducible research include:
 
 ![](figures/markdown_logo.png)
 
-* What is Markdown? ([Look at this lecture!](https://raw.githubusercontent.com/fredhutchio/tfcb_2019/master/lectures/lecture02/README.md))
+* What is Markdown? ([Look at this lecture!](https://raw.githubusercontent.com/fredhutch/tfcb_2019/master/lectures/lecture02/README.md))
 
 * Invented by John Gruber to provide markup that is intuitive and aesthetically pleasing when viewed as plain text. It's similar to how you would style a plain text email.
 

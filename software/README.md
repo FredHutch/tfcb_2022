@@ -2,10 +2,15 @@
 
 We ask you come prepared to class with a laptop on which you can participate in coding activities. Please follow the instructions below to install the required software for this course (all programs should come pre-installed on your computer, or are freely available for academic use). We'll use the other files in this directory to test the software together in class. The tools you'll need include:
 
+- [Git](#git) for GitHub commands
 - [WSL or Terminal](#unix-command-line) for Unix command line
 - [Anaconda](#python) for installing Python
 - [Conda Environment](#conda-environment) for installing R and R packages
 - [Text Editor](#text-editor) for file viewing / manipulation
+
+## Git
+
+You can follow the instructions [here](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) to install Git. 
 
 ## Unix command line
 

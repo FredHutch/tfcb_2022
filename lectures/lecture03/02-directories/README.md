@@ -30,7 +30,12 @@ Each successive directory is separated from the previous one with a `/`, so I'm 
 As I described before the beginning ("root") directory is called `/`.
 
 Remember how before we learned how to give an argument to the directory-listing command?
-Now give that command a part of your path, so see the list of files at various places in your directory hierarchy.
+Try this: give that command a part of your path, so see the list of files at various places in your directory hierarchy.
+For example, on my computer I could try
+
+    ls /home/ematsen/writing/tfcb_2021
+
+but on your machine the path components will be different.
 
 
 ### Tree
@@ -59,7 +64,7 @@ Try executing `tree` now and see if you get the same result.
 The `tree` command can also take an argument, which is the directory for which it should draw the tree.
 
 * without changing directories, show the directory tree of the `purchase` directory only
-* look in the `tree` documentation to list only directories and try that out here
+* look in the `tree` documentation to list only directories (and not files) and try that out here
 * try giving `cd` the name of a directory that doesn't exist or isn't a subdirectory of the current directory
 
 

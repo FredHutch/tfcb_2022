@@ -159,7 +159,8 @@ For a serious computational pipeline, consider a tool such as [Snakemake](https:
 
 #
 
-These slides were generated from source using a [shell script](https://github.com/FredHutch/tfcb_2021/blob/main/lectures/lecture03/slides/build.sh).
+These slides were generated from source<br>
+using a [shell script](https://github.com/FredHutch/tfcb_2021/blob/main/lectures/lecture03/slides/build.sh).
 
 
 #

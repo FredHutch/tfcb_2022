@@ -50,12 +50,13 @@ What is `Meta`?
 If you are on a PC keyboard, it's the `Alt` key.
 If you are on a Mac, it may be `Option` already, or [a little configuration may be required](http://osxdaily.com/2013/02/01/use-option-as-meta-key-in-mac-os-x-terminal/).
 
-On the other hand, if you are using Ubuntu (e.g. you are using the Fred Hutch servers) then you should just be able to use `Ctrl` with the left and right arrows to move by word.
+Additionally, if you are using Ubuntu (e.g. you are using the Fred Hutch servers) then you should just be able to use `Ctrl` with the left and right arrows to move by word.
 
 Another option for you `vim` lovers out there is the `fc` command, for "fix command."
 `fc` puts your last command into a little `vim` session, allowing you to modify it as you like.
 When you save and quit it executes the modified command.
 If you decide that you don't want to do anything, you can just remove all text from the file.
+(On some platforms there are multiple `fc` commands, and if you get an error with `fc`, use `builtin fc`.)
 
 
 ## For OS X users who want a long history.

@@ -1,3 +1,11 @@
+# Pre-flight check
+
+Before you get started, type
+
+    pwd
+
+again and make sure that the output ends with `tfcb_2021/lectures/lecture03`.
+
 # Directories
 
 Execute
@@ -13,11 +21,11 @@ Think back to the previous lesson, and execute the command that allows you to se
 ### Paths
 
 It takes a little work to keep track of where you are in the shell.
-Try executing the command
+As we have seen so far, the
 
     pwd
 
-to show where you are.
+command shows you where you are.
 The `pwd` command is short for "print working directory."
 
 On my computer the `pwd` command outputs
@@ -120,4 +128,5 @@ Now go back to where you were before.
 
 Congratulations!
 You now know how to navigate around the file system.
-For the next lesson, go up one directory and then into the `03-redirection` directory and have a look at the README there.
+
+**For the next lesson,** go up one directory and then into the `03-redirection` directory and have a look at the README there.

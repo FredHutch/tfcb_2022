@@ -121,6 +121,7 @@ You certainly can, though it's not considered hip (because vim is all about effi
 ---
 
 Congratulations!
-You now know a little `vi` which we'll use for the rest of this course.
+You now know a little `vi`.
+You can just keep this in your back pocket if you have another setup that allows you to edit files on a server, or you can use it for the reset of the course!
 
-Head over to the `05-history` directory for the next set of instructions.
+Head over to the `05-history` directory for the next set of instructions (by now, you should know that you can get there via `cd ../05-history`).

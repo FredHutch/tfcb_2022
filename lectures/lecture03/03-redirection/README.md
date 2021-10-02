@@ -34,13 +34,13 @@ etc.
 
 Now it's your turn.
 Use redirection to count the number of files in the `lecture03` directory.
-(Remember the various flags we used for `ls`, and the fact that you can give it an argument.)
+(Remember the various flags we used for `ls`, and the fact that you can give it an argument, as well as the thing-counting command we encountered towards the end of `01-first-steps.md`.)
 
 
 ## Filtering
 
 One often wants to take a subset of the output that one gets from a command, and pass it to another command.
-Enter the `grep` command.
+For example, there is the `grep` command.
 Try
 
     ls ../slides/images
@@ -52,6 +52,7 @@ and then
 You can see that adding the `grep jpg` filtered the output to only things containing the string `jpg`.
 That's what it does!
 You can read more about grep using `man`.
+It's incredibly powerful!
 
 Now pipe together `tree` and other commands you know to find the number of files in `lecture03` that contain `md`.
 
@@ -67,10 +68,10 @@ For example, try
 
 Now take a look at the `output.txt` using an appropriate command.
 
-Now use a similar command to record the output of `date` in a file and then look at it.
-What happened?
+Now use a similar command to record the output of `date` in `output.txt` and then look at it.
 
-If we don't want to over-write the output of a file, we can use the `>>` operator, like so:
+Did you over-write the previous content of `output.txt`?
+Sometimes that's intended, but if we don't want to over-write the output of a file, we can use the `>>` operator, like so:
 
     date >> output.txt
 
@@ -85,4 +86,4 @@ You can use multiple commands to achieve this result.
 Congratulations!
 You know know the basics of output redirection between commands and into files.
 
-The next step is to work through the `04-vim` README.
+The next step is to work through the `04-vim` README, so `cd ../04-vim`.

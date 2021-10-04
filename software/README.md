@@ -83,7 +83,7 @@ It can get annoying having to type your password everytime you ssh into rhino. W
 1. Open a Terminal window on your local computer and type `ssh-keygen`.
 2. When prompted with "Enter file in which to save the key (/Users/USERNAME/.ssh/id_rsa):", simply press `Enter` to save the key in the default location.
 3. Follow the prompt and enter a passphrase, which should be a longer complex password to ensure best protection of your key.
-4. Now, you should see that your public key has been saved. To copy your key to rhino, type the command: `ssh copy-id HUTCHID@rhino`. It should prompt you for your password.
+4. Now, you should see that your public key has been saved. To copy your key to rhino (via snail), type the command: `ssh-copy-id -o ProxyJump=HUTCHID@snail.fhcrc.org HUTCHID@rhino.fhcrc.org`. It should prompt you for your password.
 5. Lastly, modify your `~/.ssh/config`. To do this:
   * Check that you have the Remote - SSH extension installed. If not, follow instructions [here](#text-editor) to install this extension.
   * In VSCode, click View > Command Palette > Remote-SSH: Open SSH Configuration File...
@@ -94,14 +94,21 @@ Host alias
     HostName hostname
     User user
 ```
-  * Delete the text and copy/paste the text below into its place. Modify the "HUTCHID" part to your Hutch username, and save.
+  * Delete the text and copy/paste the text below into its place. Modify the "HUTCHID" parts to your Hutch username, and save.
 
 ```
+Host snail
+	Hostname snail.fhcrc.org
+	User HUTCHID
+
 Host rhino
-    UseKeychain  yes
-    AddKeysToAgent yes
-    IdentityFile ~/.ssh/id_rsa
-    User HUTCHID
+  UseKeychain  yes
+  AddKeysToAgent yes
+  IdentityFile ~/.ssh/id_rsa
+	User HUTCHID
+	HostName rhino.fhcrc.org
+	ProxyCommand ssh HUTCHID@snail.fhcrc.org exec nc %h %p 2> /dev/null
+
 ```
 6. Congratulations! Now, you should be able to ssh into rhino without typing your password each time using `ssh rhino`.
 <!---

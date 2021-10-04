@@ -11,9 +11,53 @@ After this course, you should:
 
 ## Class materials
 
-[A tour of Fred Hutch scientific computing resources video](https://www.youtube.com/watch?v=VkYdbQ0VoWU)
+We'll have a tour of the FH computational environment during class.
 
-## Reminders
+Here is an outline of the tour:
+
+* Welcome!
+    * Scicomp has put together a very nice system
+    * Be kind to sysadmins!
+* Not going to cover
+    * [motuz](https://sciwiki.fredhutch.org/compdemos/motuz/)
+    * [getting a graphical user interface session on the remote machines](https://sciwiki.fredhutch.org/scicomputing/access_nx/)
+* Lots of resources for you
+    * https://sciwiki.fredhutch.org/ (please contribute)
+    * http://www.fredhutch.io/
+    * https://fhbig.slack.com/
+* Interactive compute
+    * the rhinos (for non-intensive use)
+    * `grabnode`
+* Your home directory
+    * Shared across every compute resource!
+    * 100GB
+    * `.snapshot`
+* Modules
+    * `ml SAMtools`
+    * `ml fhDev`
+    * https://sciwiki.fredhutch.org/scicomputing/compute_scientificSoftware/
+* Storage
+    * /fh/fast
+    * Economy storage
+        * `sw2account v2 matsen_e`
+        * `swc ls /`
+        * `swc ls /individual-archive`
+        * `swc upload to-delete /individual-archive`
+        * `swc rm /individual-archive/to-delete`
+    * Scratch storage
+        * `cp to-delete /fh/scratch/delete30/matsen_e/shared/`
+    * `/loc/no-backup` is going to become `/loc/scratch/delete30` etc
+* gizmo cluster
+    * We use [SLURM](https://slurm.schedmd.com/documentation.html)
+    * `sbatch`
+    * `scancel`
+    * `squeue -u $USER`
+    * `tail -f slurm-output-file.out`
+    * `sacct` and variants, e.g. `sacct -u matsen -o JobID,JobName%30,Elapsed,State,MaxRSS,AllocCPUs,MaxVMsize1`
+    * `hitparade`
+
+
+[Here is a recorded video](https://www.youtube.com/watch?v=VkYdbQ0VoWU) with some of the same content.
 
 
 ## Interactive work

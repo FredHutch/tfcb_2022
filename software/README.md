@@ -83,7 +83,7 @@ It can get annoying having to type your password everytime you ssh into rhino. W
 1. Open a Terminal window on your local computer and type `ssh-keygen`.
 2. When prompted with "Enter file in which to save the key (/Users/USERNAME/.ssh/id_rsa):", simply press `Enter` to save the key in the default location.
 3. Follow the prompt and enter a passphrase, which should be a longer complex password to ensure best protection of your key.
-4. Now, you should see that your public key has been saved. To copy your key to rhino (via snail), type the command: `ssh-copy-id -o ProxyJump=HUTCHID@snail.fhcrc.org HUTCHID@rhino.fhcrc.org`. It should prompt you for your password.
+4. Now, you should see that your public key has been saved. To copy your key to snail, type the command: `ssh-copy-id HUTCHID@snail.fhcrc.org`. To copy your key to rhino (via snail), type the command: `ssh-copy-id -o ProxyJump=HUTCHID@snail.fhcrc.org HUTCHID@rhino.fhcrc.org`. It should prompt you for your password.
 5. Lastly, modify your `~/.ssh/config`. To do this:
   * Check that you have the Remote - SSH extension installed. If not, follow instructions [here](#text-editor) to install this extension.
   * In VSCode, click View > Command Palette > Remote-SSH: Open SSH Configuration File...

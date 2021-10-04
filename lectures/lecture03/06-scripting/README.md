@@ -36,6 +36,10 @@ Delete the lines that you don't want, like `man` calls, etc (an easy way to do t
 Leave at least one call to `echo` for fun.
 Repeat until you are done and then close and save the file `ZZ`.
 
+Try adding a comment!
+Comments in shell start at the beginning of the line with `#` and can have any text after that.
+They are a good idea for documenting what is happening in your script.
+
 Now you can execute your shell script with
 
     bash script1.sh

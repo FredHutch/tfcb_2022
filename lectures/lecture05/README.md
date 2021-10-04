@@ -11,7 +11,7 @@ After this course, you should:
 
 ## Class materials
 
-We'll have a tour of the FH computational environment during class.
+I'll give a tour of the FH computational environment during class.
 
 Here is an outline of the tour:
 
@@ -19,8 +19,10 @@ Here is an outline of the tour:
     * Scicomp has put together a very nice system
     * Be kind to sysadmins!
 * Not going to cover
-    * [motuz](https://sciwiki.fredhutch.org/compdemos/motuz/)
+    * [motuz](https://sciwiki.fredhutch.org/compdemos/motuz/) file transfer
     * [getting a graphical user interface session on the remote machines](https://sciwiki.fredhutch.org/scicomputing/access_nx/)
+    * Economy file storage
+    * Cloud computing
 * Lots of resources for you
     * https://sciwiki.fredhutch.org/ (please contribute)
     * http://www.fredhutch.io/
@@ -37,23 +39,17 @@ Here is an outline of the tour:
     * `ml fhDev`
     * https://sciwiki.fredhutch.org/scicomputing/compute_scientificSoftware/
 * Storage
-    * /fh/fast
-    * Economy storage
-        * `sw2account v2 matsen_e`
-        * `swc ls /`
-        * `swc ls /individual-archive`
-        * `swc upload to-delete /individual-archive`
-        * `swc rm /individual-archive/to-delete`
+    * `/fh/fast`
     * Scratch storage
         * `cp to-delete /fh/scratch/delete30/matsen_e/shared/`
     * `/loc/no-backup` is going to become `/loc/scratch/delete30` etc
 * gizmo cluster
-    * We use [SLURM](https://slurm.schedmd.com/documentation.html)
+    * We use the [SLURM](https://slurm.schedmd.com/documentation.html) job scheduler
     * `sbatch`
     * `scancel`
     * `squeue -u $USER`
     * `tail -f slurm-output-file.out`
-    * `sacct` and variants, e.g. `sacct -u matsen -o JobID,JobName%30,Elapsed,State,MaxRSS,AllocCPUs,MaxVMsize1`
+    * `sacct` and variants, e.g. `sacct -u $USER -o JobID,JobName%30,Elapsed,State,MaxRSS,AllocCPUs,MaxVMsize1`
     * `hitparade`
 
 

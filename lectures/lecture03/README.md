@@ -1,4 +1,4 @@
-# Lecture 3: First steps in the shell
+# Lecture 03: First steps in the shell
 
 **Erick Matsen ([@ematsen](https://twitter.com/ematsen), [matsen.group](http://matsen.group))**
 
@@ -28,7 +28,7 @@ After this course, you should be able to:
 
 ## Reminders
 
-- Homework 1 (command line) is available [here](https://fredhutch.github.io/tfcb_2021/homeworks/homework01); it may be useful to reference these questions as you work through material in today's class.
+- Homework 2 (command line) is available [here](https://fredhutch.github.io/tfcb_2021/homeworks/homework02); it may be useful to reference these questions as you work through material in today's class.
 
 ## Tutorial
 

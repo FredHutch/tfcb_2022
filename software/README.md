@@ -81,10 +81,21 @@ We will use the following features in VSCode as part of this class:
 
 It can get annoying having to type your password everytime you ssh into rhino. With an SSH key, you won't have to enter your password anymore. To set this up:
 1. Open a Terminal window on your local computer and type `ssh-keygen`.
-2. When prompted with "Enter file in which to save the key (/Users/USERNAME/.ssh/id_rsa):", simply type `Enter` to save the key in the default location.
+2. When prompted with "Enter file in which to save the key (/Users/USERNAME/.ssh/id_rsa):", simply press `Enter` to save the key in the default location.
 3. Follow the prompt and enter a passphrase, which should be a longer complex password to ensure best protection of your key.
 4. Now, you should see that your public key has been saved. To copy your key to rhino, type the command: `ssh copy-id HUTCHID@rhino`. It should prompt you for your password.
-5. Lastly, modify your `~/.ssh/config` file using a text editor. The simplest way to do this is to type `vim ~/.ssh/config`. Type `i`, which will allow you to insert text. Then, copy/paste the text below (and change the "HUTCHID" part to your Hutch username). To save the file, press `esc` to exit insert mode, then type `:x!`, and finally enter to exit the text editor back into Terminal.
+5. Lastly, modify your `~/.ssh/config`. To do this:
+  * Check that you have the Remote - SSH extension installed. If not, follow instructions [here](#text-editor) to install this extension.
+  * In VSCode, click View > Command Palette > Remote-SSH: Open SSH Configuration File...
+  * You should see a config file that looks like this:
+```
+# Read more about SSH config files: https://linux.die.net/man/5/ssh_config
+Host alias
+    HostName hostname
+    User user
+```
+  * Delete the text and copy/paste the text below into its place. Modify the "HUTCHID" part to your Hutch username, and save.
+
 ```
 Host rhino
     UseKeychain  yes

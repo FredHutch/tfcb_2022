@@ -49,7 +49,7 @@ Here is an outline of the tour:
     * `scancel`
     * `squeue -u $USER`
     * `tail -f slurm-output-file.out`
-    * `sacct` and variants, e.g. `sacct -u $USER -o JobID,JobName%30,Elapsed,State,MaxRSS,AllocCPUs,MaxVMsize1`
+    * `sacct` and variants, e.g. `sacct -u $USER -o JobID,JobName%30,Elapsed,State,MaxRSS,AllocCPUs,MaxVMsize`
     * `hitparade`
 
 

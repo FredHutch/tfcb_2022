@@ -9,4 +9,4 @@ set -eu
 set -o pipefail
 
 hostname
-echo "here is a message" > job_output.txt
+echo "here is a message from" $(hostname) > job_output.txt

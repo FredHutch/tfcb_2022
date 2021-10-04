@@ -1,3 +1,14 @@
+# Pre-flight check
+
+Before you get started, type
+
+    pwd
+
+and make sure that the output ends with `tfcb_2021/lectures/lecture03`.
+If not, go back to [the tutorial instructions](https://github.com/FredHutch/tfcb_2021/tree/main/lectures/lecture03#tutorial).
+Don't hesitate to ask questions if you get stuck!
+
+
 # First steps
 
 To get started, simply type
@@ -36,7 +47,7 @@ Try this command with an argument:
     ls /
 
 Here we are passing `/` to the `ls` command as an argument to tell it which directory should be listed.
-Specifically, we are telling it to list the very "bottom" directory of the file system, called root.
+Specifically, we are telling it to list the very "bottom" directory of the file system, which in unix is named `/`.
 We will discuss directory structure later.
 
 Now try
@@ -81,8 +92,8 @@ Generally two-dash flags are for long names and single-dash flags are for short 
 For example, try using `--width` in place of `-w` in the command above.
 Does `-width` work?
 
-Try the `-a` flag.
-Now try the `-a` and `-1` flags together as `ls -a -1`.
+Try `ls /` with and without using the `-a` flag.
+Then try the `-a` and `-1` flags together as `ls -a -1`.
 
 
 ## Looking at files
@@ -128,14 +139,14 @@ Try
 
 to learn about the command `man`.
 
-0. Look at the overall structure of the document. What does the top describe? What about the rest?
-1. now look through the contents of the `man` manual to find a flag that will show you the location of the file containing the documentation
-2. save this information somewhere (on a piece of paper?)
+Look at the overall structure of the document. What does the top describe? What about the rest?
 
 
 ## On your own
 
 Use any method you like to find documentation about the `wc` command, then use it to count the number of lines in `sequence.gb`.
+
+Similarly, look at the documentation for the `ls` command to learn about the `-a` flag.
 
 
 ---
@@ -143,4 +154,4 @@ Use any method you like to find documentation about the `wc` command, then use i
 Congratulations!
 You now know how to navigate around the file system.
 
-For the next step, look at the README file in the `directories` directory to work through the next part of the adventure.
+For the next step, look at the README file in the `02-directories` directory to work through the next part of the adventure.

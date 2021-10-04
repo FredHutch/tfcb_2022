@@ -146,11 +146,22 @@ but first, let's mash the keyboard
 
 <br>
 
-Just you are _only_ running other commands, like making a simple computational pipeline
+Just you are _only_ running other commands, like making a simple computational pipeline.
 
 <div class=fragment>
 For other tasks, use Python or R.
 </div>
+
+<div class=fragment>
+For a serious computational pipeline, consider a tool such as [Snakemake](https://snakemake.readthedocs.io/en/stable/) or [Nextflow](https://www.nextflow.io/).
+</div>
+
+
+#
+
+These slides were generated from source<br>
+using a [shell script](https://github.com/FredHutch/tfcb_2021/blob/main/lectures/lecture03/slides/build.sh).
+
 
 #
 

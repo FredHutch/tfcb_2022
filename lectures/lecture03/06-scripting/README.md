@@ -20,6 +20,7 @@ Look at the manual for `tail` so that you can get the last 25 lines of your hist
 There's one annoying thing about `history`, which is that it includes the number of the command.
 We can avoid that by using [fc](http://pubs.opengroup.org/onlinepubs/9699919799/utilities/fc.html#top) as `fc -ln` in place of `history`.
 If you get an error with `fc`, use `builtin fc -ln`.
+(Note that if you try to read about `fc` with `man fc` it won't work, because `fc` is part of the shell language.)
 
 Let's noodle around in the shell a bit to generate more history.
 
@@ -28,12 +29,16 @@ Let's noodle around in the shell a bit to generate more history.
 * echo "shell scripting is hip"
 * do your own `echo` command with a phrase of your choice.
 
-Now use `fc -ln -20` through tail to get the last 20 commands you have written, and redirect that to a file called `script1.sh`.
+Now use `fc -ln -20` to get the last 20 commands you have written, and redirect that to a file called `script1.sh`.
 
-Now edit that file with `vi script1.sh`
+Now edit that file with `vi script1.sh` (or however you like to edit files).
 Delete the lines that you don't want, like `man` calls, etc (an easy way to do that is to go to a line you don't want with the arrow keys, and hit `dd`).
 Leave at least one call to `echo` for fun.
 Repeat until you are done and then close and save the file `ZZ`.
+
+Try adding a comment!
+Comments in shell start at the beginning of the line with `#` and can have any text after that.
+They are a good idea for documenting what is happening in your script.
 
 Now you can execute your shell script with
 
@@ -61,12 +66,11 @@ You can make your shell script like executing a normal command by
 
 Now you should be able to run your script with `./script1.sh`.
 
-Next we'll be playing around scripting with samtools using [this bam file](https://console.cloud.google.com/storage/browser/_details/gatk-test-data/wgs_bam/NA12878_20k_b37/NA12878.bam) that's available to you in the GitHub repository.
+Next we'll be playing around scripting with samtools using the `wgs_bam_NA12878_20k_b37_NA12878.bam` file in this directory.
 
 [samtools](https://www.htslib.org/doc/samtools.html) is a collection of tools for manipulating data in
 Sequence Alignment/Map (SAM) format.
-This software is installed on rhino,
-but needs to be made available for use using `module load`, or `ml` for short:
+This software is installed on rhino, but needs to be made available for use using `module load`, or `ml` for short:
 
     ml SAMtools
 
@@ -120,17 +124,14 @@ Now we will learn something very important...
 * Re-run the script.
 
 
-## Don't write shell
+## Don't write complex shell
 
 "Classic" shell is a complex programming language.
 The most frequently used shell, called "bash", [is way more complex](https://www.tldp.org/LDP/abs/html/).
-However, I do not suggest that you write complex shell scripts.
+As I've said before, I do not suggest that you write complex shell scripts.
 
-Rather, I suggest that once you start to need more than just executing a series of commands, you reach for a general-purpose programming language such as Python.
-Speaking from personal experience and experience of those in my group, scripts often get increasingly complex to the point where one is doing more complex manipulations that are more suited to a more complete programming language.
-
-However, sometimes we need to execute a command over a series of files, which would typically happen in a loop.
-Of course, shell does have loops, but next I'll present an alternative, which is simple and has some good bonuses.
+Nevertheless, shell is the easiest way to automate lots of processes happening on large servers, which is the whole reason we're doing all of this.
+So let's do this!
 
 
 ## GNU Parallel

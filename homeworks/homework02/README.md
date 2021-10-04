@@ -1,4 +1,4 @@
-# Homework 1: Unix shell
+# Homework 2: Unix shell
 
 This homework will assess your ability to run commands in the shell and make a simple script.
 

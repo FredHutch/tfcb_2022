@@ -1,4 +1,4 @@
-# Homework 2
+# Homework 1
 
 This homework will assess your ability to use GitHub, organize projects, and apply tidy data principles, and represents content covered in lectures 4 and 5.
 

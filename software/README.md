@@ -7,6 +7,7 @@ We ask you come prepared to class with a laptop on which you can participate in 
 - [Anaconda](#python) for installing Python
 - [Conda Environment](#conda-environment) for installing R and R packages
 - [Text Editor](#text-editor) for file viewing / manipulation
+- [Passwordless Authentication](#pass-authentication-rhino) for Rhino
 
 ## Git
 
@@ -76,6 +77,22 @@ We will use the following features in VSCode as part of this class:
 8. Run the code block.
 9. You should see a scatter plot of hwy vs. displ.
 
+## Passwordless authentication for Rhino
+
+It can get annoying having to type your password everytime you ssh into rhino. With an SSH key, you won't have to enter your password anymore. To set this up:
+1. Open a Terminal window on your local computer and type `ssh-keygen`.
+2. When prompted with "Enter file in which to save the key (/Users/USERNAME/.ssh/id_rsa):", simply type `Enter` to save the key in the default location.
+3. Follow the prompt and enter a passphrase, which should be a longer complex password to ensure best protection of your key.
+4. Now, you should see that your public key has been saved. To copy your key to rhino, type the command: `ssh copy-id HUTCHID@rhino`. It should prompt you for your password.
+5. Lastly, modify your `~/.ssh/config` file using a text editor. The simplest way to do this is to type `vim ~/.ssh/config`. Type `i`, which will allow you to insert text. Then, copy/paste the text below (and change the "HUTCHID" part to your Hutch username). To save the file, press `esc` to exit insert mode, then type `:x!`, and finally enter to exit the text editor back into Terminal.
+```
+Host rhino
+    UseKeychain  yes
+    AddKeysToAgent yes
+    IdentityFile ~/.ssh/id_rsa
+    User HUTCHID
+```
+6. Congratulations! Now, you should be able to ssh into rhino without typing your password each time using `ssh rhino`.
 <!---
 # Software installation
 

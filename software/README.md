@@ -98,16 +98,16 @@ Host alias
 
 ```
 Host snail
-	Hostname snail.fhcrc.org
-	User HUTCHID
+    Hostname snail.fhcrc.org
+    User HUTCHID
 
 Host rhino
-  UseKeychain  yes
-  AddKeysToAgent yes
-  IdentityFile ~/.ssh/id_rsa
-	User HUTCHID
-	HostName rhino.fhcrc.org
-	ProxyCommand ssh HUTCHID@snail.fhcrc.org exec nc %h %p 2> /dev/null
+    UseKeychain  yes
+    AddKeysToAgent yes
+    IdentityFile ~/.ssh/id_rsa
+    User HUTCHID
+    HostName rhino.fhcrc.org
+    ProxyCommand ssh HUTCHID@snail.fhcrc.org exec nc %h %p 2> /dev/null
 
 ```
 6. Congratulations! Now, you should be able to ssh into rhino without typing your password each time using `ssh rhino`.

@@ -30,6 +30,8 @@ Here is an outline of the tour:
 * Interactive compute
     * the rhinos (for non-intensive use)
     * `grabnode`
+    * `top`, `htop`
+    * You need to use some strategy to avoid your jobs being killed when you close your laptop. [Options here](https://sciwiki.fredhutch.org/scicomputing/access_methods/#ssh-connections). [My notes on tmux](http://erick.matsen.org/2020/01/04/2nd-gen-interactive-shell.html).
 * Your home directory
     * Shared across every compute resource!
     * 100GB
@@ -37,7 +39,7 @@ Here is an outline of the tour:
 * Modules
     * `ml SAMtools`
     * `ml fhDev`
-    * https://sciwiki.fredhutch.org/scicomputing/compute_scientificSoftware/
+    * [Available modules](https://sciwiki.fredhutch.org/scicomputing/compute_scientificSoftware/)
 * Storage
     * `/fh/fast`
     * Scratch storage

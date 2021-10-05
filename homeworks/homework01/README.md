@@ -39,7 +39,7 @@ The resulting repository can now be accessed at `github.com/{your_name}/tfcb-hom
 If necessary, you can make this repository public by going to "Settings" from this page.
 
 Push the local `tfcb-homework01` to GitHub.
-Do this by picking `Push` from the Source Control Tab in VSCode.
+Do this by picking `Push` from the `...` icon in the Source Control Tab of VSCode.
 The first time you try doing this, you will get an error asking you to configure your "Remote". 
 Use the URL of the GitHub repository you created above to configure the Remote.
 Now you should be able to push any further changes to your repository.

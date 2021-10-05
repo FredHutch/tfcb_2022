@@ -51,6 +51,7 @@ For further assistance, TAs Timothy Yu and Ty Bottorff will be available to offe
 - A total of 8 homework assignments will be assigned on the following dates and will be due at 1pm on the dates indicated.
 If you need to submit a homework late, please check with the instructor at least 24 hours before the due date.
 - Grading criteria and instructions for submission are available in the [Canvas](http://canvas.uw.edu) site for this class.
+- Submit homework solutions as Markdown text files, scripts, or PDF as appropriate for each homework through Canvas.
 - You are encouraged to search online for solutions and discuss the homework with your classmates.
 However, the answers you submit should be written in your own words.
 You should also cite any online source or person that helped you arrive at your solution as inline comments in your code.

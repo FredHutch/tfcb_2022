@@ -18,9 +18,9 @@ This question assesses your ability to track a project using Git.
 
 Download the course files with the following link: [github.com/FredHutch/tfcb_2021/archive/refs/heads/main.zip](https://github.com/FredHutch/tfcb_2021/archive/refs/heads/main.zip). Copy the contents of `homeworks/homework01/messy-project-directory/` to a new directory on your computer named `tfcb-homework01`.
 
-Open VSCode and make a "New repository" with name `tfcb-homework01`. Set "Local Path" to the location in your computer where your `tfcb-homework01` directory can be found.
+Open the above `tfcb-homework01` in VSCode and "Initialize Repository" in the Source Control Tab. 
 
-Create an initial commit that adds all the local files in `tfcb-homework12`:
+Create an initial commit that adds all the local files in `tfcb-homework01`:
 - `Survey Data.xlsx`
 - `get Species_list.py`
 - etc...
@@ -33,7 +33,16 @@ You do not need to submit anything for this problem; your success will be evalua
 
 This question assesses your ability to publish projects to GitHub.
 
-Publish `tfcb-homework12` to GitHub using Git. Make sure to set this to be a "public" repository. The resulting repository can now be accessed at `github.com/{your_name}/tfcb-homework01`. If necessary, you can make this repository public by going to "Settings" from this page.
+Create a new repository on GitHub called `tfcb-homework01`.
+Make sure to set this to be a "public" repository.
+The resulting repository can now be accessed at `github.com/{your_name}/tfcb-homework01`. 
+If necessary, you can make this repository public by going to "Settings" from this page.
+
+Push the local `tfcb-homework01` to GitHub.
+Do this by picking `Push` from the Source Control Tab in VSCode.
+The first time you try doing this, you will get an error asking you to configure your "Remote". 
+Use the URL of the GitHub repository you created above to configure the Remote.
+Now you should be able to push any further changes to your repository.
 
 _Include the link to your `tfcb-homework01` GitHub repository here._
 

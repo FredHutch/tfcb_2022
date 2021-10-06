@@ -21,7 +21,7 @@ Here is an outline of the tour:
 * Not going to cover
     * [motuz](https://sciwiki.fredhutch.org/compdemos/motuz/) file transfer
     * [getting a graphical user interface session on the remote machines](https://sciwiki.fredhutch.org/scicomputing/access_nx/)
-    * Economy file storage
+    * Economy cloud storage
     * Cloud computing
 * Lots of resources for you
     * https://sciwiki.fredhutch.org/ (please contribute)
@@ -32,19 +32,18 @@ Here is an outline of the tour:
     * `grabnode`
     * `top`, `htop`
     * You need to use some strategy to avoid your jobs being killed when you close your laptop. [Options here](https://sciwiki.fredhutch.org/scicomputing/access_methods/#ssh-connections). [My notes on tmux](http://erick.matsen.org/2020/01/04/2nd-gen-interactive-shell.html).
-* Your home directory
-    * Shared across every compute resource!
-    * 100GB
-    * `.snapshot`
 * Modules
     * `ml SAMtools`
     * `ml fhDev`
     * [Available modules](https://sciwiki.fredhutch.org/scicomputing/compute_scientificSoftware/)
+* Your home directory
+    * Shared across every compute resource!
+    * 100GB
+    * `.snapshot`
 * Storage
     * `/fh/fast`
-    * Scratch storage
-        * `cp to-delete /fh/scratch/delete30/matsen_e/shared/`
-    * `/loc/no-backup` is going to become `/loc/scratch/delete30` etc
+    * Scratch storage: `cp to-delete /fh/scratch/delete30/matsen_e/` (replace `matsen_e` with your PI's name once you have one)
+    * Economy cloud storage
 * gizmo cluster
     * We use the [SLURM](https://slurm.schedmd.com/documentation.html) job scheduler
     * `sbatch`

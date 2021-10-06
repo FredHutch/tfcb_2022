@@ -32,13 +32,13 @@ Location: Zoom (see Slack)
 | 10      | Nov 2  | Phil Bradley     | [Modeling and machine learning in Python](lectures/lecture10)                   |
 | 11      | Nov 4  | Phil Bradley     | [Modeling/machine learning in Python (continued)](lectures/lecture11)           |
 | 12      | Nov 9  | Rasi Subramaniam | [Visualize data using R/ggplot2](lectures/lecture12/)                           |
-| 13      | Nov 16 | Rasi Subramaniam | [Working with data using R/tidyverse](lectures/lecture13/)                      |
-| 14      | Nov 18 | Rasi Subramaniam | [Principles of data visualization](lectures/lecture14/)                         |
-| 15      | Nov 23 | Gavin Ha         | [Introduction to sequencing data](lectures/lecture15/)                          |
-| 16      | Nov 30 | Gavin Ha         | [Genomic data in R](lectures/lecture16/)                                        |
-| 17      | Dec 2  | Manu Setty       | Introduction to RNA-seq                                                         |
-| 18      | Dec 7  | Manu Setty       | Single-cell RNA-seq analysis                                                    |
-| 19      | Dec 9  | Manu Setty       | Single-cell RNA-seq analysis (continued)                                        |
+| 13      | Nov 11 | Rasi Subramaniam | [Working with data using R/tidyverse](lectures/lecture13/)                      |
+| 14      | Nov 16 | Rasi Subramaniam | [Principles of data visualization](lectures/lecture14/)                         |
+| 15      | Nov 18 | Gavin Ha         | [Introduction to sequencing data](lectures/lecture15/)                          |
+| 16      | Nov 23 | Gavin Ha         | [Genomic data in R](lectures/lecture16/)                                        |
+| 17      | Nov 30 | Manu Setty       | Introduction to RNA-seq                                                         |
+| 18      | Dec 2  | Manu Setty       | Single-cell RNA-seq analysis                                                    |
+| 19      | Dec 7  | Manu Setty       | Single-cell RNA-seq analysis (continued)                                        |
 
 Materials for each lecture will be available in this repository prior to the class session;
 the link for each topic will take you to the folder containing materials for that class.
@@ -64,10 +64,10 @@ You should also cite any online source or person that helped you arrive at your 
 | 2        | Oct 14        | Oct 21   | [Unix command line](homeworks/homework02)                              |
 | 3        | Oct 21        | Oct 28   | [Programming in Python](homeworks/homework03)                          |
 | 4        | Oct 28        | Nov 4    | [Python analysis, lecture 9](homeworks/homework04)                     |
-| 5        | Nov 4         | Nov 16   | [Modeling and machine learning in Python](homeworks/homework05)        |
-| 6        | Nov 16        | Nov 23   | [Data visualization and manipulation in R](homeworks/homework06)       |
-| 7        | Nov 23        | Dec 2    | [Genomic data in R](homeworks/homework07)                              |
-| 8        | Dec 7         | Dec 14   | [Homework 8]                                                           |
+| 5        | Nov 4         | Nov 11   | [Modeling and machine learning in Python](homeworks/homework05)        |
+| 6        | Nov 11        | Nov 18   | [Data visualization and manipulation in R](homeworks/homework06)       |
+| 7        | Nov 18        | Nov 30   | [Genomic data in R](homeworks/homework07)                              |
+| 8        | Nov 30        | Dec 14   | [Homework 8]                                                           |
 
 ## Course description
 

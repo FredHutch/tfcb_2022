@@ -1,6 +1,6 @@
 MCB536 Homework 7
 ================
-This assignment is due on **Dec 2, 2021**. 
+This assignment is due on **Nov 30, 2021**. 
 
 ***Total: 50 points***
 

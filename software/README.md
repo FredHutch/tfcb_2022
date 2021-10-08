@@ -28,6 +28,7 @@ Macintosh operating systems are built on Unix, so many of the tools you'll need 
 Please install Python using Anaconda, which includes Jupyter notebooks and most of the other packages we'll use for the course, according to the following instructions:
 - Download the [Anaconda](https://www.anaconda.com/download/) installer for Python 3.x for your particular operating system.
 - Double-click the downloaded file and follow the prompts to install Anaconda (default options are acceptable).
+- If you are using WSL, you may need to follow [these steps instead](https://gist.github.com/kauffmanes/5e74916617f9993bc3479f401dfec7da#steps-to-install-anaconda-on-windows-ubuntu-terminal) (especially if you are running into issues with conda within vscode terminal)
 
 ## Conda Environment
 

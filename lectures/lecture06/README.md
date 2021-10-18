@@ -17,4 +17,4 @@ After this section, you should be able to:
 
 ## Reminders
 - Homework deadlines:
-  - [Homework 3 (intro to python)](../../homeworks/homework03) will be due October 28th.
+  - [Homework 3 (intro to python)](../../homeworks/homework03) will be finalized by end-of-day October 21 and due October 28th.

@@ -1,14 +1,24 @@
-# Lecture 18: Remote computing
+# Lecture 18: Introduction to single-cell RNA-seq
 
-This last session will begin to tie together principles for you, as we explore how to work with genomic data using remote computing. We'll be learning more about data management, as well as working with command-line bioinformatics software. This material represents how you would work with newly derived sequencing data, prior to the analyses we've previously explored in Bioconductor or Biopython.
+In this lecture, we will discussin single-cell RNA-seq data analysis. We will start with a brief discussion of why we need scRNA-seq and experimental innovation. We will then spend some time interacting with a previously processed data using [cellxgene](https://github.com/chanzuckerberg/cellxgene). We will dig into the nuts and bolts of single-cell RNA-seq data preprocessing, analysis and batch correction. Method development for analysis of scRNA-seq data is a highly active area of research. This lecture will provide an introduction to the most commonly used approaches and provide pointers to alternative approaches and resources.
 
-## Learning objectives
+The dataset which we will interact with is made available by 10X Genomics. This profile peripheral blood mononuclear cells derived from a healthy donor. Details of the dataset are available [here](https://support.10xgenomics.com/single-cell-gene-expression/datasets/3.0.0/pbmc_10k_protein_v3). Analyzed data is available to download from [here](https://drive.google.com/file/d/1haywzdKgexv0Mm5KMDfJMVjI0PLaSy5b/view?usp=sharing).
 
-After this session, you should be able to:
-- run command-line genomics software
-- understand the development of simple pipelines involving command-line genomics software
+## Learning Objectives 
+- Insights about why and how of single-cell RNA-seq.
+- Interact with single-cell data using cellxgenes.
+- Understand the reasoning behind various QC, preprocessing and analysis approaches for scRNA-seq. 
 
 ## Class materials
+- The lecture slides are available [here](Lecture18_singlecell_RNAseq_slides.pdf)
+- The anndata file which contains analyzed PBMC data is [here](https://support.10xgenomics.com/single-cell-gene-expression/datasets/3.0.0/pbmc_10k_protein_v3). Analyzed data is available to download from [here](https://drive.google.com/file/d/1haywzdKgexv0Mm5KMDfJMVjI0PLaSy5b/view?usp=sharing). Please download this to the `data/` folder.
 
-- The course materials are contained in the file [`lecture18.md`](lecture18.md).
-- You should log into Rhino using the [class instructions](https://fredhutch.github.io/tfcb_2021/software/unix_rhino) we used earilier in the quarter.
+
+## Class preparation
+The code for Lectures 18 and 19 has been tested using Python 3.8. Use of [`conda`](https://docs.conda.io/en/latest/miniconda.html) to install and maintain python versions and packages is highly recommended. Please install the following packages and reach out if you have issues installing:
+- [scanpy](https://scanpy.readthedocs.io/en/stable/) 
+- [cellxgene](https://github.com/chanzuckerberg/cellxgene-documentation/blob/main/README.md)
+- [harmonypy](https://github.com/slowkow/harmonypy)
+- The latest version of `umap`(0.5.2) generates rather funny results with default parameters. Overwrite your installation results to the previous version using 
+`pip install umap-learn==0.5.1` in your conda environment.
+

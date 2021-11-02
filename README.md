@@ -36,9 +36,9 @@ Location: Zoom (see Slack)
 | 14      | Nov 18 | Rasi Subramaniam | [Principles of data visualization](lectures/lecture14/)                         |
 | 15      | Nov 23 | Gavin Ha         | [Introduction to sequencing data](lectures/lecture15/)                          |
 | 16      | Nov 30 | Gavin Ha         | [Genomic data in R](lectures/lecture16/)                                        |
-| 17      | Dec 2  | Manu Setty       | Introduction to RNA-seq                                                         |
-| 18      | Dec 7  | Manu Setty       | Single-cell RNA-seq analysis                                                    |
-| 19      | Dec 9  | Manu Setty       | Single-cell RNA-seq analysis (continued)                                        |
+| 17      | Dec 2  | Manu Setty       | [Introduction to RNA-seq](lectures/lecture17/)                                  |
+| 18      | Dec 7  | Manu Setty       | [Single-cell RNA-seq analysis](lectures/lecture18/)                             |                                                    
+| 19      | Dec 9  | Manu Setty       | [Single-cell RNA-seq analysis (continued)](lectures/lecture19/)                 |
 
 Materials for each lecture will be available in this repository prior to the class session;
 the link for each topic will take you to the folder containing materials for that class.

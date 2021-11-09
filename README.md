@@ -31,7 +31,7 @@ Location: Zoom (see Slack)
 | 9       | Oct 28 | Jesse Bloom      | [Data structures/biological analyses in Python (continued)](lectures/lecture09) |
 | 10      | Nov 2  | Phil Bradley     | [Modeling and machine learning in Python](lectures/lecture10)                   |
 | 11      | Nov 4  | Phil Bradley     | [Modeling/machine learning in Python (continued)](lectures/lecture11)           |
-| 12      | Nov 9  | Rasi Subramaniam | [WOrking with data using R/tidyverse](lectures/lecture12/)                      |
+| 12      | Nov 9  | Rasi Subramaniam | [Working with data using R/tidyverse](lectures/lecture12/)                      |
 | 13      | Nov 16 | Rasi Subramaniam | [Working with data using R/tidyverse (continued)](lectures/lecture13/)          |
 | 14      | Nov 18 | Rasi Subramaniam | [Principles of data visualization](lectures/lecture14/)                         |
 | 15      | Nov 23 | Gavin Ha         | [Introduction to sequencing data](lectures/lecture15/)                          |

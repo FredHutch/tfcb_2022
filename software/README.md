@@ -35,7 +35,7 @@ Please install Python using Anaconda, which includes Jupyter notebooks and most 
 A conda environment is a directory that stores a specific collection of packages that you have installed. For this course, we ask that you create a custom conda environment with certain R packages so that everyone will be on the same page. To do this:
 - Check that Anaconda has been installed.
 - In WSL or Terminal, create a new conda environment with the packages we'll need for this course using the following command. Type 'y' when asked to Proceed. (NOTE: if prompted with a "To use the java command-line tool...", just press OK).
-  * `conda create -n tfcb2021 r r-tidyverse r-irkernel bioconductor-plyranges bioconductor-genomicfeatures -c conda-forge -c bioconda`
+  * `conda create -n tfcb2021 r r-tidyverse r-irkernel bioconductor-plyranges bioconductor-genomicfeatures bioconductor-rtracklayer bioconductor-bsgenome.hsapiens.ucsc.hg38 bioconductor-ggbio -c conda-forge -c bioconda`
 - Activate the environment with:
   * `conda activate tfcb2021`
 

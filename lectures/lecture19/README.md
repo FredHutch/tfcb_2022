@@ -27,3 +27,39 @@ The code for Lectures 18 and 19 has been tested using Python 3.8. Use of [`conda
 - The latest version of `umap`(0.5.2) generates rather funny results with default parameters. Overwrite your installation results to the previous version using 
 `pip install umap-learn==0.5.1` in your conda environment.
 
+### Environment setup
+Using `conda`, the following commands can be used to create a new environment with all the required dependencies
+```
+# Create new conda environment
+conda create --name tfcb_2021_rna python==3.8
+
+# Activate conda environment
+conda activate tfcb_2021_rna
+
+
+# Scanpy installation 
+conda install seaborn scikit-learn statsmodels numba pytables
+conda install -c conda-forge python-igraph leidenalg
+pip install scanpy
+
+
+# cellxgene installation 
+pip install cellxgene
+
+# harmonypy installation
+pip install harmonypy
+
+# umap version
+pip install umap-learn==0.5.1
+
+# jupyter/ipython installation 
+conda install -c conda-forge jupyterlab
+
+```
+
+### Data for the class
+Create a folder called `data/` and download the following files for the class exercise:
+- [Dataset 1](https://drive.google.com/file/d/1haywzdKgexv0Mm5KMDfJMVjI0PLaSy5b/view?usp=sharings)
+- [Dataset 2](https://cf.10xgenomics.com/samples/cell-exp/3.0.0/pbmc_10k_protein_v3/pbmc_10k_protein_v3_filtered_feature_bc_matrix.h5)
+- [Dataset 3](https://cf.10xgenomics.com/samples/cell-exp/6.1.0/10k_PBMC_3p_nextgem_Chromium_X/10k_PBMC_3p_nextgem_Chromium_X_filtered_feature_bc_matrix.h5)
+

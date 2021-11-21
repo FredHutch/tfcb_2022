@@ -28,7 +28,7 @@ The code for Lectures 18 and 19 has been tested using Python 3.8. Use of [`conda
 `pip install umap-learn==0.5.1` in your conda environment.
 
 ### Environment setup
-Using `conda`, the following commands can be used to create a new environment with all the required dependencies
+Using `conda`, the following commands can be used to create a new environment with all the required dependencies. Some of the single-cell packages do not work with the latest version of python and hence we recommend creating new conda environment
 ```
 # Create new conda environment
 conda create --name tfcb_2021_rna python==3.8

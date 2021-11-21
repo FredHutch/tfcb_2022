@@ -9,6 +9,9 @@ Download the following data into the `data` directory
 The first part of the homework will use the data from one patient available at `data/RU675_filtered`. 
 The batch correction section of the algorithm will make use of the data in the preprocessed anndata object `data/RU675_RU682.h5ad`. 
 
-The homework is a series of empty code-cells which you will need to update to generate the necessary outputs. The expected outputs are shown in many instances. Note that the umaps and clusters you will  identify might be slightly different to the expected outputs due to random seeds used by `scanpy`.
+The homework is a Jupyter notebook series of empty code-cells which you will need to update to generate the necessary outputs. The expected outputs are shown in many instances. Note that the umaps and clusters you will  identify might be slightly different to the expected outputs due to random seeds used by `scanpy`.
 
-The conda environment that you built for the Lecture 19 should work for the Homework too.
+The conda environment that you built for the Lecture 19 should work for the Homework too. 
+
+Make sure your entire notebook is executable, and has been executed in order (in the "Cell" menu, select "Run All")
+

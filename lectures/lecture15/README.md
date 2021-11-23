@@ -20,18 +20,11 @@ Outline of [content from the slides](MCB536_lecture15_IntroSeqData.pdf):
 
 2. Tools for sequencing data
 - Tools to query, inspect, visualize an aligned sequence file (demo + exercise)
-- Learn the contents of sequence data files
+- Learn the contents of sequence data files (demo + exercise)
 - Learn to generate sequencing metrics and to process sequence data (demo + exercise)
 
-3. Genome variant analysis
-- Types of genomic variation
-- Tools to predict genomic variations
-- Learn the common file formats for variation data
-- Databases and online resources for human variation data
+## Before the class
 
-For in-class exercises, data and examples shown in this lecture are available on Fred Hutch filesystem at `/fh/fast/subramaniam_a/tfcb` and on [DropBox](https://www.dropbox.com/sh/zoitjnobgp7l7c2/AABBIpTQcNA4lWYOFnV5dlMKa?dl=0).
+1. Please be able to locate files for in-class exercises. Data and examples shown in `lecture 15` and [lecture 16](../lecture16/) are available on Fred Hutch filesystem at `/fh/fast/subramaniam_a/tfcb` and on [DropBox](https://www.dropbox.com/sh/zoitjnobgp7l7c2/AABBIpTQcNA4lWYOFnV5dlMKa?dl=0). For `lecture15`, you will only need to access the files from `/fh/fast/subramaniam_a/tfcb`. For `lecture 16`, you will need to download these files onto your laptop.
 
-Visualization examples use the [Integrative Genomics Viewer (IGV)](https://software.broadinstitute.org/software/igv/)
-
-## Reminders
-- The next class session (lecture 16) will include analysis of genomic data in R. To prepare for this session, please download all data files in [this Dropbox folder](https://www.dropbox.com/sh/zoitjnobgp7l7c2/AABBIpTQcNA4lWYOFnV5dlMKa?dl=0) and follow the instructions in [this script](../../software/genomic_data.R) to install required packages. You may also find it useful to install the [Integrative Genomics Viewer (IGV)](https://software.broadinstitute.org/software/igv/) for visualization of genomic data.
+2. Please install [Integrative Genomics Viewer (IGV)](https://software.broadinstitute.org/software/igv/).

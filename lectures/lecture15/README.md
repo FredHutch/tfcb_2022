@@ -25,6 +25,6 @@ Outline of [content from the slides](MCB536_lecture15_IntroSeqData.pdf):
 
 ## Before the class
 
-1. Please be able to locate files for in-class exercises. Data and examples shown in `lecture 15` and [lecture 16](../lecture16/) are available on Fred Hutch filesystem at `/fh/fast/subramaniam_a/tfcb` and on [DropBox](https://www.dropbox.com/sh/zoitjnobgp7l7c2/AABBIpTQcNA4lWYOFnV5dlMKa?dl=0). For `lecture15`, you will only need to access the files from `/fh/fast/subramaniam_a/tfcb`. For `lecture 16`, you will need to download these files onto your laptop.
+1. Please be able to locate files for in-class exercises. Data and examples shown in `lecture 15` and [lecture 16](../lecture16/) are available on Fred Hutch filesystem at `/fh/fast/subramaniam_a/tfcb` and on [DropBox](https://www.dropbox.com/sh/zoitjnobgp7l7c2/AABBIpTQcNA4lWYOFnV5dlMKa?dl=0). For both `lecture 15` and `lecture 16`, you will need to download these files onto your laptop.
 
 2. Please install [Integrative Genomics Viewer (IGV)](https://software.broadinstitute.org/software/igv/).

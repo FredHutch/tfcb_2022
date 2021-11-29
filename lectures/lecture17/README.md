@@ -12,7 +12,7 @@ This lecture will begin with a introduction to RNA-seq and the steps in RNA-seq 
 ## Class materials
 - The lecture slides are available [here](Lecture17_bulk_RNAseq_slides.pdf)
 
-- The Notebook which will be using for this lecture is available at (Lecture17.ipynb)[Lecture17.ipynb]. If you have difficulty performing a `git pull` to obtain the materials for this class, it is likely because you have a conflict between `Lecture17.ipynb)` and the version in the public GitHub repo. You can resolve this by making a copy of that markdown (naming it something different, like `my_Lecture17.ipynb)`) and then discarding changes to the original markdown file. 
+- The Notebook which will be using for this lecture is available at [Lecture17.ipynb](Lecture17.ipynb). If you have difficulty performing a `git pull` to obtain the materials for this class, it is likely because you have a conflict between `Lecture17.ipynb)` and the version in the public GitHub repo. You can resolve this by making a copy of that markdown (naming it something different, like `my_Lecture17.ipynb)`) and then discarding changes to the original markdown file. 
 
 - The bam files for generation of count matrices are available [here](https://drive.google.com/file/d/1VWvwatiE4WbMpocCm3W1rdCtakkqdAI6/view?usp=sharing) and the Glioblastoma patient data is available [here](https://drive.google.com/file/d/1NcGZcyhpJ1QxUGL4aYpe7KsPLUXfQ9Kd/view?usp=sharing). Please download (and unzip the files) to the `data` folder. 
 

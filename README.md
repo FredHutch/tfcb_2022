@@ -66,7 +66,7 @@ For further assistance, TAs Timothy Yu and Ty Bottorff will be available to offe
 | 4        | Oct 28        | Nov 4    | [Python analysis, lecture 9](homeworks/homework04)                     |
 | 5        | Nov 4         | Nov 16   | [Modeling and machine learning in Python](homeworks/homework05)        |
 | 6        | Nov 16        | Nov 23   | [Data visualization and manipulation in R](homeworks/homework06)       |
-| 7        | Nov 23        | Dec 2    | [Genomic data in R](homeworks/homework07)                              |
+| 7        | Nov 23        | Dec 7    | [Genomic data in R](homeworks/homework07)                              |
 | 8        | Dec 7         | Dec 14   | [Single-cell RNA-seq analysis](homeworks/homework08)                   |
 
 ## Course description

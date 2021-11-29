@@ -2,7 +2,7 @@
 title: "MCB536 Lecture 16 (Part 2): Sequence Data Analysis in R"
 author: "Gavin Ha"
 date: "11/30/2021"
-output: pdf_document
+output: html_document
 ---
 
 ```{r setup, include=FALSE}
@@ -15,7 +15,7 @@ The BAM file is the primary input for Rsamtools. There are two initial steps:
   a. Define the genomic coordinates and components to query (`ScanBamParam`)
   b. Scan the BAM file (`scanBam`)
 
-For this tutorial, we will be using the same data and example from Lecture 15: Slides 12-16.
+For this tutorial, we will be using the same data and example from Lecture 15: Slides 16-24.
 The BAM file can be downloaded at https://www.dropbox.com/home/File%20requests/TFCB_tutorials
 
 For more information, refer to https://bioconductor.org/packages/release/bioc/vignettes/Rsamtools/inst/doc/Rsamtools-Overview.pdf
@@ -105,6 +105,8 @@ bam[[1]]$tag   # value for the tag we specified
 
 
 # 2. Compute "Pile-Up" Statistics
+**For your reference**
+
 The pileup is a term referring to counting the alleles from all the reads at a given genomic locus. It is the data that many variant and mutation calling algorithms use to determine variant status and allelic fractions.
 
 There are 3 steps:
@@ -133,5 +135,6 @@ param <- ScanBamParam(flag = flag, which = whichRanges2,
 The `pileup` command outputs a `data.frame` object containing the counts for each allele at every base specified in `param`.
 ```{r}
 pu <- pileup(file = bamFile, scanBamParam = param, pileupParam = pu.param)
+pu
 ```
 

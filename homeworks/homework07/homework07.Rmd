@@ -2,7 +2,7 @@
 title: "MCB536: Homework 7"
 author: "Student Name"
 date: "11/30/2021"
-output: pdf_document
+output: html_document
 ---
 
 ```{r setup, include=FALSE}
@@ -14,41 +14,51 @@ Complete this homework by writing R code to complete the following tasks. Keep i
 
 i. Empty chunks have been included where code is required
 ii. For Problem 2e, you should include a image (screen shot) instead of providing code
-iii. This homework requires use of 
+iii. This homework requires use of data files:
 
   - `BRCA.genome_wide_snp_6_broad_Level_3_scna.seg` (Problems 1, 2)
   - `BRCA_IDC_cfDNA.bam` and `"BRCA_IDC_cfDNA.bai` (Problem 3)
   - `GIAB_highconf_v.3.3.2.vcf.gz` (Problem 4)
   
-iv. You will be graded on your code and output results (knitted .html or .pdf file). The assignment is worth 40 points total; partial credit can be awarded.
+iv. You will be graded on your code and output results (knitted .html file). The assignment is worth 50 points total; partial credit can be awarded.
 
-This assignment is due on **Dec 2, 2021**. 
+This assignment is due on **Dec 7, 2021**. 
+
+For additional resources, please refer to these links:
+Problems 1 & 2:  
+- https://www.bioconductor.org/packages/devel/bioc/vignettes/plyranges/inst/doc/an-introduction.html
+- https://bioconductor.org/packages/release/bioc/vignettes/GenomicRanges/inst/doc/GenomicRangesIntroduction.html
+Problem 3:  
+- https://bioconductor.org/packages/release/bioc/vignettes/Rsamtools/inst/doc/Rsamtools-Overview.pdf
+Problem 4: 
+- https://bioconductor.org/packages/release/bioc/vignettes/VariantAnnotation/inst/doc/VariantAnnotation.pdf 
 
 # Problem 1: Overlaps between genomic regions and copy number alterations. (14 points total)
 
-## Preparation
+### Preparation
 Load copy number segment results as shown in *2.1 BED format* of *Lecture16_GenomicData.Rmd*. You will use the same file as in the lecture notes, `BRCA.genome_wide_snp_6_broad_Level_3_scna.seg`. Here is code to get you started.
 ```{r, message=FALSE}
-library(GenomicRanges)
 library(tidyverse)
+library(GenomicRanges)
+library(plyranges)
 segs <- read.delim("BRCA.genome_wide_snp_6_broad_Level_3_scna.seg", as.is = TRUE)
 mode(segs$Chromosome) <- "character" 
 segs[segs$Chromosome == 23, "Chromosome"] <- "X"
 segs.gr <- as(segs, "GRanges")
 ```
 
-## a. Find the segments in `segs.gr` that have *any* overlap with the region `chr8:128,746,347-128,755,810` (4 points)
+### a. Find the segments in `segs.gr` that have *any* overlap with the region `chr8:128,746,347-128,755,810` (4 points)
 Print out the first five unique TCGA IDs.
 ```{r}
 
 ```
 
-## b. Find the mean of the `Segment_Mean` values for copy number segments that have *any* overlap with the region chr17:37,842,337-37,886,915. (4 points)
+### b. Find the mean of the `Segment_Mean` values for copy number segments that have *any* overlap with the region chr17:37,842,337-37,886,915. (4 points)
 ```{r}
 
 ```
 
-## c. Find the patient sample distribution of copy number for `PIK3CA` (hg19). (6 points)
+### c. Find the patient sample distribution of copy number for `PIK3CA` (hg19). (6 points)
 Find the counts of samples with deletion (D; `Segment_Mean < -0.3`), neutral (N; `Segment_Mean >= -0.3 & Segment_Mean <= 0.3`), gain (G; `Segment_Mean > 0.3`) segments that have `any` overlap with `PIK3CA` gene coordinates.  
 ```{r}
 
@@ -58,28 +68,28 @@ Find the counts of samples with deletion (D; `Segment_Mean < -0.3`), neutral (N;
 
 This problem will continue to use the copy number data stored in `segs.gr`.
 
-## a. Create a genome-wide tile of 1Mb windows for the human genome (`hg19`). (4 points)
+### a. Create a genome-wide tile of 1Mb windows for the human genome (`hg19`). (4 points)
 See *3.1 Tiling the genome* of *Lecture16_GenomicData.Rmd* for hints.
 ```{r}
 
 ```
 
-## b. Find the 1Mb window with the most frequent overlapping deletions. (4 points)
+### b. Find the 1Mb window with the most frequent overlapping deletions. (4 points)
 Find the 1Mb windows with `any` overlap with deletion copy number segments. Assume a deletion segment is defined as a segment in `segs.gr` having `Segment_Mean < -0.3`. 
 
 Return one of the 1Mb window `Granges` entry with the highest frequency (count) of deletion segments.
 
-Hint: Subset the `segs.gr` to only rows with `Segment_Mean < -0.3`.
+Hint: Subset the `segs.gr` to only rows with `Segment_Mean < -0.3`. 
 ```{r}
 
 ```
 
-## c. Visually inspect the deletion overlap result from part (b) using IGV. (4 points)
+### c. Visually inspect the deletion overlap result from part (b) using IGV. (4 points)
 Provide a screen shot of IGV at the 1Mb window with the most frequent overlap with deletion segments. The image should include the segments from `BRCA.genome_wide_snp_6_broad_Level_3_scna.seg` loaded. 
 
 # Problem 3: Reading and extracting sequencing data (8 points total)
 
-## Preparation
+### Preparation
 ```{r, message=FALSE}
 library(Rsamtools)
 bamFile <- "BRCA_IDC_cfDNA.bam"
@@ -91,7 +101,7 @@ Use the same settings for `scanBamWhat()`, `scanBamFlag()`, and `ScanBamParam()`
 
 ```
 
-## b. What is the fraction of G+C bases? (4 points)
+### b. What is the fraction of G+C bases? (4 points)
 Count the number of G and C bases in the read sequence from part (a).
 Hints: 
 
@@ -104,25 +114,25 @@ iii. `nchar()` returns the length of a string.
 
 # Problem 4: Reading and annotating genomic variants (16 points total)
 
-## Preparation
+### Preparation
 ```{r, message=FALSE}
 library(VariantAnnotation)
 vcfFile <- "GIAB_highconf_v.3.3.2.vcf.gz"
 ```
 
-## a. Load variant data from VCF file `GIAB_highconf_v.3.3.2.vcf.gz` for `chr8:128,700,000-129,000,000`. (4 points)
+### a. Load variant data from VCF file `GIAB_highconf_v.3.3.2.vcf.gz` for `chr8:128,700,000-129,000,000`. (4 points)
 Note: use genome build `hg19`.
 ```{r}
 
 ```
 
-## b. Combine the fields of the VCF genotype information into a table. (4 points)
+### b. Combine the fields of the VCF genotype information into a table. (4 points)
 You may use your choice of data objects (e.g. `data.frame`).
 ```{r}
 
 ```
 
-## c. Retrieve the following information at chr8:128747953. (8 points)
+### c. Retrieve the following information at chr8:128747953. (8 points)
 Print out the SNP ID (i.e. "rs ID"), reference base (`REF`), alterate base (`ALT`), genotype (`GT`), depth (`DP`), allele depth (`ADALL`), phase set (`PS`).
 
 Hints: 

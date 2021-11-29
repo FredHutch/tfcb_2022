@@ -2,7 +2,7 @@
 title: "MCB536 Lecture 16 (Part 3): Read Variant Call Format (VCF) Files in R"
 author: "Gavin Ha"
 date: "11/30/2021"
-output: pdf_document
+output: html_document
 ---
 
 ```{r setup, include=FALSE}
@@ -11,7 +11,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 We will learn to read VCF files within R using a publicly available dataset of genomic variant calls for the infamous individual, NA12878. The Genome-in-a-Bottle Consortium has compiled consensus variant calls on this individual's genome and released this data for researchers to use. One of the main purposes of this data is to provide a benchmark for those to develop computational tools and analysis of human genomes. See https://github.com/genome-in-a-bottle/giab_latest_release
 
-Variant Call Format (VCF) is a very common format for representing genomic variation data. See Lecture 16: Slides 12.
+Variant Call Format (VCF) is a very common format for representing genomic variation data. See Lecture 16: Slides 19.
 
 ## 0. Install and load the `VariantAnnotation` Bioconductor package 
 Load the `VariantAnnotation` package
@@ -70,6 +70,7 @@ You can also combine all fields into a `data.frame` object. But this code only w
 ```{r}
 genoData <- data.frame(do.call(cbind, geno(vcf)))
 colnames(genoData) <- rownames(geno(header(vcf)))
+genoData[1:10,]
 ```
 
 ## Exercise 3: Reading variants from a VCF file.

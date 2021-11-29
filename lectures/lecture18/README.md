@@ -15,10 +15,34 @@ The dataset which we will interact with is made available by 10X Genomics. This 
 
 
 ## Class preparation
-The code for Lectures 18 and 19 has been tested using Python 3.8. Use of [`conda`](https://docs.conda.io/en/latest/miniconda.html) to install and maintain python versions and packages is highly recommended. Please install the following packages and reach out if you have issues installing:
-- [scanpy](https://scanpy.readthedocs.io/en/stable/) 
-- [cellxgene](https://github.com/chanzuckerberg/cellxgene-documentation/blob/main/README.md)
-- [harmonypy](https://github.com/slowkow/harmonypy)
-- The latest version of `umap`(0.5.2) generates rather funny results with default parameters. Overwrite your installation results to the previous version using 
-`pip install umap-learn==0.5.1` in your conda environment.
 
+## Class preparation
+
+We will be using `cellxgene`, and `scanpy` for Lectures 18 and 19, and Homework 8. All the packages and dependencies can be installed using `conda`.
+
+### Environment setup
+Using `conda`, the following commands can be used to install all the required dependencies. 
+```
+# Activate conda environment
+conda activate tfcb_2021_rna
+
+
+# Scanpy installation 
+conda install seaborn scikit-learn statsmodels numba pytables
+conda install -c conda-forge python-igraph leidenalg
+pip install scanpy
+
+
+# cellxgene installation 
+pip install cellxgene
+
+# harmonypy installation
+pip install harmonypy
+
+# umap version
+pip install umap-learn==0.5.1
+
+# jupyter/ipython installation 
+conda install -c conda-forge jupyterlab
+
+```

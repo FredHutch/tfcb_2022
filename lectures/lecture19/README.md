@@ -20,19 +20,12 @@ We will use two PBMC datasets made available by 10X Genomics. Please download th
 
 
 ## Class preparation
-The code for Lectures 18 and 19 has been tested using Python 3.8. Use of [`conda`](https://docs.conda.io/en/latest/miniconda.html) to install and maintain python versions and packages is highly recommended. Please install the following packages and reach out if you have issues installing:
-- [scanpy](https://scanpy.readthedocs.io/en/stable/) 
-- [cellxgene](https://github.com/chanzuckerberg/cellxgene-documentation/blob/main/README.md)
-- [harmonypy](https://github.com/slowkow/harmonypy)
-- The latest version of `umap`(0.5.2) generates rather funny results with default parameters. Overwrite your installation results to the previous version using 
-`pip install umap-learn==0.5.1` in your conda environment.
+
+We will be using `cellxgene`, and `scanpy` for Lectures 18 and 19, and Homework 8. All the packages and dependencies can be installed using `conda`.
 
 ### Environment setup
-Using `conda`, the following commands can be used to create a new environment with all the required dependencies. Some of the single-cell packages do not work with the latest version of python and hence we recommend creating new conda environment
+Using `conda`, the following commands can be used to install all the required dependencies. 
 ```
-# Create new conda environment
-conda create --name tfcb_2021_rna python==3.8
-
 # Activate conda environment
 conda activate tfcb_2021_rna
 

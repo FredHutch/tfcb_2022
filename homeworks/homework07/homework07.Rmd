@@ -24,14 +24,14 @@ iv. You will be graded on your code and output results (knitted .html file). The
 
 This assignment is due on **Dec 7, 2021**. 
 
-For additional resources, please refer to these links:
+For additional resources, please refer to these links:  
 Problems 1 & 2:  
-- https://www.bioconductor.org/packages/devel/bioc/vignettes/plyranges/inst/doc/an-introduction.html
-- https://bioconductor.org/packages/release/bioc/vignettes/GenomicRanges/inst/doc/GenomicRangesIntroduction.html
+  - https://www.bioconductor.org/packages/devel/bioc/vignettes/plyranges/inst/doc/an-introduction.html
+  - https://bioconductor.org/packages/release/bioc/vignettes/GenomicRanges/inst/doc/GenomicRangesIntroduction.html  
 Problem 3:  
-- https://bioconductor.org/packages/release/bioc/vignettes/Rsamtools/inst/doc/Rsamtools-Overview.pdf
+  - https://bioconductor.org/packages/release/bioc/vignettes/Rsamtools/inst/doc/Rsamtools-Overview.pdf  
 Problem 4: 
-- https://bioconductor.org/packages/release/bioc/vignettes/VariantAnnotation/inst/doc/VariantAnnotation.pdf 
+  - https://bioconductor.org/packages/release/bioc/vignettes/VariantAnnotation/inst/doc/VariantAnnotation.pdf  
 
 # Problem 1: Overlaps between genomic regions and copy number alterations. (14 points total)
 

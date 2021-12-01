@@ -17,17 +17,29 @@ This lecture will begin with a introduction to RNA-seq and the steps in RNA-seq 
 - The bam files for generation of count matrices are available [here](https://drive.google.com/file/d/1VWvwatiE4WbMpocCm3W1rdCtakkqdAI6/view?usp=sharing) and the Glioblastoma patient data is available [here](https://drive.google.com/file/d/1NcGZcyhpJ1QxUGL4aYpe7KsPLUXfQ9Kd/view?usp=sharing). Please download (and unzip the files) to the `data` folder. 
 
 ## Class preparation
+
+### Environment set up
 We will create a new conda environment for the RNA-seq lectures
 
 ```
 # Create new conda environment
-conda create -n tfcb2021_rna r r-tidyverse r-irkernel bioconductor-plyranges bioconductor-genomicfeatures bioconductor-rtracklayer bioconductor-bsgenome.hsapiens.ucsc.hg38 bioconductor-ggbio bioconductor-deseq2 bioconductor-enhancedvolcano   bioconductor-goseq r-pheatmap r-rcolorbrewer -c conda-forge -c bioconda
+conda create -n tfcb2021_rna r r-tidyverse r-irkernel bioconductor-plyranges bioconductor-genomicfeatures bioconductor-rtracklayer bioconductor-ggbio bioconductor-deseq2 bioconductor-enhancedvolcano   bioconductor-goseq r-pheatmap r-rcolorbrewer  bioconductor-org.hs.eg.db -c conda-forge -c bioconda
 
 # Activate conda environment
-conda activate tfcb_2021_rna
+conda activate tfcb2021_rna
 
 ```
 
-Follow the instructions [here](https://github.com/FredHutch/tfcb_2021/blob/main/software/README.md#getting-started-with-using-terminalpythonr-in-vscode) to setup the new conda environment in VSCode.
+Follow the instructions [here](https://github.com/FredHutch/tfcb_2021/blob/main/software/README.md#getting-started-with-using-terminalpythonr-in-vscode) to setup the new conda environment in VSCode. Repeated below for convenience.
+1. Open the Terminal window in VSCode (Terminal > New Terminal) and activate the `tfcb2021_rna` environment you previously created with `conda activate tfcb2021_rna`.
+2. Type `which R` into Terminal to identify where the R interpreter is located in the environment (ex. `/usr/local/anaconda3/envs/tfcb2021_rna/bin/R`).
+3. Now switch back to the base environment with `conda activate base`. 
+4. Type the location identified in Step 2 (ex. `/usr/local/anaconda3/envs/tfcb2021_rna/bin/R`). This should start the R interpreter.
+5. In the R interpreter, type `IRkernel::installspec()` after the >. This should install kernelspec in the right location.
+
+### Data files
+- The bam files for generation of count matrices are available [here](https://drive.google.com/file/d/1VWvwatiE4WbMpocCm3W1rdCtakkqdAI6/view?usp=sharing) and the Glioblastoma patient data is available [here](https://drive.google.com/file/d/1NcGZcyhpJ1QxUGL4aYpe7KsPLUXfQ9Kd/view?usp=sharing). Please download (and unzip the files) to the `data` folder. 
+
+
 
 

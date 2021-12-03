@@ -17,7 +17,7 @@ We will use two PBMC datasets made available by 10X Genomics. Please download th
 
 ## Class materials
 - The lecture slides are available [here](Lecture18_singlecell_RNAseq_slides.pdf)
-- The Jupyter notebook which will be used for the lecture are available here slides are available [Lecture19-scRNA-seq-analysis.ipynb](Lecture19-scRNA-seq-analysis.ipynb). If you have difficulty performing a `git pull` to obtain the materials for this class, it is likely because you have a conflict between `Lecture19-scRNA-seq-analysis.ipynb)` and the version in the public GitHub repo. You can resolve this by making a copy of that markdown (naming it something different, like `my_Lecture19-scRNA-seq-analysis.ipynb)`) and then discarding changes to the original markdown file. 
+- The Jupyter notebook which will be used for the lecture are available here slides are available [Lecture18-scRNA-seq-analysis.ipynb](Lecture18-scRNA-seq-analysis.ipynb). If you have difficulty performing a `git pull` to obtain the materials for this class, it is likely because you have a conflict between `Lecture19-scRNA-seq-analysis.ipynb)` and the version in the public GitHub repo. You can resolve this by making a copy of that markdown (naming it something different, like `my_Lecture19-scRNA-seq-analysis.ipynb)`) and then discarding changes to the original markdown file. 
 
 ### Data Download
 Download the following datasets and copy it a folder called `data/`

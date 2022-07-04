@@ -18,7 +18,7 @@ Location: TBD
 
 TA Office hours: 1:00PM-2:00PM, Wed, Sep 30 - Dec 7 2022
 
-Location: Zoom (see Slack)
+Location: Zoom (see Slack) or the first floor of the [Molecular Engineering Building](https://www.washington.edu/maps/#!/mol) in the UW Main Campus (go to whichever you prefer)
 
 | Lecture | Date   | Instructor       | Topic                                                                           |
 | ------- | ------ | ---------------- | ------------------------------------------------------------------------------- |
@@ -46,7 +46,7 @@ Materials for each lecture will be available in this repository prior to the cla
 the link for each topic will take you to the folder containing materials for that class.
 Please note that materials are considered in draft form until the beginning of the class session in which they will be presented (or if otherwise indicated).
 
-For further assistance, TA Avi Swartz will be available to offer assistance just prior to and during the regular class session.
+For further assistance, TA Avi Swartz will be available to offer assistance just after the regular class session.
 
 ## Homework and grading
 
@@ -109,4 +109,4 @@ For general inquiries about this course, please contact rasi at fredhutch.org
 
 ## Teaching Assistants
 
-- [Avi Swartz](https://mcb-seattle.edu/student-profile/?uid=255)
+- [Avi Swartz](https://www.linkedin.com/in/avi-swartz/)

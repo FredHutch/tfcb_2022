@@ -1,5 +1,5 @@
 # base conda container
-FROM continuumio/miniconda3:4.10.3
+FROM continuumio/miniconda3:4.12.0
 
 # Install mamba installer for quick conda installations
 RUN conda install -y mamba -c conda-forge
@@ -27,3 +27,5 @@ RUN mamba install -y -n tidy -c bioconda -c conda-forge \
   bioconductor-genomicfeatures \
   bioconductor-rtracklayer \
   bioconductor-bsgenome.hsapiens.ucsc.hg38    
+# Make R kernel visible to Jupyter
+RUN /opt/conda/envs/tidy/bin/R -s -e "IRkernel::installspec(sys_prefix = T)"

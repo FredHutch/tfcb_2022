@@ -8,7 +8,7 @@ This document is the syllabus for this course.
   - [Course description](#course-description)
   - [Resources and required materials](#resources-and-required-materials)
   - [Instructors](#instructors)
-  - [Teaching Assistants](#teaching-assistants)
+  - [Teaching Assistant](#teaching-assistant)
 
 ## Class schedule
 
@@ -107,6 +107,6 @@ For general inquiries about this course, please contact rasi at fredhutch.org
 - [Manu Setty](https://research.fredhutch.org/setty/en.html)
 - [Arvind Rasi Subramaniam](http://rasilab.fredhutch.org)
 
-## Teaching Assistants
+## Teaching Assistant
 
 - [Avi Swartz](https://www.linkedin.com/in/avi-swartz/)

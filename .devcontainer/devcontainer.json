@@ -1,0 +1,10 @@
+{
+    "image":  "ghcr.io/FredHutch/tfcb_2022:0.1.0",
+    // "build": {
+    //     "dockerfile": "./Dockerfile",
+    // },
+    // "extensions": [
+    //     "ms-python.python",
+    //     "ms-toolsai.jupyter",
+    // ],
+}

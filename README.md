@@ -24,9 +24,9 @@ TA Office Hours Location: Zoom (see Slack) or the first floor of the [Molecular 
 | ------- | ------ | ---------------- | ------------------------------------------------------------------------------- |
 | 1       | Sep 29 | Rasi Subramaniam | [Introduction to course, VScode, Git](lectures/lecture01/)                      |
 | 2       | Oct 4  | Avi Swartz       | Software installation and troubleshooting                                       |
-| 3       | Oct 6  | Rasi Subramaniam | [Data and project organization](lectures/lecture02/)                            |
-| 4       | Oct 11 | Melody Campbell  | [Introduction to the command line](lectures/lecture03/)                         |
-| 5       | Oct 13 | Melody Campbell  | [Intro to the command line (continued)](lectures/lecture04/)                    |
+| 3       | Oct 6  | Rasi Subramaniam | [Data and project organization](lectures/lecture03/)                            |
+| 4       | Oct 11 | Melody Campbell  | [Introduction to the command line](lectures/lecture04/)                         |
+| 5       | Oct 13 | Melody Campbell  | [Intro to the command line (continued)](lectures/lecture05/)                    |
 | 6       | Oct 18 | Phil Bradley     | [Introduction to Python](lectures/lecture06/)                                   |
 | 7       | Oct 20 | Phil Bradley     | [Intro to Python (continued)](lectures/lecture07/)                              |
 | 8       | Oct 25 | Maggie Russell   | [Data structures and biological analyses using Python](lectures/lecture08/)     |

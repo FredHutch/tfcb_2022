@@ -14,11 +14,11 @@ This document is the syllabus for this course.
 
 Time: 3:20PM-4:40PM, Tue & Thu, Sep 29 - Dec 6 2022
 
-Location: TBD
+Class Location: TBD
 
-TA Office hours: 1:00PM-2:00PM, Wed, Sep 30 - Dec 7 2022
+TA Office Hours: 1:00PM-2:00PM, Wed, Sep 30 - Dec 7 2022
 
-Location: Zoom (see Slack) or the first floor of the [Molecular Engineering Building](https://www.washington.edu/maps/#!/mol) in the UW Main Campus (go to whichever you prefer)
+TA Office Hours Location: Zoom (see Slack) or the first floor of the [Molecular Engineering Building](https://www.washington.edu/maps/#!/mol) in the UW Main Campus (go to whichever you prefer)
 
 | Lecture | Date   | Instructor       | Topic                                                                           |
 | ------- | ------ | ---------------- | ------------------------------------------------------------------------------- |
@@ -28,7 +28,7 @@ Location: Zoom (see Slack) or the first floor of the [Molecular Engineering Buil
 | 4       | Oct 11 | Melody Campbell  | [Introduction to the command line](lectures/lecture03/)                         |
 | 5       | Oct 13 | Melody Campbell  | [Intro to the command line (continued)](lectures/lecture04/)                    |
 | 6       | Oct 18 | Phil Bradley     | [Introduction to Python](lectures/lecture06/)                                   |
-| 7       | Oct 29 | Phil Bradley     | [Intro to Python (continued)](lectures/lecture07/)                              |
+| 7       | Oct 20 | Phil Bradley     | [Intro to Python (continued)](lectures/lecture07/)                              |
 | 8       | Oct 25 | Maggie Russell   | [Data structures and biological analyses using Python](lectures/lecture08/)     |
 | 9       | Oct 27 | Maggie Russell   | [Data structures/biological analyses in Python (continued)](lectures/lecture09) |
 | 10      | Nov 1  | Phil Bradley     | [Modeling and machine learning in Python](lectures/lecture10)                   |

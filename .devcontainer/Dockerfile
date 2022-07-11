@@ -10,6 +10,7 @@ RUN mamba install -y -c conda-forge -c bioconda \
     matplotlib \
     ipykernel \
     biopython \
+    scikit-learn \
     pysam \
     plotnine
 

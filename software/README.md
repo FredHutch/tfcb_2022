@@ -7,7 +7,7 @@ We ask you come prepared to class with a laptop on which you can participate in 
 - [VSCode Remote Development Extension Pack](#vscode-remote-development-extension-pack) for running software withing VSCode
 - [Git](#git) for version control
 
-Once you have the above software installed, you should be able to run the example [Python](test_python.ipynb) and [R](test_R.ipynb) Jupyter notebooks within VSCode.
+Once you have the above software installed, you should be able to run the example [Python](test_python.ipynb) and [R](test_R.ipynb) Jupyter notebooks after you open this repository using a Remote Development Container within VSCode.
 
 ## VSCode Text Editor
 

@@ -38,7 +38,7 @@ TA Office Hours Location: Zoom (see Slack) or the first floor of the [Molecular 
 | 14      | Nov 15 | Rasi Subramaniam | [Biological sequences and annotations in Bioconductor](lectures/lecture14/)     |
 | 15      | Nov 17 | Gavin Ha         | [Introduction to sequencing data](lectures/lecture15/)                          |
 | 16      | Nov 22 | Gavin Ha         | [Genomic data in R](lectures/lecture16/)                                        |
-| 17      | Nov 29 | Manu Setty       | [Introduction to RNA-seq](lectures/lecture17/)                                  |
+| 17      | Nov 29 | Maggie Russell   | [Immune repertoire sequencing and analysis](lectures/lecture17/)                |
 | 18      | Dec 1  | Manu Setty       | [Single-cell RNA-seq analysis](lectures/lecture18/)                             |
 | 19      | Dec 6  | Manu Setty       | [Single-cell RNA-seq analysis (continued)](lectures/lecture19/)                 |
 

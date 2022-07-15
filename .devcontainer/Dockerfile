@@ -30,3 +30,27 @@ RUN mamba install -y -n tidy -c bioconda -c conda-forge \
   bioconductor-bsgenome.hsapiens.ucsc.hg38    
 # Make R kernel visible to Jupyter
 RUN /opt/conda/envs/tidy/bin/R -s -e "IRkernel::installspec(sys_prefix = T)"
+
+# Create new conda environment for Manu Setty's lectures
+RUN conda create -n tfcb2022_rna -c conda-forge -c bioconda
+
+# Scanpy installation
+RUN mamba install -y -n tfcb2022_rna seaborn \
+  scikit-learn \
+  statsmodels \
+  numba \
+  pytables
+RUN mamba install -y -n tfcb2022_rna -c conda-forge python-igraph leidenalg
+RUN conda run -n tfcb2022_rna pip install scanpy
+
+# cellxgene installation
+RUN conda run -n tfcb2022_rna pip install cellxgene
+
+# harmonypy installation
+RUN conda run -n tfcb2022_rna pip install harmonypy
+
+# umap version
+RUN conda run -n tfcb2022_rna pip install umap-learn==0.5.1
+
+# jupyter/ipython installation
+RUN mamba install -y -n tfcb2022_rna -c conda-forge ipykernel

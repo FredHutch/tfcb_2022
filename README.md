@@ -14,7 +14,7 @@ This document is the syllabus for this course.
 
 Time: 3:20PM-4:40PM, Tue & Thu, Sep 29 - Dec 6 2022
 
-Class Location: TBD
+Class Location: B1-072/074 (Weintraub Building, Fred Hutch SLU campus)
 
 TA Office Hours: 1:00PM-2:00PM, Wed, Sep 30 - Dec 7 2022
 

@@ -11,7 +11,7 @@ Once you have the above software installed, you should be able to run the exampl
 
 ## VSCode Text Editor
 
-We will use VSCode as the source code and text editor for this class. Install [VSCode](https://code.visualstudio.com/docs/editor/versioncontrol) on your computer and view the introductory video [here](https://code.visualstudio.com/docs/introvideos/basics) before the first class to familiarize yourself with the user interface.
+We will use VSCode as the source code and text editor for this class. Install [VSCode](https://code.visualstudio.com/Download) on your computer and view the introductory video [here](https://code.visualstudio.com/docs/introvideos/basics) before the first class to familiarize yourself with the user interface.
 
 We will use the following features in VSCode as part of this class:
 
@@ -24,7 +24,7 @@ We will use the following features in VSCode as part of this class:
 ## Docker
 
 We need Docker for creating reproducible environments for running programs written in Python or R.
-You can install Docker following links [here](https://code.visualstudio.com/docs/remote/containers#_installation).
+You can install Docker following links [here](https://code.visualstudio.com/docs/remote/containers#_installation). Ignore steps 2 and 3 about the WSL 2 for now. 
 
 ## VSCode Remote Development Extension Pack
 
@@ -32,4 +32,4 @@ You can follow instructions [here](https://marketplace.visualstudio.com/items?it
 
 ## Git
 
-You can follow the instructions [here](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) to install Git. 
+You can follow the instructions [here](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) to install Git. Use the default settings in the installer.

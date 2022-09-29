@@ -19,7 +19,7 @@ Class Location: B1-072/074 (Weintraub Building, Fred Hutch SLU campus)
 TA Office Hours: 11AM-12PM Thu (Jacob), 1:00PM-2:00PM (Avi) Wed, Oct 5 - Dec 7 2022
 
 
-TA Office Hours Location: Zoom (see Slack) or the first floor of the [Molecular Engineering Building](https://www.washington.edu/maps/#!/mol) in the UW Main Campus (Avi) or 2nd floor of Steam Plant @ Fred Htuch
+TA Office Hours Location: Zoom (see Slack) or the first floor of the [Molecular Engineering Building](https://www.washington.edu/maps/#!/mol) in the UW Main Campus (Avi) or 2nd floor of Steam Plant @ Fred Hutch
 
 | Lecture | Date   | Instructor                | Topic                                                                           |
 | ------- | ------ | ------------------------- | ------------------------------------------------------------------------------- |

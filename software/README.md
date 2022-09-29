@@ -33,3 +33,14 @@ You can follow instructions [here](https://marketplace.visualstudio.com/items?it
 ## Git
 
 You can follow the instructions [here](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) to install Git. Use the default settings in the installer.
+
+## Testing Software Installation
+
+Once you have installed the requisite software, then you should be able to perfom the following steps:
+
+1) Open VS Code
+
+2) Reopen in container the TFCB 
+
+3) After installing the container (takes a minute), then you should be able to run the test code (hint: pick the right kernel for R, python etc.)
+

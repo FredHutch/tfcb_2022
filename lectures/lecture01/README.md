@@ -2,13 +2,9 @@
 
 ## Pre-Class Tasks
 
-- Complete the [pre-class survey](https://docs.google.com/forms/d/e/1FAIpQLSdjCrvr0_cFZN4rTnvSzKYU5jmo9riRh0SyQgIr9ZWaRmp9GQ/viewform)
+- Complete the [pre-class survey](https://forms.gle/h8Xpaiu49baTdP7SA)
 - Install [VSCode](https://code.visualstudio.com/#alt-downloads) and watch [this](https://code.visualstudio.com/docs/introvideos/basics) 5 minute intro video (no need to install any extension).
 - Create an account on [GitHub](https://github.com/signup) (note down your username and password in an accessible location for the class)
-
-<!-- Pre-class tasks for Isntructor
-
-- Send info on Zoom link and course website to students the day before -->
 
 ## Learning objectives
 
@@ -18,7 +14,7 @@
 
 ## Post-Class Tasks
 
-- Follow [these instructions](../../software/README.md) to complete software installation and testing. If you need help, attend TA office hours.
+- Follow [these instructions](../../software/README.md) to complete software installation and testing. If you need help, lecture 2 will be dedicated to this task.
 
 ## Class materials
 

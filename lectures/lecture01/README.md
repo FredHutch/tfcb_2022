@@ -1,4 +1,4 @@
-# Lecture 1: Introduction to Course, Markdown, Git
+# Lecture 1: Introduction to Course, Git, VSCode, Markdown
 
 ## Pre-Class Tasks
 

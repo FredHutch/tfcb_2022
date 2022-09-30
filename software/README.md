@@ -40,7 +40,7 @@ Once you have installed the requisite software, then you should be able to perfo
 
 1) Open VS Code
 
-2) Reopen in container the TFCB 
+2) "Reopen in container" the TFCB Docker container. This will install the container.
 
 3) After installing the container (takes a minute), then you should be able to run the test code (hint: pick the right kernel for R, python etc.)
 

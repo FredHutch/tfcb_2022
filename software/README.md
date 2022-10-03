@@ -44,3 +44,17 @@ Once you have installed the requisite software, then you should be able to perfo
 
 3) After installing the container (takes a minute), then you should be able to run the test code (hint: pick the right kernel for R, python etc.)
 
+## R
+
+R in vscode is run via jupyter. Ignore the next bit if R seems to be working.
+See: https://code.visualstudio.com/docs/languages/r
+
+1) Open terminal in vscode inside the dev container. Check your environment, which is located left of your current path and likely says `(base)`.
+
+2) Check which conda you are using by typing `which conda` and `conda --version` into terminal. These should return something like `/opt/conda/bin/conda` and `conda 4.12.0` respectively.
+
+3) Check your conda environments with `conda env list`. We will use the tidy env for R, which can be activate with `conda activate tidy`.
+
+4) Inside the tidy environment you can run R directly from the commandline, which is helpful for installing new packages. Of note, the devcontainer already comes with most things you need and adding new packages can create conflicts, so be careful installing packages that you dont overwrite dependencies or install anything risky from a 3rd party developer. For now lets just which R we are running, which I will let you figure out using some of the above commands (see step 2). What happens if you run these commands outside the conda environment?
+
+5) Add your R path to the `Rterm` in the dev container settings. Your R path should now appear under available kernels, which you can select to run the R test notebook.

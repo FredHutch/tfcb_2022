@@ -55,6 +55,6 @@ See: https://code.visualstudio.com/docs/languages/r
 
 3) Check your conda environments with `conda env list`. We will use the tidy env for R, which can be activate with `conda activate tidy`.
 
-4) Inside the tidy environment you can run R directly from the commandline, which is helpful for installing new packages. Of note, the devcontainer already comes with most things you need and adding new packages can create conflicts, so be careful installing packages that you dont overwrite dependencies or install anything risky from a 3rd party developer. For now lets just which R we are running, which I will let you figure out using some of the above commands (see step 2). What happens if you run these commands outside the conda environment?
+4) Inside the tidy environment you can run R directly from the commandline, which is helpful for installing new packages. Of note, the devcontainer already comes with most things you need and adding new packages can create conflicts, so be careful installing packages that you don't overwrite dependencies or install anything risky from a 3rd party developer. For now lets just determine which R we are running, which I will let you figure out using some of the above commands (see step 2). What happens if you run these commands outside the conda environment?
 
 5) Add your R path to the `Rterm` in the dev container settings. Your R path should now appear under available kernels, which you can select to run the R test notebook.

@@ -3,11 +3,15 @@
     // "build": {
     //     "dockerfile": "./Dockerfile",
     // },
+    "settings": {
+        "extensions.autoUpdate": false,
+        "extensions.autoCheckUpdates": false
+    },
     "extensions": [
         // Python extension 
         "ms-python.python",
         // Jupyter extension
-        "ms-toolsai.jupyter",
+        "ms-toolsai.jupyter@2022.6.1001890150",
         // R extension 
         "REditorSupport.r",
     ],

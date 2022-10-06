@@ -1,55 +1,96 @@
-# Lecture 2: Introduction to Data
+---
+controls: false
+progress: false
+enableMenu: false
+enableChalkboard: false
+enableTitleFooter: false
+enableSearch: false
+transition: slide
+theme: night
+customTheme: custom
+---
 
-**Trevor Bedford ([@trvrb](https://twitter.com/trvrb), [bedford.io](https://bedford.io))**
+# Lecture 3: Data and Project Management
+
+## [Rasi Subramaniam](http://rasilab.fredhutch.org)
+
+---
+
+## Reminders
+
+The homework assignment is available today (October 6) and is due October 13 at 3:20pm.
+
+---
 
 ## Learning objectives
 
 - Identify minimum requirements for a reproducible computational project
-- Apply computational project organization principles specifically to good practices in data management
-- Implement best practices for organizing tabular (spreadsheet-style) data according to tidy data principles
+- Apply good practices for file organization 
+- Use `tidy` principles for tabular (`spreadsheet`-style) data
 
-## Class materials
+---
 
-1. [Reproducibility and collaborative science](#reproducible-science)
-2. [File organization and naming](#project-and-data-organization)
-3. [Tidy data](#tidy-data)
+## Outline
 
-This class requires Microsoft Excel (or an equivalent program that can open `.xlsx` files); see [Software installation](../../software/) for more information.
+1. Elements of reproducibility
+2. File organization
+3. Tidy data
 
-## Reminders
+This class requires Microsoft Excel or LibreOffice Calc (for opening `.xlsx` or `.csv` files).
 
-- Recommended reading is available throughout each section
-- The homework assignment is available on October 7 and is due October 14 at 1pm.
+---
 
-## Reproducible science
+## Minimum elements for computational reproducibility
 
-### Motivation
+- *Annotated* data from experiments or simulations
+- *Documented* code for data analyses
+- *Defined* software environments
+- *Standardized* organization of above 3 elements
 
-There is a lot of interest and discussion of the reproducibility "crisis". In one example, ["Estimating the reproducibility of psychological science" (Open Science Collaboration, Science 2015)](https://doi.org/10.1126/science.aac4716), authors attempt to replicate 100 studies in psychology and find that only 36 of the studies had statistically significant results.
+<div style="font-size: 60%; text-align: left; margin-top: 50px;">
 
-![](figures/reproducibility_psychology.png)
+</div>
 
-The Center for Open Science has also embarked on a [Reproducibility Project for Cancer Biology, with results being reported in an ongoing fashion](https://elifesciences.org/collections/9b1e83d1/reproducibility-project-cancer-biology).
+---
 
-There are a lot of factors at play here, including "_p_ hacking" lead by the "garden of forking paths" and selective publication of significant results. I would call this a crisis of _replication_ and have this as a separate concept from _reproducibility_.
+## 1 project = 1 GitHub repository
 
-But even reproducibility is also difficult to achieve. In ["An empirical analysis of journal policy effectiveness for computational reproducibility" (Stodden et al, PNAS 2018)](https://doi.org/10.1073/pnas.1708290115), Stodden, Seiler and Ma:
+- Code
+- Data*
+- Lab notebook
+- Presentations
+- Manuscripts
+- Grants & fellowships
+- Discussion
 
->Evaluate the effectiveness of journal policy that requires the data and code necessary for reproducibility be made available postpublication by the authors upon request. We assess the effectiveness of such a policy by (i) requesting data and code from authors and (ii) attempting replication of the published findings. We chose a random sample of 204 scientific papers published in the journal Science after the implementation of their policy in February 2011. We found that we were able to obtain artifacts from 44% of our sample and were able to reproduce the findings for 26%.
+<div style="font-size:50%;margin-top:50px">
 
-They get responses like:
+\* Large datasets are stored in cloud (eg. [AWS S3](https://aws.amazon.com/s3/)) or public repositories (eg. [Zenodo](https://zenodo.org/), [SRA](https://www.ncbi.nlm.nih.gov/sra))
 
->"When you approach a PI for the source codes and raw data, you better
-explain who you are, whom you work for, why you need the data and
-what you are going to do with it."
+</div>
 
->"I have to say that this is a very unusual request without any explanation!
-Please ask your supervisor to send me an email with a detailed,
-and I mean detailed, explanation."
+---
 
-[Tables in paper are interesting.](http://www.pnas.org/content/pnas/115/11/2584.full.pdf)
+## Benefits of GitHub
 
-At the _very_ least, it should be possible to take the raw data that forms the the basis of a paper and run the same analysis that the author used and confirm that it generates the same results. This is my bar for reproducibility.
+- Version control (file history, track changes)
+- Collaboration (branches, merging, issue comments, discussion)
+- Project management tools (project board, issues, milestones, labels)
+
+---
+
+## Naming conventions
+
+- Project repo: Short, descriptive, understandable
+- File names: 
+  - No caps
+  - No spaces
+  - Date format: `YYYY-MM-DD`
+  - No version numbers or names such as `rasi_v20` (GitHub does this automatically)
+
+---
+
+
 
 ### Reproducible science guidelines
 
@@ -151,6 +192,8 @@ Documenting data can be a time-consuming process, but is often required to submi
 
 [More excellent advice from Karl Broman](https://kbroman.org/dataorg/)
 
+---
+
 ## Tidy data
 
 Tidy data is term from Hadley Wickham and refers to:
@@ -159,7 +202,7 @@ Tidy data is term from Hadley Wickham and refers to:
 
 Data in this form is much easier to deal with programmatically. This is also known as a _data frame_. This [tutorial presents a nice overview](https://r4ds.had.co.nz/tidy-data.html).
 
-Observations as rows and variables as columns is an excellent standard to adhere to.
+---
 
 1. Each variable forms a column
 2. Each observation forms a row.
@@ -167,11 +210,15 @@ Observations as rows and variables as columns is an excellent standard to adhere
 
 See for example, single cell RNA sequencing data, with cells as rows and genes as columns. This is also the way that relational databases (MySQL, Postgres, etc...) are constructed.
 
+---
+
 ### Exercise on tidy data
 
 1. Demonstrate conversion of simple example dataset. Work from [Table 2 in Bedford et al. 2014](https://bedford.io/papers/bedford-flux/), available as an [Excel table in the course repo](tables/influenza-evolutionary-parameters.xlsx).
 
 2. Split into small groups of 3-4 people to work from an HI (haemagglutination-inhibition) table and convert to tidy data. Data available as an [Excel table in the course repo](tables/influenza-titer-data.xlsx).
+
+---
 
 ## File formats
 
@@ -179,8 +226,14 @@ Saving data as plain text files is necessarily to process this data with either 
 - Beware that [line endings](https://support.nesi.org.nz/hc/en-gb/articles/218032857-Converting-from-Windows-style-to-UNIX-style-line-endings) differ between Windows and Unix (including Mac), though the text editors we recommend for this class can deal with this
 - Exporting from Excel only works for the currently displayed spreadsheet. If you have multiple sheets, you'll need to export multiple times.
 
-### Further reading
+---
 
-Some suggested readings include:
+## Further reading
 
-* [Good Enough Practices for Scientific Computing by Wilson et al.](https://swcarpentry.github.io/good-enough-practices-in-scientific-computing/) as already referenced
+
+* [Good Enough Practices for Scientific Computing](https://swcarpentry.github.io/good-enough-practices-in-scientific-computing/)
+
+
+* [Practical computational reproducibility in the life sciences](https://pubmed.ncbi.nlm.nih.gov/29953862/)
+
+* [Reproducibility standards for machine learning in the life sciences](https://pubmed.ncbi.nlm.nih.gov/34462593/)

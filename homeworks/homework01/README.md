@@ -1,6 +1,6 @@
 # Homework 1
 
-This homework will assess your ability to use GitHub, organize projects, and apply tidy data principles, and represents content covered in lectures 1 and 2.
+This homework will assess your ability to use GitHub, organize projects, and apply tidy data principles, and represents content covered in lectures 1 and 2. Fill this README.md document with your answers below and upload this file to Canvas.
 
 ## Problem 1
 

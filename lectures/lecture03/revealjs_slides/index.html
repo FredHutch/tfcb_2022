@@ -73,6 +73,7 @@
             
             <h1>Lecture 3: Data and Project Management</h1>
 <h2><a href="http://rasilab.fredhutch.org">Rasi Subramaniam</a></h2>
+<p><a href="https://fredhutch.github.io/tfcb_2022/lectures/lecture03/revealjs_slides/index.html">Link to slides</a></p>
 
             </section>
     
@@ -312,7 +313,9 @@ sample3 SRR21277965  104p6      dicodon_facs_on_low_2
 </ul>
 </li>
 </ul>
-<!-- Documenting data can be a time-consuming process, but is often required to submit data to repositories. Since data publishing is a requirement for most academic research as a part of publication, keeping track of this information early on can save you time later, and increase the chances of other researchers using your data later (which means more citations for you). -->
+<aside class="notes">
+Documenting data can be a time-consuming process, but is often required to submit data to repositories. Since data publishing is a requirement for most academic research as a part of publication, keeping track of this information early on can save you time later, and increase the chances of other researchers using your data later (which means more citations for you).
+</aside>
             </section>
     
 
@@ -326,66 +329,59 @@ sample3 SRR21277965  104p6      dicodon_facs_on_low_2
 <blockquote>
 <p>A standard method of displaying a multivariate set of data is in the form of a data matrix in which rows correspond to sample individuals and columns to variables, so that the entry in the ith row and jth column gives the value of the jth variate as measured or observed on the ith individual.</p>
 </blockquote>
-<div style="text-align: right;"> 
+<div style="text-align: right;font-size:80%"> 
 <p><a href="https://twitter.com/hadleywickham">Hadley Wickham</a></p>
 </div>
-<p>Data in this form is much easier to deal with programmatically. This is also
-known as a <em>data frame</em>. See <a href="https://r4ds.had.co.nz/tidy-data.html">this</a>
-tutorial for an <code>R</code>-centric overview of tidy data.</p>
 </div>
-            </section>
-    
-
-
-
-    
-        <section >
-            
-            <h2>Tidy data</h2>
 <ol>
 <li>Each variable forms a column</li>
-<li>Each observation forms a row.</li>
+<li>Each observation forms a row</li>
 <li>Each type of observational unit forms a table</li>
 </ol>
+<aside class="notes">
+Data in this form is much easier to deal with programmatically. This is also
+known as a _data frame_. See [this](https://r4ds.had.co.nz/tidy-data.html)
+tutorial for an `R`-centric overview of tidy data.
+</aside>
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <h2>Tidy data examples</h2>
 <div style="text-align: left; margin-top: 50px;">
-<p>Examples from <a href="https://github.com/rasilab/ribosome_collisions_yeast">Park &amp; Subramaniam 2019</a>:</p>
 <ul>
-<li><a href="https://github.com/rasilab/ribosome_collisions_yeast/blob/master/data/western/quantification.tsv">data</a></li>
-<li><a href="https://github.com/rasilab/ribosome_collisions_yeast/blob/master/data/flow/10xaag_wt/annotations.tsv">annotations</a></li>
+<li>
+<p>Examples from <a href="https://github.com/rasilab/ribosome_collisions_yeast">Park &amp; Subramaniam 2019</a>: <a href="https://github.com/rasilab/ribosome_collisions_yeast/blob/master/data/western/quantification.tsv">data</a>, <a href="https://github.com/rasilab/ribosome_collisions_yeast/blob/master/data/flow/10xaag_wt/annotations.tsv">annotations</a></p>
+</li>
+<li>
+<p>Example from <a href="https://bedford.io/papers/bedford-flux/">Table 2 in Bedford et al. 2014</a>, available as an <a href="tables/influenza-evolutionary-parameters.xlsx">Excel table in the course repo</a></p>
+</li>
+<li>
+<p>Follow same naming principles for columns as for files: No caps, no spaces, no special characters, use only <code>_</code> and <code>-</code> if necessary.</p>
+</li>
 </ul>
 </div>
-            </section>
-    
-
-
-
-    
-        <section >
-            
-            <h3>Exercise on tidy data</h3>
-<ol>
-<li>
-<p>Demonstrate conversion of simple example dataset. Work from <a href="https://bedford.io/papers/bedford-flux/">Table 2 in Bedford et al. 2014</a>, available as an <a href="tables/influenza-evolutionary-parameters.xlsx">Excel table in the course repo</a>.</p>
-</li>
-<li>
-<p>Split into small groups of 3-4 people to work from an HI (haemagglutination-inhibition) table and convert to tidy data. Data available as an <a href="tables/influenza-titer-data.xlsx">Excel table in the course repo</a>.</p>
-</li>
-</ol>
-
-            </section>
-    
-
-
-
-    
-        <section >
-            
-            <h2>File formats</h2>
+<aside class="notes">
 <p>Saving data as plain text files is necessarily to process this data with either R or Python. You can export from Excel to <code>.tsv</code> (tab-delimited, preferred format) or <code>.csv</code> (comma-delimited). A few things to note when exporting data files in these formats:</p>
 <ul>
 <li>Beware that <a href="https://support.nesi.org.nz/hc/en-gb/articles/218032857-Converting-from-Windows-style-to-UNIX-style-line-endings">line endings</a> differ between Windows and Unix (including Mac), though the text editors we recommend for this class can deal with this</li>
 <li>Exporting from Excel only works for the currently displayed spreadsheet. If you have multiple sheets, you’ll need to export multiple times.</li>
 </ul>
+</aside>
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <h2>Exercise on tidy data</h2>
+<p>Split into small groups of 3-4 people to work from an HI (haemagglutination-inhibition) table and convert to tidy data. Data available as an <a href="tables/influenza-titer-data.xlsx">Excel table in the course repo</a>.</p>
 
             </section>
     
@@ -398,13 +394,16 @@ tutorial for an <code>R</code>-centric overview of tidy data.</p>
             <h2>Further reading</h2>
 <ul>
 <li>
-<p><a href="https://swcarpentry.github.io/good-enough-practices-in-scientific-computing/">Good Enough Practices for Scientific Computing</a></p>
+<p><a href="https://swcarpentry.github.io/good-enough-practices-in-scientific-computing/">Good enough practices for scientific computing</a></p>
 </li>
 <li>
 <p><a href="https://pubmed.ncbi.nlm.nih.gov/29953862/">Practical computational reproducibility in the life sciences</a></p>
 </li>
 <li>
 <p><a href="https://pubmed.ncbi.nlm.nih.gov/34462593/">Reproducibility standards for machine learning in the life sciences</a></p>
+</li>
+<li>
+<p><a href="https://r4ds.had.co.nz/tidy-data.html"><code>R</code>-centric overview of tidy data</a></p>
 </li>
 </ul>
 

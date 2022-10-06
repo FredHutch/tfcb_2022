@@ -1,0 +1,651 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>Reveal JS presentation</title>
+
+  <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+  <meta name="author" content="Hakim El Hattab">
+
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="libs/reveal.js/4.3.1/reset.css">
+  <link rel="stylesheet" href="libs/reveal.js/4.3.1/reveal.css">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  <!-- highlight Theme -->
+  
+  <link rel="stylesheet" href="libs/highlight.js/11.3.1/styles/monokai.min.css">
+  
+	
+		
+	<link rel="stylesheet" href="libs/reveal.js/4.3.1/plugin/chalkboard/style.css">
+	
+	
+	
+	
+
+
+
+  <!-- Revealjs Theme -->
+  
+  <link rel="stylesheet" href="libs/reveal.js/4.3.1/theme/night.css" id="theme">
+  
+  
+
+  <link rel="stylesheet" href="libs/styles/tasklist.css">
+	<link rel="stylesheet" href="libs/styles/iota.css">
+	<link rel="stylesheet" href="libs/styles/layout.css">
+
+
+  <!-- Revealjs Theme -->
+  
+  <link rel="stylesheet" href="custom.css">
+  
+
+   <!-- css list -->
+	
+
+   
+
+</head>
+
+<body>
+
+   
+
+  <div class="reveal">
+
+    <!-- Any section element inside of this container is displayed as a slide -->
+    <div class="slides">
+
+      
+
+
+    
+        <section >
+            
+            <h1>Lecture 3: Data and Project Management</h1>
+<h2><a href="http://rasilab.fredhutch.org">Rasi Subramaniam</a></h2>
+<p><a href="https://fredhutch.github.io/tfcb_2022/lectures/lecture03/revealjs_slides/index.html">Link to slides</a></p>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <h2>Reminders</h2>
+<p>The homework assignment is available today (October 6) and is due October 13 at 3:20pm.</p>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <h2>Learning objectives</h2>
+<ul>
+<li>Identify minimum requirements for a reproducible computational project</li>
+<li>Apply good practices for file organization</li>
+<li>Use <code>tidy</code> principles for tabular (<code>spreadsheet</code>-style) data</li>
+</ul>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <h2>Outline</h2>
+<ol>
+<li>Elements of reproducibility</li>
+<li>File organization</li>
+<li>Tidy data</li>
+</ol>
+<p>This class requires Microsoft Excel or LibreOffice Calc (for opening <code>.xlsx</code> or <code>.csv</code> files).</p>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <h2>Minimum elements for computational reproducibility</h2>
+<ul>
+<li><em>Annotated</em> data from experiments or simulations</li>
+<li><em>Documented</em> code for data analyses</li>
+<li><em>Defined</em> software environments</li>
+<li><em>Standardized</em> organization of above 3 elements</li>
+</ul>
+<div style="font-size: 60%; text-align: left; margin-top: 50px;">
+</div>
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <h2>1 project = 1 GitHub repository</h2>
+<ul>
+<li>Code</li>
+<li>Data*</li>
+<li>Lab notebook</li>
+<li>Presentations</li>
+<li>Manuscripts</li>
+<li>Grants &amp; fellowships</li>
+<li>Discussion</li>
+</ul>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <h2>Different locations for data at different analysis stages</h2>
+<ul>
+<li><strong>Raw data</strong>: can be very large, store in cloud eg. <a href="https://aws.amazon.com/s3/">AWS S3</a> or public repositories eg. <a href="https://zenodo.org/">Zenodo</a>, <a href="https://www.ncbi.nlm.nih.gov/sra">SRA</a></li>
+<li><strong>Intermediate data</strong>: can be large or small, store in temporary scratch space</li>
+<li><strong>Tables underlying figures or samples</strong>: small, store in GitHub</li>
+</ul>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <h2>Store sample annotations with data</h2>
+<p>Raw data without annotations cannot be analyzed</p>
+<pre><code>data/sample1.fastq
+data/sample2.fastq
+data/sample3.fastq
+data/sample_annotations.tsv
+</code></pre>
+<p><code>sample1.fastq</code></p>
+<pre><code>@SRR21277963.1
+GGAGTAACAGAAGTGAGAACCAGCTTATCAGAAAAAAAGTTTGAATTATG
++SRR21277963.1
+AAGAGGGGAGGGAGGGGIAGGGGGGA.GGGGAGGGGIGIGGII&lt;A&lt;GGAA
+</code></pre>
+<p><code>sample_annotations.tsv</code></p>
+<pre><code>sample  srr_id       sample_id  sample_name
+sample1 SRR21277963  104p8      dicodon_facs_off_low_2
+sample2 SRR21277964  104p7      dicodon_facs_off_high_2
+sample3 SRR21277965  104p6      dicodon_facs_on_low_2
+</code></pre>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <h2>Benefits of GitHub</h2>
+<ul>
+<li>Version control (file history, track changes)</li>
+<li>Collaboration (branches, merging, issue comments, discussion)</li>
+<li>Project management tools (project board, issues, milestones, labels)</li>
+<li>Link to Slack channel for notifications</li>
+</ul>
+<div style="font-size: 60%; text-align: left; margin-top: 50px;">
+<p>Example GitHub repositories: <br>
+<a href="https://github.com/rasilab/ribosome_collisions_yeast">https://github.com/rasilab/ribosome_collisions_yeast</a> (public) <br>
+<a href="https://github.com/rasilab/bottorff_2022">https://github.com/rasilab/bottorff_2022</a> (public) <br>
+<a href="https://github.com/rasilab/micropeptide_immunity">https://github.com/rasilab/micropeptide_immunity</a> (private)</p>
+</div>
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <h2>Organization of GitHub repository</h2>
+<pre><code>project_name
+  |-- analysis/
+  |-- experiments/
+  |-- grants/
+  |-- presentations/
+  |-- manuscripts/
+  |-- .devcontainer/
+  |-- .gitignore
+  |-- README.md
+</code></pre>
+<ul>
+<li>Use <code>README.md</code> to give an overview of the project and file organization</li>
+<li>Use <code>.gitignore</code> to ignore files that should not be tracked by git</li>
+<li>Use <code>.devcontainer/</code> to define the software environment for analysis (specific to VSCode), also called <code>.install/</code></li>
+</ul>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <h2>Organization of <code>analysis</code> folder</h2>
+<pre><code>analysis
+    |--USER
+        |--ANALYSIS_TYPE (eg. riboseq)
+            |--YYYY-MM-DD_short_desc
+                |--README.md
+                |--data 
+                    |--gencode
+                        |--gencode.v26.gtf.gz
+                    |--fastq
+                        |--SRRnnnnnn.fastq
+                |--scripts
+                    |--analyze_riboseq.ipynb
+                    |--download_from_sra.ipynb
+                    |--run_analysis_pipeline.smk
+                |--annotations 
+                    |--sample_annotations.csv
+                |--tables
+                    |--summary_table_1.csv
+                    |--summary_table_2.csv
+                |--figures
+                    |--summary_figure_1.pdf
+                    |--summary_figure_2.pdf
+</code></pre>
+<ul>
+<li><code>.gz</code> and <code>.fastq</code> files are usually in <code>.gitignore</code></li>
+<li><code>README.md</code> should give an overview of the analysis, data source etc. and how to reproduce it</li>
+<li>Ideally, every data file should be downloaded programmatically from permalinks</li>
+</ul>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <h2>Naming conventions</h2>
+<ul>
+<li><strong>Project repo</strong>: Short, descriptive, understandable</li>
+<li><strong>File names</strong>
+<ul>
+<li>No caps, no spaces, no special characters other than <code>_</code> and <code>-</code></li>
+<li>Date format: <code>YYYY-MM-DD</code></li>
+<li>No version numbers or names such as <code>rasi_v20</code> (GitHub does this automatically)</li>
+</ul>
+</li>
+<li><strong>Experiment labels</strong>
+<ul>
+<li><code>exp001</code>, <code>exp002</code> etc.</li>
+<li>Use in filenames, sample annotations, issues</li>
+</ul>
+</li>
+<li><strong>Sample labels</strong>
+<ul>
+<li><code>16p1</code>, <code>16p2</code> … <code>20t1</code>, <code>20t2</code> etc…</li>
+<li>Include experiment number (16, 20), type of sample (p, t), and sample number (1, 2)</li>
+<li>Use on Eppendorf tubes, lab notebook etc.</li>
+<li>Create a table of sample annotations in your lab notebook record</li>
+</ul>
+</li>
+</ul>
+<aside class="notes">
+Documenting data can be a time-consuming process, but is often required to submit data to repositories. Since data publishing is a requirement for most academic research as a part of publication, keeping track of this information early on can save you time later, and increase the chances of other researchers using your data later (which means more citations for you).
+</aside>
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <h2>Tidy data</h2>
+<div style="font-size: 80%; text-align: left; margin-top: 50px;">
+<blockquote>
+<p>A standard method of displaying a multivariate set of data is in the form of a data matrix in which rows correspond to sample individuals and columns to variables, so that the entry in the ith row and jth column gives the value of the jth variate as measured or observed on the ith individual.</p>
+</blockquote>
+<div style="text-align: right;font-size:80%"> 
+<p><a href="https://twitter.com/hadleywickham">Hadley Wickham</a></p>
+</div>
+</div>
+<ol>
+<li>Each variable forms a column</li>
+<li>Each observation forms a row</li>
+<li>Each type of observational unit forms a table</li>
+</ol>
+<aside class="notes">
+Data in this form is much easier to deal with programmatically. This is also
+known as a _data frame_. See [this](https://r4ds.had.co.nz/tidy-data.html)
+tutorial for an `R`-centric overview of tidy data.
+</aside>
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <h2>Tidy data examples</h2>
+<div style="text-align: left; margin-top: 50px;">
+<ul>
+<li>
+<p>Examples from <a href="https://github.com/rasilab/ribosome_collisions_yeast">Park &amp; Subramaniam 2019</a>: <a href="https://github.com/rasilab/ribosome_collisions_yeast/blob/master/data/western/quantification.tsv">data</a>, <a href="https://github.com/rasilab/ribosome_collisions_yeast/blob/master/data/flow/10xaag_wt/annotations.tsv">annotations</a></p>
+</li>
+<li>
+<p>Example from <a href="https://bedford.io/papers/bedford-flux/">Table 2 in Bedford et al. 2014</a>, available as an <a href="tables/influenza-evolutionary-parameters.xlsx">Excel table in the course repo</a></p>
+</li>
+<li>
+<p>Follow same naming principles for columns as for files: No caps, no spaces, no special characters, use only <code>_</code> and <code>-</code> if necessary.</p>
+</li>
+</ul>
+</div>
+<aside class="notes">
+<p>Saving data as plain text files is necessarily to process this data with either R or Python. You can export from Excel to <code>.tsv</code> (tab-delimited, preferred format) or <code>.csv</code> (comma-delimited). A few things to note when exporting data files in these formats:</p>
+<ul>
+<li>Beware that <a href="https://support.nesi.org.nz/hc/en-gb/articles/218032857-Converting-from-Windows-style-to-UNIX-style-line-endings">line endings</a> differ between Windows and Unix (including Mac), though the text editors we recommend for this class can deal with this</li>
+<li>Exporting from Excel only works for the currently displayed spreadsheet. If you have multiple sheets, you’ll need to export multiple times.</li>
+</ul>
+</aside>
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <h2>Exercise on tidy data</h2>
+<p>Split into small groups of 3-4 people to work from an HI (haemagglutination-inhibition) table and convert to tidy data. Data available as an <a href="tables/influenza-titer-data.xlsx">Excel table in the course repo</a>.</p>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <h2>Further reading</h2>
+<ul>
+<li>
+<p><a href="https://swcarpentry.github.io/good-enough-practices-in-scientific-computing/">Good enough practices for scientific computing</a></p>
+</li>
+<li>
+<p><a href="https://pubmed.ncbi.nlm.nih.gov/29953862/">Practical computational reproducibility in the life sciences</a></p>
+</li>
+<li>
+<p><a href="https://pubmed.ncbi.nlm.nih.gov/34462593/">Reproducibility standards for machine learning in the life sciences</a></p>
+</li>
+<li>
+<p><a href="https://r4ds.had.co.nz/tidy-data.html"><code>R</code>-centric overview of tidy data</a></p>
+</li>
+</ul>
+
+            </section>
+    
+
+
+    </div>
+
+
+  </div>
+
+  <div class="line top"></div>
+  <div class="line bottom"></div>
+  <div class="line left"></div>
+  <div class="line right"></div>
+
+  <script src="libs/reveal.js/4.3.1/reveal.js"></script>
+<script src="libs/reveal.js/4.3.1/plugin/notes/notes.js"></script>
+<script src="libs/reveal.js/4.3.1/plugin/markdown/markdown.js"></script>
+<script src="libs/reveal.js/4.3.1/plugin/highlight/highlight.js"></script>
+<script src="libs/reveal.js/4.3.1/plugin/math/math.js"></script>
+<script src="libs/reveal.js/4.3.1/plugin/fullscreen/plugin.js"></script>
+<script src="libs/reveal.js/4.3.1/plugin/animate/plugin.js"></script>
+<script src="libs/reveal.js/4.3.1/plugin/animate/svg.min.js"></script>
+<script src="libs/reveal.js/4.3.1/plugin/anything/plugin.js"></script>
+<script src="libs/reveal.js/4.3.1/plugin/anything/Chart.min.js"></script>
+<script src="libs/reveal.js/4.3.1/plugin/anything/d3/d3.v3.min.js"></script>
+<script src="libs/reveal.js/4.3.1/plugin/anything/d3.patch.js"></script>
+<script src="libs/reveal.js/4.3.1/plugin/anything/d3/queue.v1.min.js"></script>
+<script src="libs/reveal.js/4.3.1/plugin/anything/d3/topojson.v1.min.js"></script>
+<script src="libs/reveal.js/4.3.1/plugin/anything/function-plot.js"></script>
+<script src="libs/reveal.js/4.3.1/plugin/customcontrols/plugin.js"></script>
+<script src="libs/reveal.js/4.3.1/plugin/embed-tweet/plugin.js"></script>
+<script src="libs/reveal.js/4.3.1/plugin/chart/chart.min.js"></script>
+<script src="libs/reveal.js/4.3.1/plugin/chart/plugin.js"></script>
+<script src="libs/reveal.js/4.3.1/plugin/verticator/verticator.js"></script>
+
+<script src="libs/reveal.js/4.3.1/plugin/zoom/zoom.js"></script>
+
+
+
+
+<!--	<script src="libs/reveal.js/4.3.1/plugin/audio-slideshow/plugin.js"></script>  -->
+<!--	<script src="libs/reveal.js/4.3.1/plugin/audio-slideshow/recorder.js"></script>-->
+<!--	<script src="libs/reveal.js/4.3.1/plugin/audio-slideshow/RecordRTC.js"></script>-->
+
+  
+
+<script>
+  const printPlugins = [
+      RevealNotes,
+      RevealHighlight,
+      RevealMath.MathJax3,
+      RevealAnimate,
+      
+			RevealEmbedTweet,
+			RevealChart,
+		];
+
+		const plugins =  [...printPlugins,
+		RevealZoom, 
+		
+				RevealMarkdown, 
+				
+				RevealFullscreen,
+				RevealAnything,
+				//RevealAudioSlideshow,
+				//RevealAudioRecorder,
+				
+				// poll
+				// question
+				// seminar
+				Verticator 
+				 ]
+
+
+		// Also available as an ES module, see:
+		// https://revealjs.com/initialization/
+		Reveal.initialize({
+			controls: false,
+      controlsTutorial: true,
+      controlsLayout: 'bottom-right',
+      controlsBackArrows: 'faded',
+      progress: false,
+      slideNumber: true,
+      //#showSlideNumber "all" "print" "speaker"
+      hash: true, //# hash: false,
+      //# respondToHashChanges: true,
+      //# history: false,
+      keyboard: true,
+      //#keyboardCondition: null,
+      overview: true,
+      center: false,
+      touch: true,
+      loop: false,
+      rtl: false,
+      //#navigationMode: 'default', linear grid
+      shuffle: false,
+      fragments: true,
+      fragmentInURL: false,
+      embedded: false,
+      help: true,
+      //#pause: true
+      showNotes: false,
+      autoPlayMedia: false, // TODO fix this to a nullable value
+      //#preloadIframes: null. true false
+      //#autoAnimate: true
+      //#autoAnimateMatcher: null,
+      //#autoAnimateEasing: 'ease',
+      //autoAnimateDuration: 1.0,
+      //#autoAnimateUnmatched: true
+      //#autoAnimateStyles: []
+      autoSlide: 0, // TODO fix this to a falseable value
+      autoSlideStoppable: true,
+      autoSlideMethod: '0',
+      defaultTiming: 120,
+      mouseWheel: false,
+      //#previewLinks: false
+      //#postMessage: true, // TODO : this can cause issues with the vscode api ???
+      //#postMessageEvents: false,
+      //#focusBodyOnPageVisibilityChange: true,
+      transition: 'slide',
+      transitionSpeed: 'default',
+      backgroundTransition: 'none',
+      //#pdfMaxPagesPerSlide: Number.POSITIVE_INFINITY,
+      //#pdfSeparateFragments: true,
+      //#pdfPageHeightOffset: -1,
+      viewDistance: 3,
+      //#mobileViewDistance: 2,
+      display: 'block',
+      //#hideInactiveCursor: true,
+      //#hideCursorTime: 5000
+
+      // Parallax Background
+      parallaxBackgroundImage: '',
+      parallaxBackgroundSize: '',
+      parallaxBackgroundHorizontal: 0,
+      parallaxBackgroundVertical: 0,
+
+      //Presentation Size
+      width: 960,
+			height: 700,
+			margin: 0.04,
+      minScale: 0.2,
+      maxScale: 2,
+      disableLayout: false,
+
+      audio: {
+        prefix: 'audio/', // audio files are stored in the "audio" folder
+        suffix: '.ogg', // audio files have the ".ogg" ending
+        textToSpeechURL: null, // the URL to the text to speech converter
+        defaultNotes: false, // use slide notes as default for the text to speech converter
+        defaultText: false, // use slide text as default for the text to speech converter
+        advance: 0, // advance to next slide after given time in milliseconds after audio has played, use negative value to not advance
+        autoplay: false, // automatically start slideshow
+        defaultDuration: 5, // default duration in seconds if no audio is available
+        defaultAudios: true, // try to play audios with names such as audio/1.2.ogg
+        playerOpacity: 0.05, // opacity value of audio player if unfocused
+        playerStyle: 'position: fixed; bottom: 4px; left: 25%; width: 50%; height:75px; z-index: 33;', // style used for container of audio controls
+        startAtFragment: false, // when moving to a slide, start at the current fragment or at the start of the slide
+      },
+      
+			customcontrols: {
+					controls: [
+      						{
+						  id: 'toggle-overview',
+						  title: 'Toggle overview (O)',
+						  icon: '<i class="fa fa-th"></i>',
+						  action: 'Reveal.toggleOverview();'
+						}
+						
+				]
+			},
+			chart: {
+					defaults: { 
+						color: 'lightgray', // color of labels
+						scale: { 
+							beginAtZero: true, 
+							ticks: { stepSize: 1 },
+							grid: { color: "lightgray" } , // color of grid lines
+						},
+					},
+					line: { borderColor: [ "rgba(20,220,220,.8)" , "rgba(220,120,120,.8)", "rgba(20,120,220,.8)" ], "borderDash": [ [5,10], [0,0] ] }, 
+					bar: { backgroundColor: [ "rgba(20,220,220,.8)" , "rgba(220,120,120,.8)", "rgba(20,120,220,.8)" ]}, 
+					pie: { backgroundColor: [ ["rgba(0,0,0,.8)" , "rgba(220,20,20,.8)", "rgba(20,220,20,.8)", "rgba(220,220,20,.8)", "rgba(20,20,220,.8)"] ]},
+					radar: { borderColor: [ "rgba(20,220,220,.8)" , "rgba(220,120,120,.8)", "rgba(20,120,220,.8)" ]}, 
+			},
+			math: {
+				mathjax: 'https://cdn.jsdelivr.net/gh/mathjax/mathjax@2.7.8/MathJax.js',
+				config: 'TeX-AMS_HTML-full',
+				// pass other options into `MathJax.Hub.Config()`
+				TeX: { Macros: { RR: "{\\bf R}" } }
+				},
+				anything: [ 
+				{
+		className: "plot",
+		defaults: {width:500, height: 500, grid:true},
+		initialize: (function(container, options){ options.target = "#"+container.id; functionPlot(options) })
+	 },
+	 {
+		className: "chart",  
+		initialize: (function(container, options){ container.chart = new Chart(container.getContext("2d"), options);  })
+	 },
+	 {
+		className: "anything",
+		initialize: (function(container, options){ if (options && options.initialize) { options.initialize(container)} })
+	 },
+					],
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: (window.location.search.match(/print-pdf/gi) ? printPlugins : plugins ) 
+		});
+			
+
+
+	    // Change chalkboard theme : 
+		function changeTheme(input) {
+			var config = {};
+			config.theme = input.value;
+			Reveal.getPlugin("RevealChalkboard").configure(config);
+			input.blur();
+		}
+
+		// // Handle the message inside the webview
+        // window.addEventListener('message', event => {
+
+        //     const message = event.data; // The JSON data our extension sent
+
+        //     switch (message.command) {
+        //         case 'refactor':
+        //             Reveal.toggleHelp();
+        //     }
+        // });
+
+		if (window.location.search.match(/print-pdf-now/gi)) {
+      		setTimeout(() => {
+				window.print();
+			  }, 2500);
+			
+    }
+</script>
+
+</body>
+
+</html>

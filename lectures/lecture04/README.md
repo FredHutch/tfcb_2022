@@ -10,14 +10,14 @@ In the first lecture, I will describe the larger context of why we want to use t
 
 ## Learning objectives
 
-After this course, you should be able to:
+After these two lectures, you should be able to:
 
 - Navigate a file system in the shell
 - Run commands in the shell
 - Understand basic usage of piping and redirection
 - Edit a file using vim
+- Write a for loop
 - Write a basic shell script
-- Run a command in parallel using GNU Parallel
 
 ## Class materials
 

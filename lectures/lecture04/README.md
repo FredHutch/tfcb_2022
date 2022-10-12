@@ -1,11 +1,13 @@
 # Lecture 04: First steps in the shell
 
-**Melody Campbell ([@melodygcampbell](https://twitter.com/elodygcampbell), [campbellab.org](http://campbellab.org))**
+**Melody Campbell ([@melodygcampbell](https://twitter.com/melodygcampbell), [campbellab.org](http://campbellab.org))**
 
 This lesson introduces you to the command line (a.k.a. Unix shell), which is useful (and necessary) for automating tasks, working with files/directories, and using compute clusters.
 
 In the first lecture, I will describe the larger context of why we want to use the command line.
-[Here are the slides](https://fredhutch.github.io/tfcb_2021/lectures/lecture03/slides/slides.html) if you wish to follow along, and if you missed the lecture [here is a recorded version](https://www.youtube.com/watch?v=dzkacZ2BTjw) covering the same material.
+[Here are the slides](https://fredhutch.github.io/tfcb_2021/lectures/lecture03/slides/slides.html), and if you missed the lecture [here is a recorded version]([https://www.youtube.com/watch?v=dzkacZ2BTjw](https://washington.zoom.us/rec/play/nj7pWg7IKpyr-GPZxY1vRFxO7vY1DL9ngNOJn30qPEaKAtZXhey-ozbD1y9fzfk51pOQL07IY9QzE0V0.WvN9DpGY50yEGzXI?continueMode=true)) covering the same material.
+
+If you want a second opnion or want to learn paralleization, [here is a recorded version](https://www.youtube.com/watch?v=dzkacZ2BTjw) covering the similar material by Eric Matsen in 2020.
 
 
 ## Learning objectives

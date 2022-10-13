@@ -1,4 +1,4 @@
-# Lecture 05: First steps in the shell
+# Lecture 05: Next steps in the shell
 
 **Melody Campbell ([@melodygcampbell](https://twitter.com/melodygcampbell), [campbellab.org](http://campbellab.org))**
 

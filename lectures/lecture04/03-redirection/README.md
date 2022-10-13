@@ -6,20 +6,21 @@ Let's make sure we're in the right place-- `pwd` should end in `03-redirection`.
 
 ## Pipes
 
-Remember how we didn't want to cat the `sequence.gb` file because it was too big?
-Sometimes the output from a command is also very verbose and we'd like to be able to page through it.
-For example, `tree /` will make a tree of every single file on your file system, which may be in the millions.
-You don't want to wait for that to scroll past.
+Think back to the long file `sequence.gb` We used the grep command to only look at the header (lines containing `/`)
 
-So!
-Try this:
+What if we wanted to quickly list out all of the protein id that start with AAA.
 
-    tree / | less
+Try the grep command again
 
-Magic!
-We can now use our less keys to page through the output.
+    grep AAA sequence.gb
+    
+ You get some extra unwanted lines.
+ Instead use a pipe to filter only results within the header, and then look for the AAA pattern
 
-What happened here is that we took the output flowing from `tree` and connected it using a "pipe" to `less`.
+    grep '/' sequence.gb | grep AAA
+    
+Now we only get the desired protein id lines.*
+
 The "pipe" operator is `|`.
 The general format is
 
@@ -33,11 +34,11 @@ We can chain together an arbitrary number of commands like
 etc.
 
 Now it's your turn.
-Use redirection to count the number of files in the `lecture03` directory.
+Use redirection to count the number of files in the `lecture04` directory.
 (Remember the various flags we used for `ls`, and the fact that you can give it an argument, as well as the thing-counting command we encountered towards the end of `01-first-steps.md`.)
 
 
-## Filtering
+## Filtering directories with grep
 
 One often wants to take a subset of the output that one gets from a command, and pass it to another command.
 For example, there is the `grep` command.
@@ -50,12 +51,12 @@ and then
     ls ../slides/images | grep jpg
 
 You can see that adding the `grep jpg` filtered the output to only things containing the string `jpg`.
-That's what it does!
+That's what it does!**
 You can read more about grep using `man`.
 It's incredibly powerful!
 
-Now pipe together `tree` and other commands you know to find the number of files in `lecture03` that contain `md`.
-
+* what is an easier way to do this?
+** how can you do this with a wildcard?
 
 ## Redirecting to files
 
@@ -64,22 +65,23 @@ We can do that with another redirection operator, which is `>`.
 
 For example, try
 
-    tree .. > output.txt
+    ls .. | grep .md > output.txt
 
 Now take a look at the `output.txt` using an appropriate command.
 
-Now use a similar command to record the output of `date` in `output.txt` and then look at it.
+Now use a similar command to record the output of only `.gb` files in `output.txt` and then look at it.
 
 Did you over-write the previous content of `output.txt`?
 Sometimes that's intended, but if we don't want to over-write the output of a file, we can use the `>>` operator, like so:
 
-    date >> output.txt
+    ls .. | grep .gb >> output.txt
 
-This appends the output of `date` to our file.
+This appends the output of the command to our file.
 
 Now it's your turn.
-Make a file that has the date, a picture of Darth Vader, and the directory tree of `lecture03`.
+Make a file that has the date, a picture of Darth Vader, and the list of files in `lecture04`.
 You can use multiple commands to achieve this result.
+
 
 ---
 

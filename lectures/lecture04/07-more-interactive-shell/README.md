@@ -4,10 +4,10 @@
 
 In the scripting component you just did, we used wildcards like so:
 
-    ls input_*.bam | parallel file
+    ls PHOTO*.jpg
 
 The `*` just represents any set of characters.
-Thus this `ls` call just lists anything that starts with `input_` and ends with `.bam`.
+Thus this `ls` call just lists anything that starts with `PHOTO` and ends with `.jpg`.
 
 Now it's your turn.
 You can combine wildcards, using them for example for both directory and file names.
@@ -58,23 +58,7 @@ It is more common to use the less safe
 
 which recursively removes `DIRECTORYNAMES` and all of their contents.
 
-Unlike "putting something in the trash" on a desktop OS, once linux removes a file, it's gone!
-
-However, there's a safety net on the Fred Hutch linux system, which are the "snapshots."
-Every hour the Fred Hutch servers back up your whole home directory into a snapshot folder hosted in `~/.snapshot`.
-Assuming you are on `rhino`, try
-
-    ls ~/.snapshot
-
-to see all of these files.
-
-Now it's your turn to pretend you made a mistake.
-I will assume that you are in `tfcb_2021/lectures/lecture03`.
-Try removing some non-essential file, say doing
-
-    rm vader.txt
-
-and then restoring it from the snapshot directory.
+BE CAREFUL!! Unlike "putting something in the trash" on a desktop OS, once linux removes a file, it's gone!
 
 
 ### Making directories

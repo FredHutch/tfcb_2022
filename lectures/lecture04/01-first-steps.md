@@ -127,6 +127,13 @@ Try
 
 to find the commands that allow you to move forward and backward by page, and use them to view `sequence.gb`.
 
+Additionally, sometimes you may only be interested in reading a specific part of a file.
+For this sequence file, lines containing header information start with a '\'. If you want to print only that, use the `grep` command
+    grep sequence.gb /
+    
+ The general usage is
+    grep 'word' filename
+    
 
 ## `man`: the built-in manual
 
@@ -146,8 +153,8 @@ Look at the overall structure of the document. What does the top describe? What 
 
 Use any method you like to find documentation about the `wc` command, then use it to count the number of lines in `sequence.gb`.
 
-Similarly, look at the documentation for the `ls` command to learn about the `-a` flag.
-
+Look at the documentation for the `ls` command to learn about the `-a` flag.
+Look at the documentation for the `grep` command to learn about the `-v` flag.
 
 ---
 

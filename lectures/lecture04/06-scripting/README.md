@@ -66,37 +66,7 @@ You can make your shell script like executing a normal command by
 
 Now you should be able to run your script with `./script1.sh`.
 
-Next we'll be playing around scripting with samtools using the `wgs_bam_NA12878_20k_b37_NA12878.bam` file in this directory.
-
-[samtools](https://www.htslib.org/doc/samtools.html) is a collection of tools for manipulating data in
-Sequence Alignment/Map (SAM) format.
-This software is installed on rhino, but needs to be made available for use using `module load`, or `ml` for short:
-
-    ml SAMtools
-
-Our data has an awkward name, so let's rename it `input.bam` with
-
-    mv wgs_bam_NA12878_20k_b37_NA12878.bam input.bam
-
-This file contains a bunch of sequence reads that align to the human genome.
-You first need to prepare this file like so:
-
-    samtools index input.bam
-
-Samtools has a nice command line user interface that has commands within the command.
-The format is like
-
-    samtools COMMAND ETC
-
-where `COMMAND` is a command such as `index` and `ETC` are flags, files, etc.
-This is now common and is used for git and other lovely software.
-
-You can view reads from the first chromosome with
-
-    samtools view input.bam 1 | head
-
-Try that out.
-Rather than using `head`, try piping to something that will allow you to scroll.
+## Making a for loop
 
 
 ## ERRORS!!!

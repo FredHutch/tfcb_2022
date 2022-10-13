@@ -34,6 +34,12 @@ or using `snail` as described [here](https://fredhutch.github.io/tfcb_2021/softw
 Once you have logged on,
 execute the following commands:
 
+(Optional) If you followed along yesterday for the interactive lecture, you will need to mv your directory since it has the same name as the one we will use today.
+
+    mv tfcb_2022 tfcb_2022_inclass
+    
+Then use this command to grab the materials we'll work though today:
+
     git clone https://github.com/fredhutch/tfcb_2022.git
     cd tfcb_2022/lectures/lecture04
 

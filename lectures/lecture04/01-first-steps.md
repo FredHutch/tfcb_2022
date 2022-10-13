@@ -4,7 +4,7 @@ Before you get started, type
 
     pwd
 
-and make sure that the output ends with `tfcb_2021/lectures/lecture03`.
+and make sure that the output ends with `tfcb_2022/lectures/lecture04`.
 If not, go back to [the tutorial instructions](https://github.com/FredHutch/tfcb_2021/tree/main/lectures/lecture03#tutorial).
 Don't hesitate to ask questions if you get stuck!
 

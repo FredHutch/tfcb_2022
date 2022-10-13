@@ -37,7 +37,7 @@ execute the following commands:
     git clone https://github.com/fredhutch/tfcb_2022.git
     cd tfcb_2022/lectures/lecture04
 
-Now you can start the first lesson by clicking [here](01-first-steps.md).
-We recommend keeping a browser open with the lesson materials as you work through the exercises on rhino.
-Go to [this page](https://github.com/fredhutch/tfcb_2021/tree/master/lectures/lecture03) to see the complete list of files for this lecture.
-The [`quickref.md` file](https://fredhutch.github.io/tfcb_2021/lectures/lecture03/quickref) is a short-as-possible quick reference sheet with basic commands.
+Now you can start the first lesson by clicking [here](https://fredhutch.github.io/tfcb_2022/lectures/lecture04/01-first-steps.md).
+We recommend keeping a browser open with the lesson materials as you work through the exercises on VS Studio or your computer.
+Go to [this page](https://github.com/fredhutch/tfcb_2022/tree/master/lectures/lecture04) to see the complete list of files for this lecture.
+The [`quickref.md` file](https://fredhutch.github.io/tfcb_2022/lectures/lecture04/quickref) is a short-as-possible quick reference sheet with basic commands.

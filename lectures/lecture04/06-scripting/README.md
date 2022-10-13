@@ -66,33 +66,6 @@ You can make your shell script like executing a normal command by
 
 Now you should be able to run your script with `./script1.sh`.
 
-## Making a for loop
-
-
-## ERRORS!!!
-
-Try running `./script2.sh` via
-
-    ./script2.sh
-
-* What happened?
-* Did the script run to completion?
-* What is in the final output file?
-* Fix the "bug" in this script and re-run.
-* How does the output look now?
-
-You see, shell scripts are determined to finish come hell or high water.
-That's a really bad thing!
-When something goes wrong, such as getting a filename wrong, you want the program to stop, not making bad output.
-Now we will learn something very important...
-
-**Always put `set -eu` as the second line of your shell script.**
-
-* Try putting `set -eu` as the second line, just after `#!/bin/bash`.
-* Re-introduce the "bug".
-* Remove the output files.
-* Re-run the script.
-
 
 ## Don't write complex shell
 

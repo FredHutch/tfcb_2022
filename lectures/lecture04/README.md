@@ -14,12 +14,12 @@ If you want a second opnion or want to learn cluser-based computing and parallei
 
 After these two lectures, you should be able to:
 
-- Navigate a file system in the shell
-- Run commands in the shell
-- Understand basic usage of piping and redirection
-- Edit a file using vim
-- Write a for loop
-- Write a basic shell script
+- Navigate a file system in the shell (lecture 04)
+- Run commands in the shell (lecture 04)
+- Understand basic usage of redirection (lecture 04)
+- Write a for loop (lecture 05)
+- Edit a file using vim (lecture 05)
+- Write a basic shell script (lecture 05)
 
 ## Class materials
 

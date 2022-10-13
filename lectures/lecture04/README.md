@@ -1,6 +1,6 @@
 # Lecture 04: First steps in the shell
 
-**Melody Campbell ([@melodygcampbell](https://twitter.com/melodygcampbell), [campbellab.org](http://campbellab.org))**
+**Melody Campbell ([@melodygcampbell](https://twitter.com/melodygcampbell), [campbelllab.org](http://campbelllab.org))**
 
 This lesson introduces you to the command line (a.k.a. Unix shell), which is useful (and necessary) for automating tasks, working with files/directories, and using compute clusters.
 

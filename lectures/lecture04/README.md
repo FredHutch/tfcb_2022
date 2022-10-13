@@ -39,7 +39,7 @@ This material requires access to a [unix shell](https://fredhutch.github.io/tfcb
   - Macintosh operating systems are built on Unix, so many of the tools you’ll need are pre-installed on your computer. You can access the command line through an application called Terminal. You can either search for this in Finder, or use the Go drop-down menu to locate it in the Utilities folder.
   
 - **Use a Command Line on Windows 10**
-  - Windows 10 comes with a new feature called Windows Subsystem for Linux (WSL) that allows you to access Unix tools on your computer. Please install WSL with the instructions [here] (https://learn.microsoft.com/en-us/windows/wsl/install).
+  - Windows 10 comes with a new feature called Windows Subsystem for Linux (WSL) that allows you to access Unix tools on your computer. Please install WSL with the instructions [here](https://learn.microsoft.com/en-us/windows/wsl/install).
 
 
 ## Reminders

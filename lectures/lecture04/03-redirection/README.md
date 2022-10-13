@@ -69,7 +69,7 @@ For example, try
 
 Now take a look at the `output.txt` using an appropriate command.
 
-Now use a similar command to record the output of only `.gb` files in `output.txt` and then look at it.
+Now use a similar command to record the date using the `date` command in `output.txt` and then look at it.
 
 Did you over-write the previous content of `output.txt`?
 Sometimes that's intended, but if we don't want to over-write the output of a file, we can use the `>>` operator, like so:

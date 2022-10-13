@@ -27,7 +27,7 @@ After these two lectures, you should be able to:
   - See the Tutorial section below to get started with the exercises.
   - The recorded lecture and introductory slides are linked to above.
 - This material requires access to a [unix shell](https://fredhutch.github.io/tfcb_2021/software/#unix-command-line-shell). Different "flavors" of shell have slight variations in commands available so don't be surprised if some of the commands and options are slightly different (especially on OS X).
-  - Terminal via Visual Studio Code (recommended)
+  - Terminal via [Visual Studio Code (recommended)](https://github.com/FredHutch/tfcb_2022/blob/main/software/README.md#vscode-text-editor)
   - Terminal via Mac OS X
   - Terminal via Windows 10
 

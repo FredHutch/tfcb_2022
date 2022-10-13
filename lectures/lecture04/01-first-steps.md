@@ -154,4 +154,4 @@ Similarly, look at the documentation for the `ls` command to learn about the `-a
 Congratulations!
 You now know how to navigate around the file system.
 
-For the next step, look at the [README](https://fredhutch.github.io/tfcb_2022/lectures/lecture04/02-directories/README) file in the `02-directories` directory to work through the next part of the adventure.
+For the next step, look at the [README](https://fredhutch.github.io/tfcb_2022/lectures/lecture04/02-directories/README.md) file in the `02-directories` directory to work through the next part of the adventure.

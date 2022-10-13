@@ -56,6 +56,7 @@ There are lots of ways to move around beyond the arrow keys, but I'm just going 
 * `0` moves to the beginning of the line, and `$` moves to the end of the line
 * `b` moves back one word, and `w` moves forward one word
 * `{` moves back one paragraph, and `}` moves forward one paragraph
+* `G` moves you to the end of the document
 
 You can prefix these commands with numbers to move faster, e.g. `3w` moves you forward three words.
 
@@ -85,6 +86,17 @@ If you want to change every instance in the whole document with out confirming e
 `:%s/input/output/g`
 
 *If you want your search term to have a space or a special character you need to use the escape character
+
+## Deleting Lines
+
+First bring your cursor to the line you want to delete: (Not a colon command)
+
+* `dd` delete a whole line
+* `4 dd` delete that line and the 3 subsequnt lines
+
+To get to a specific line is a colon command
+* `:1` brings you do the first line
+* `:6` brings you do the 6th line
 
 
 ## Cutting and pasting

@@ -14,7 +14,7 @@ Try the grep command again
 
     grep AAA ../sequence.gb
     
- You get some extra unwanted lines.
+ You get an extra unwanted line that is not part of the header.
  Instead use a pipe to filter only results within the header, and then look for the AAA pattern
 
     grep '/' ../sequence.gb | grep AAA

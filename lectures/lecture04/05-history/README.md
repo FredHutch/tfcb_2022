@@ -30,7 +30,7 @@ bck-i-search: cd_
 You can cycle through earlier commands by hitting `Ctrl-r` again.
 If you want to cancel your reverse search, use `Ctrl-g`.
 
-Try looking back through your history to find all the commands that used `tree`.
+Try looking back through your history to find all the commands that used `ls`.
 
 
 ## Command line editing
@@ -40,8 +40,8 @@ Do you use the arrow keys to go one letter by letter to the start of the line?
 No!
 You use the following handy commands:
 
-* `Ctrl-a`: move to the start of the line
-* `Ctrl-e`: move to the end of the line
+* `Ctrl-a`: move to the start of the line (a is the first letter of the alphabet)
+* `Ctrl-e`: move to the end of the line (the word 'end' starts with e)
 * `Meta-f`: move forward one word
 * `Meta-b`: move backward one word
 * `Ctrl-k`: delete to the end of the line

@@ -24,7 +24,7 @@ After these two lectures, you should be able to:
 ## Class materials
 
 - All instructions for this lesson are links or are available in this repository.
-  - See the Tutorial section below to get started with the exercises.
+  - See the Tutorial section in the next lecture to get started with the exercises.
   - The recorded lecture and introductory slides are linked to above.
   
 ## Setup: Accessing a Command Line

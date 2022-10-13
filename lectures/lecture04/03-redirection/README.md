@@ -12,12 +12,12 @@ What if we wanted to quickly list out all of the protein id that start with AAA.
 
 Try the grep command again
 
-    grep AAA sequence.gb
+    grep AAA ../sequence.gb
     
  You get some extra unwanted lines.
  Instead use a pipe to filter only results within the header, and then look for the AAA pattern
 
-    grep '/' sequence.gb | grep AAA
+    grep '/' ../sequence.gb | grep AAA
     
 Now we only get the desired protein id lines.*
 

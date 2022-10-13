@@ -26,7 +26,11 @@ After these two lectures, you should be able to:
 - All instructions for this lesson are links or are available in this repository.
   - See the Tutorial section below to get started with the exercises.
   - The recorded lecture and introductory slides are linked to above.
-- This material requires access to a [unix shell](https://fredhutch.github.io/tfcb_2021/software/#unix-command-line-shell). Different "flavors" of shell have slight variations in commands available. These materials are designed to work on the group of computing servers at Fred Hutch called "rhino". Please see [these instructions](https://fredhutch.github.io/tfcb_2021/software/unix_rhino) for logging on to rhino, and note there is an extra step to log in off campus. You can execute most of these commands on your own computer (e.g., without logging in to rhino), but don't be surprised if some of the commands and options are slightly different (especially on OS X).
+- This material requires access to a [unix shell](https://fredhutch.github.io/tfcb_2021/software/#unix-command-line-shell). Different "flavors" of shell have slight variations in commands available so don't be surprised if some of the commands and options are slightly different (especially on OS X).
+  - Terminal via Visual Studio Code (recommended)
+  - Terminal via Mac OS X
+  - Terminal via Windows 10
+
 
 ## Reminders
 

@@ -1,6 +1,6 @@
 # Lecture 05: Next steps in the shell
 
-**Melody Campbell ([@melodygcampbell](https://twitter.com/melodygcampbell), [campbellab.org](http://campbellab.org))**
+**Melody Campbell ([@melodygcampbell](https://twitter.com/melodygcampbell), [campbelllab.org](http://campbelllab.org))**
 
 This lesson builds on the work that we did in the previous session, while adding additional complexity. editing a file using vim, writing a for loop, and writing a basic shell script.
 

@@ -72,6 +72,20 @@ When you are done typing the thing you want to find, hit return.
 If you want to find the next item, hit `n`.
 You can go back using `Ctrl-o` as described before.
 
+## Find / Replace
+
+This is a colon command using the search function.
+
+Let's say we want to change every instance of 'citizen' in this speech to 'computer programmer'. To do this use this command:
+
+`:%s/citizen/computer_programmer/g`
+
+If you want to change every instance in the whole document with out confirming each one, the basic structure is as follows:
+
+`:%s/input/output/g`
+
+*If you want your search term to have a space or a special character you need to use the escape character
+
 
 ## Cutting and pasting
 

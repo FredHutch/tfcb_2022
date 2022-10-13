@@ -93,7 +93,7 @@ Now it's your turn.
 * Copy this `README.md` file into `..`
 * Rename it `../README.copy.md`
 * Make a directory called `copies`
-* Copy `../README.copy.md` and `../lecture09/vader.txt` into `copies`
+* Copy `../README.copy.md` and into `copies`
 * Remove the `copies` directory
 
 ---

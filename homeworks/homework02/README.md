@@ -34,12 +34,42 @@ This file should contain the following text:
 
 This script should also create a directory called homework02, and move question01.txt into the homework02 directory.
 
+Example:
+My name is melody
+My home directory is /Users/melody
+The contents of the tfcb_2022/lectures/lecture04/ directory are
+01-first-steps.md
+02-directories
+03-redirection
+04-vim
+05-history
+06-scripting
+07-more-interactive-shell
+README.md
+quickref.md
+sequence.gb
+slides
+vader.txt
 
 
 ## Problem 2
 
 **20 points**
 
-Will be released tonight (October 13)
+**Write a script that uses a loop to output files with specific names**
+
+
+Make a single script that does the following:
+
+Makes a new directory in homework02 called question02
+
+In that directory, your script should make 25 new files called
+file###.txt
+
+the ### should be the numbers from a list you can find here:
+
+tfcb_2022/homeworks/homework02/list.txt
+
+You can make the contents of those files whatever you want (hint: slide 10... what was the contents of the fake "jpg" file?)
 
 

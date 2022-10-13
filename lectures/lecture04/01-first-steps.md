@@ -156,6 +156,7 @@ Look at the overall structure of the document. What does the top describe? What 
 Use any method you like to find documentation about the `wc` command, then use it to count the number of lines in `sequence.gb`.
 
 Look at the documentation for the `ls` command to learn about the `-a` flag.
+
 Look at the documentation for the `grep` command to learn about the `-v` flag.
 
 ---

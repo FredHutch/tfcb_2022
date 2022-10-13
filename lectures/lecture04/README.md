@@ -7,7 +7,7 @@ This lesson introduces you to the command line (a.k.a. Unix shell), which is use
 In the first lecture, I will describe the history of and larger context for why we want to use the command line.
 [Here are the slides](https://fredhutch.github.io/tfcb_2021/lectures/lecture03/slides/slides.html), and if you missed the lecture [here is a recorded version](https://washington.zoom.us/rec/share/kAlIrKjjhTXqy76tNzHBJG8g1BlglpnBkWj4vAS-7taesKBxFPTeyd6X4vmBnTnw.RXJ0i7Snc2N6Trel). 
 
-If you want a second opnion or want to learn cluser-based computing and paralleization, [here is a recorded version](https://www.youtube.com/watch?v=dzkacZ2BTjw) covering the similar material by Eric Matsen in 2020.
+If you want a second opnion or want to learn cluser-based computing and paralleization, [here is a recorded version](https://www.youtube.com/watch?v=dzkacZ2BTjw) covering related material by Eric Matsen in 2020.
 
 
 ## Learning objectives

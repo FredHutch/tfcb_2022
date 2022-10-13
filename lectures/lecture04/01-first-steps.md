@@ -128,10 +128,12 @@ Try
 to find the commands that allow you to move forward and backward by page, and use them to view `sequence.gb`.
 
 Additionally, sometimes you may only be interested in reading a specific part of a file.
-For this sequence file, lines containing header information start with a '\'. If you want to print only that, use the `grep` command
+For this sequence file, lines containing header information start with a '\/'. If you want to print only that, use the `grep` command:
+    
     grep sequence.gb /
     
  The general usage is
+    
     grep 'word' filename
     
 

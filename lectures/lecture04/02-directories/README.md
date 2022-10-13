@@ -45,37 +45,6 @@ For example, on my computer I could try
 
 but on your machine the path components will be different.
 
-
-### Tree
-
-Of course, directories can be nested and so it's not always easy to get an overall view of what is where.
-For this there is the `tree` command, which will show a nested directory structure as a tree.
-
-Try
-
-    tree
-
-The output should look like
-
-    .
-    ├── purchase
-    │   ├── egg
-    │   │   └── yolk.md
-    │   └── greenland
-    │       └── ice.md
-    └── README.md
-
-    3 directories, 3 files
-
-Try executing `tree` now and see if you get the same result.
-
-The `tree` command can also take an argument, which is the directory for which it should draw the tree.
-
-* without changing directories, show the directory tree of the `purchase` directory only
-* look in the `tree` documentation to list only directories (and not files) and try that out here
-* try giving `cd` the name of a directory that doesn't exist or isn't a subdirectory of the current directory
-
-
 ### Tab completion
 
 Experienced shell users do not write out the full names of files or directories.

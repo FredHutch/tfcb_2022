@@ -34,8 +34,8 @@ or using `snail` as described [here](https://fredhutch.github.io/tfcb_2021/softw
 Once you have logged on,
 execute the following commands:
 
-    git clone https://github.com/fredhutch/tfcb_2021.git
-    cd tfcb_2021/lectures/lecture03
+    git clone https://github.com/fredhutch/tfcb_2022.git
+    cd tfcb_2022/lectures/lecture04
 
 Now you can start the first lesson by clicking [here](01-first-steps.md).
 We recommend keeping a browser open with the lesson materials as you work through the exercises on rhino.

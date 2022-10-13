@@ -2,7 +2,7 @@
 
 **Melody Campbell ([@melodygcampbell](https://twitter.com/melodygcampbell), [campbelllab.org](http://campbelllab.org))**
 
-This lesson builds on the work that we did in the previous session, while adding additional complexity. editing a file using vim, writing a for loop, and writing a basic shell script.
+This lesson builds on the work that we did in the previous session, while adding additional complexity.
 
 ## Learning objectives
 
@@ -16,7 +16,7 @@ After these two lectures, you should be able to:
 - Write a basic shell script (lecture 05)
 
 
-In the second lecture, We will go over the commands presented in the previous session. We will use some of these commands to write a for loop that can automate tasks. We will also learn how to edit a file using vim and how to write and submit a shell script. A signficant portion of this session will be dedicated to working though the tutorial.
+In the second lecture, We will go over the commands presented in the previous session. We will use some of these commands to write a for loop that can automate tasks. We will also learn how to edit a file using vim and how to write and submit a shell script. A signficant portion of this session will be dedicated to working though the tutorial by Erick Matsen.
 
 [The slides will be here](https://fredhutch.github.io/tfcb_2022/lectures/lecture05/slides/slides.html), and if you missed the lecture [here will be a recorded version](https://washington.zoom.us). 
 

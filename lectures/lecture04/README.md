@@ -27,9 +27,16 @@ After these two lectures, you should be able to:
   - See the Tutorial section below to get started with the exercises.
   - The recorded lecture and introductory slides are linked to above.
 - This material requires access to a [unix shell](https://fredhutch.github.io/tfcb_2021/software/#unix-command-line-shell). Different "flavors" of shell have slight variations in commands available so don't be surprised if some of the commands and options are slightly different (especially on OS X).
-  - Terminal via [Visual Studio Code (recommended)](https://github.com/FredHutch/tfcb_2022/blob/main/software/README.md#vscode-text-editor)
-  - Terminal via Mac OS X
-  - Terminal via Windows 10
+  
+**Use a Command Line via Visual Studio Code (recommended)**
+  -  [Install using these instructions](https://github.com/FredHutch/tfcb_2022/blob/main/software/README.md#vscode-text-editor)
+  -  Adjust the view options in the upper right corner to toggle view and maximize the "Terminal" tab
+  
+**Use a Command Line on Mac OS X**
+  - Macintosh operating systems are built on Unix, so many of the tools you’ll need are pre-installed on your computer. You can access the command line through an application called Terminal. You can either search for this in Finder, or use the Go drop-down menu to locate it in the Utilities folder.
+  
+**Use a Command Line on Windows 10**
+   - Windows 10 comes with a new feature called Windows Subsystem for Linux (WSL) that allows you to access Unix tools on your computer. Please install WSL with the instructions [here] (https://learn.microsoft.com/en-us/windows/wsl/install).
 
 
 ## Reminders

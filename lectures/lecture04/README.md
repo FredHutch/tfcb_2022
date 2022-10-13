@@ -41,7 +41,7 @@ After these two lectures, you should be able to:
 
 ## Reminders
 
-- Homework 2 (command line) is available [here](https://fredhutch.github.io/tfcb_2021/homeworks/homework02); it may be useful to reference these questions as you work through material in today's class.
+- Homework 2 (command line) will be available [here](https://fredhutch.github.io/tfcb_2022/homeworks/homework02); it may be useful to reference these questions as you work through material in today's class.
 
 ## Tutorial
 

@@ -12,9 +12,9 @@ After this section, you should be able to:
 
 ## Class materials
 
-- We'll be using Jupyter notebooks as our interface for Python, so we recommend installing [Anaconda](https://github.com/fredhutch/tfcb_2021/tree/master/software#Python) (this also installs many of the other packages we'll be using in Python this semester).
+- We'll be using Jupyter notebooks as our interface for Python, which we'll interact with through vscode. Another route is through the Anaconda package manager.
 - The content for this lecture (as well as lecture 7) is contained in the Jupyter notebook [`lecture06.ipynb`](lecture06.ipynb) located in this directory. The example code and practice exercises are executable as code cells in that notebook. For additional background on Jupyter notebooks, please see [this link](https://realpython.com/jupyter-notebook-introduction/).
 
 ## Reminders
 - Homework deadlines:
-  - [Homework 3 (intro to python)](../../homeworks/homework03) will be finalized by end-of-day October 21 and due October 28th.
+  - [Homework 3 (intro to python)](../../homeworks/homework03) will be finalized by end-of-day October 20 and due October 27th.

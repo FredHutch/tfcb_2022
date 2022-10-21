@@ -8,5 +8,5 @@ If you have difficulty viewing this notebook in GitHub, copy the URL to the page
 
 **Instructions:**
 - Pull the most recent changes from GitHub into your local copy of the repository.
-- Add your code to the notebook to answer each question. The data file from lectures 8/9 has been included for your convenience. You may find it useful to view the material presented in those lectures. A copy of the data file has been included here for your convenience.
-- Make sure your entire notebook is executable, and has been executed in order (in the "Cell" menu, select "Run All")
+- Add your code to the notebook to answer each question. A copy of the data file from lectures 8/9 has been included for your convenience. You may find it useful to view the material presented in those lectures.
+- Make sure your entire notebook is executable, and has been executed in order (hit the "Run All" button before submitting)

@@ -1,6 +1,8 @@
 # Lecture 08
 
-For our next set of lectures, we'll use Python to explore some specific tools common in computational biology research. Lecture 08 and 09 from Jesse Bloom will introduce you to the use of packages in general, and [Biopython](https://biopython.org) in particular, which includes many useful tools for manipulation and analysis of data related to molecular biology.
+For our next set of lectures, we'll use Python to explore some specific tools common in computational biology research.
+Lecture 08 and 09 from Maggie Russell will introduce you to the use of packages in general, and [Biopython](https://biopython.org) in particular, which includes many useful tools for manipulation and analysis of data related to molecular biology.
+We've included a number of practice exercises in this section to help you gauge your understanding of the material.
 
 ## Learning objectives
 
@@ -16,6 +18,8 @@ After this section, you should be able to write Python functions that perform so
 
 - The content for this lecture is contained in the Jupyter notebook [lecture08.ipynb](lecture08.ipynb) located in this directory.
 
-- Please install [Biopython](https://anaconda.org/anaconda/biopython) prior to class by opening Terminal (Mac) or Anaconda Prompt (Windows) and executing the following code: `conda install -c anaconda biopython` . Alternatively (on either platform), open Anaconda Navigator, go to "Environments" and click "not installed". Search for biopython click the box to install.
+- All of the necessary packages should already be installed within the class Docker container
 
-- This class requires use of Python 3.6+. If you installed Anaconda recently (e.g., within the last few months, since the start of the course), you should be fine. If you are working with an older installation of Python, please see [these instructions](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-python.html#updating-or-upgrading-python) for checking your version and updating if necessary.
+## Reminders
+
+- [Homework 4](../../homeworks/homework04) will be finalized by end-of-class on October 27th and will be due on November 3rd

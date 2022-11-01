@@ -54,3 +54,11 @@ RUN conda run -n tfcb2022_rna pip install umap-learn==0.5.1
 
 # jupyter/ipython installation
 RUN mamba install -y -n tfcb2022_rna -c conda-forge ipykernel
+
+# install for Gavin Ha's lectures
+RUN mamba install -y -n tidy -c bioconda bioconductor-variantannotation
+
+RUN mamba create -n samtools
+RUN mamba install -y -n samtools -c bioconda -c conda-forge samtools=1.16.1
+RUN mamba create -n picard
+RUN mamba install -y -n picard -c bioconda -c conda-forge picard-slim=2.21.6

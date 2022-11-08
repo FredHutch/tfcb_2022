@@ -65,3 +65,6 @@ RUN mamba install -y -n picard -c bioconda -c conda-forge picard-slim=2.21.6
 
 # ggbio is for plotting genomic coordinate data
 RUN mamba install -y -n tidy -c bioconda -c conda-forge bioconductor-ggbio
+
+# add seaborn to base container
+RUN mamba install -y -c conda-forge seaborn

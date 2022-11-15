@@ -3,7 +3,7 @@
 This lecture will unite the last lecture's content on genomic analysis with our previous coding in R. The packages we'll use this week are from [Bioconductor](http://bioconductor.org), a collection of software specifically designed for genomic analysis in R.
 
 ## Lecture Notes
-[Lecture slides](./MCB536_lecture16_GenomicDataInR.pdf)
+[Lecture slides](./MCB536_lecture15_GenomicDataInR.pdf)
 
 ## Learning objectives
 
@@ -15,12 +15,12 @@ Genome variant analysis (Background)
 
 Genomic Data (hands-on tutorials)
 - Use Bioconductor packages to work with genomic data in R
-- Load, inspect, and query genomic data (BED/SEG, BAM, VCF files)
+- Load, inspect, and query genomic data (BED/SEG, VCF files)
 - Identify and annotate genomic variants
 
 ## Before the class
 
-We will be working through some tutorials directly on your laptop using R Studio.
+We will be working through some tutorials directly on your laptop using R. 
 
 ### 1. Install the R packages
 
@@ -40,24 +40,13 @@ We will be working through some tutorials directly on your laptop using R Studio
 
 ### 2. Class materials: R Markdown files containing the tutorials
 
-- If you have not done so already, update your local copy of the class repository from GitHub. You should have a directory (`lecture16`) containing the following three RMarkdown tutorials:
-  - [Lecture16_GenomicData.Rmd](Lecture16_GenomicData.Rmd): store genomic data as objects, assess genomic ranges, apply operations on genomic data
-  - [Lecture16_Rsamtools.Rmd](Lecture16_Rsamtools.Rmd): load and query sequencing data; compute “pile-up” statistics at genomic loci to identify genomic variants
-  - [Lecture16_VariantCalls.Rmd](Lecture16_VariantCalls.Rmd): load and assess variant (vcf) data
-
-### 3. Install R Extension in VSCode 
-
-- `Extensions` (on left panel) > Type in search bar: `"R Extension"` > Select `R Extension for Visual Studio Code` by Yuki Ueda
-- The extension page should look something like this: https://marketplace.visualstudio.com/items?itemName=Ikuyadeu.r 
-
-### 4. Install `pandoc` 
-
-- To knit R Markdown files, you'll need the R Extension as well as `pandoc`.
-- Install `pandoc` outside of VScode by downloading the installer here: https://pandoc.org/installing.html 
+- If you have not done so already, update your local copy of the class repository from GitHub. You should have a directory (`lecture15`) containing the following three R tutorials:
+  - [Lecture16_GenomicData.Rmd](Lecture15_GenomicData.Rmd): store genomic data as objects, assess genomic ranges, apply operations on genomic data
+  - [Lecture16_VariantCalls.Rmd](Lecture15_VariantCalls.Rmd): load and assess variant (vcf) data
   
-### 5. Class materials: Genomic and sequencing data for the tutorials
+### 3. Class materials: Genomic and sequencing data for the tutorials
 
-- Please download all data files found in [this folder](https://www.dropbox.com/sh/zoitjnobgp7l7c2/AABBIpTQcNA4lWYOFnV5dlMKa?dl=0) and add them to your `lecture16` directory. The files should have the following filenames:
+- Please download all data files found in [this folder](https://drive.google.com/drive/folders/13jM29nhzELyThKQXl27MrRXxbziVunQr?usp=sharing) and add them to your `lecture15` directory. The files should have the following filenames:
   - `BRCA.genome_wide_snp_6_broad_Level_3_scna.seg`
   - `BRCA_IDC_cfDNA.bam`
   - `BRCA_IDC_cfDNA.bam.bai`

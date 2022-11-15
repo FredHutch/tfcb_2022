@@ -12,7 +12,7 @@ This lecture focuses on concepts surrounding genome sequence data and their asso
 
 ## Class materials
 
-Outline of [content from the slides](MCB536_lecture15_IntroSeqData.pdf):
+Outline of [content from the slides](MCB536_lecture14_IntroSeqData.pdf):
 
 1. Sequence data
 - Databases and online resources for sequence data
@@ -25,6 +25,9 @@ Outline of [content from the slides](MCB536_lecture15_IntroSeqData.pdf):
 
 ## Before the class
 
-1. Please be able to locate files for in-class exercises. Data and examples shown in `lecture 14` and [lecture 15](../lecture16/) are available on Fred Hutch filesystem at `/fh/fast/subramaniam_a/tfcb` and on [DropBox](https://www.dropbox.com/sh/zoitjnobgp7l7c2/AABBIpTQcNA4lWYOFnV5dlMKa?dl=0). For both `lecture 14` and `lecture 15`, you will need to download these files onto your laptop.
+1. Please download data for in-class tutorials shown in `lecture 14` and [lecture 15](../lecture15/) to your laptop.  
 
-2. Please install [Integrative Genomics Viewer (IGV)](https://software.broadinstitute.org/software/igv/).
+- [Google Drive](https://drive.google.com/drive/folders/13jM29nhzELyThKQXl27MrRXxbziVunQr?usp=sharing). 
+
+
+2. Be able to access the web-based version of the Integrative Genomics View (IGV) at https://igv.org/app/. Alternatively, you may also download the desktop app at https://software.broadinstitute.org/software/igv/.

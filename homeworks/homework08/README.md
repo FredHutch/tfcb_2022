@@ -7,8 +7,8 @@ The homework is a Jupyter notebook series of empty code-cells which you will nee
 
 ## Data and environment
 Download the following data into the `data` directory
-1. RU675_RU682.h5ad available at [link](https://drive.google.com/file/d/11x--cAG723ite7q-y6oysx6jLLyYkepa/view?usp=sharing)
-2. RU675_filtered.tar.gz at [link](https://drive.google.com/file/d/11yQoiVrOcFuvtlJ06bNErlOTCsnnlWM5/view?usp=sharing). Untar this file after downloading.
+1. RU675_RU682.h5ad available at [link](https://drive.google.com/file/d/1jvuL2zYNpmdX4OH6-mKT9OZuEkOuz74-/view?usp=share_link)
+2. RU675_filtered.tar.gz at [link](https://drive.google.com/file/d/11yQoiVrOcFuvtlJ06bNErlOTCsnnlWM5/view?usp=share_link). Untar this file after downloading.
 The conda environment that you built for the Lectures 18 and 19 will work for the Homework too. 
 
 The first part of the homework will use the data from one patient available at `data/RU675_filtered`. 

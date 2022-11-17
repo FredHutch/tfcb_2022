@@ -1,14 +1,14 @@
 ---
 title: "MCB536: Homework 7"
 author: "Student Name"
-date: "11/30/2021"
+date: "11/22/2022"
 output: html_document
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
-***Total: 50 points***
+***Total: 42 points***
 
 Complete this homework by writing R code to complete the following tasks. Keep in mind:
 
@@ -17,12 +17,11 @@ ii. For Problem 2e, you should include a image (screen shot) instead of providin
 iii. This homework requires use of data files:
 
   - `BRCA.genome_wide_snp_6_broad_Level_3_scna.seg` (Problems 1, 2)
-  - `BRCA_IDC_cfDNA.bam` and `"BRCA_IDC_cfDNA.bai` (Problem 3)
-  - `GIAB_highconf_v.3.3.2.vcf.gz` (Problem 4)
+  - `GIAB_highconf_v.3.3.2.vcf.gz` (Problem 3)
   
 iv. You will be graded on your code and output results (knitted .html file). The assignment is worth 50 points total; partial credit can be awarded.
 
-This assignment is due on **Dec 7, 2021**. 
+This assignment is due on **Dec 1, 2022**. 
 
 For additional resources, please refer to these links:  
 Problems 1 & 2:  
@@ -87,32 +86,7 @@ Hint: Subset the `segs.gr` to only rows with `Segment_Mean < -0.3`.
 ### c. Visually inspect the deletion overlap result from part (b) using IGV. (4 points)
 Provide a screen shot of IGV at the 1Mb window with the most frequent overlap with deletion segments. The image should include the segments from `BRCA.genome_wide_snp_6_broad_Level_3_scna.seg` loaded. 
 
-# Problem 3: Reading and extracting sequencing data (8 points total)
-
-### Preparation
-```{r, message=FALSE}
-library(Rsamtools)
-bamFile <- "BRCA_IDC_cfDNA.bam"
-```
-
-## a. Retrieve reads in the BAM file `BRCA_IDC_cfDNA.bam` at `chr12:25,380,269-25,380,308`. (4 points)
-Use the same settings for `scanBamWhat()`, `scanBamFlag()`, and `ScanBamParam()` as in Section `1` of `Lecture16_Rsamtools.Rmd`.
-```{r}
-
-```
-
-### b. What is the fraction of G+C bases? (4 points)
-Count the number of G and C bases in the read sequence from part (a).
-Hints: 
-
-i. To get the sequence of `DNAStringSet`, use `as.character(unlist(x))`.  
-ii. `strsplit()` function splits a string into individual characters.
-iii. `nchar()` returns the length of a string.
-```{r}
-
-```
-
-# Problem 4: Reading and annotating genomic variants (16 points total)
+# Problem 3: Reading and annotating genomic variants (16 points total)
 
 ### Preparation
 ```{r, message=FALSE}

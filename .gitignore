@@ -37,4 +37,8 @@ Thumbs.db
 # Jupyter notebooks #
 #####################
 .ipynb_checkpoints
+
+# other #
+#########
 _ignore/
+*.key

@@ -25,11 +25,7 @@ In the second lecture, We will go over the commands presented in the previous se
 This is an interactive tutorial to teach you about navigating the shell.
 
 To get started,
-[access the unix shell on your computer](https://github.com/FredHutch/tfcb_2022/blob/main/lectures/lecture04/README.md#setup-accessing-a-command-line).
-Make sure you're connected to the Fred Hutch network,
-either on campus via the Marconi wireless network,
-via VPN,
-or using `snail` as described [here](https://fredhutch.github.io/tfcb_2021/software/unix_rhino#off-campus-log-in).
+[access the unix shell on your computer](https://github.com/FredHutch/tfcb_2023/blob/main/lectures/lecture04/README.md#setup-accessing-a-command-line).
 
 Once you have logged on,
 execute the following commands:
